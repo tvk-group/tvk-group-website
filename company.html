@@ -1,55 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TVK Group Companies</title>
+  <title>TVK Group – Our Companies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: sans-serif; padding: 2rem; background: #fff; color: #111; }
-    h1 { text-align: center; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
-    .card { background: #f9f9f9; padding: 1rem; border-radius: 12px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-    .card img { max-width: 120px; max-height: 120px; margin-bottom: 1rem; }
-    .jurisdiction { font-size: 0.9rem; color: #666; }
+    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .company {
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f0f0f0;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
-  <h1>TVK Group Holding LTD – Company Structure</h1>
-  <div class="grid">
-    <div class="card">
-      <img src="Logo TVK Solar & Renewable.jpg" alt="TVK Solar Logo">
-      <h3>TVK Solar & Renewable Energy LTD</h3>
-      <p class="jurisdiction">🇬🇧 UK – Energiemind hardware & energy operations</p>
+  <nav>
+    <div><strong>TVK GROUP</strong></div>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/company.html">Company</a></li>
+      <li><a href="/work.html">Work With Us</a></li>
+      <li><a href="/legal.html">Legal</a></li>
+      <li><a href="/privacy.html">Privacy</a></li>
+      <li><a href="/terms.html">Terms</a></li>
+    </ul>
+  </nav>
+
+  <div class="section">
+    <h2>Our Companies</h2>
+
+    <div class="company">
+      <h3>TVK Group Holding LTD 🇸🇨</h3>
+      <p>Parent company overseeing all global operations and intellectual property. Based in Seychelles.</p>
     </div>
-    <div class="card">
-      <img src="Logo London the secretofwomen.png" alt="Secret of Women">
-      <h3>TVK – The Secret of Women LTD</h3>
-      <p class="jurisdiction">🇬🇧 UK – Ava Santé wellness, beauty, and influence</p>
+
+    <div class="company">
+      <h3>TVK Labs LTD 🇬🇧</h3>
+      <p>R&D hub for blockchain, AI, Entelekron, Sentient Signals, Ava Sentient, Ava Santé.</p>
     </div>
-    <div class="card">
-      <img src="tvk logo.png" alt="TVK Military">
-      <h3>TVK Prefab & Military Systems LTD</h3>
-      <p class="jurisdiction">🇬🇧 UK – Construction, defense & logistics</p>
+
+    <div class="company">
+      <h3>TVK Solar & Renewable LTD 🇬🇧</h3>
+      <p>Develops mining technology, solar power projects, and carbon tokenization via Energiemind brand.</p>
     </div>
-    <div class="card">
-      <img src="Energiemind Business Logo_A_2D_vector_graphic_features_the_logo_for_a_compan.png" alt="Energiemind">
-      <h3>Energiemind</h3>
-      <p class="jurisdiction">Energy token + mining optimization protocols</p>
+
+    <div class="company">
+      <h3>TVK Prefab-Buildings & Containers, Military Systems & Int. Transport LTD 🇬🇧</h3>
+      <p>Prefabricated housing, defense infrastructure, drone deployment and international military contracts.</p>
     </div>
-    <div class="card">
-      <img src="Screenshot 2024-10-28 211936.png" alt="Energiemind Alt">
-      <h3>Energiemind (Alt Visual)</h3>
-      <p class="jurisdiction">Visual branding – secondary energy ecosystem</p>
+
+    <div class="company">
+      <h3>TVK - London - The Secret Of Women LTD 🇬🇧</h3>
+      <p>Luxury and wellness product brand tailored for women, based in London.</p>
     </div>
-    <div class="card">
-      <img src="flc_design20231104200645(1).jpg" alt="Secret Alt">
-      <h3>TVK – The Secret of Women (Alt)</h3>
-      <p class="jurisdiction">Beauty + wellness alternate branding</p>
+
+    <div class="company">
+      <h3>TVK Container & Military GmbH 🇩🇪</h3>
+      <p>German division focused on logistics, container technology, and EU-side transport contracts.</p>
     </div>
-    <div class="card">
-      <img src="ChatGPT Image 12. Mai 2025, 05_57_55.png" alt="Q Presence">
-      <h3>Q-Presence</h3>
-      <p class="jurisdiction">Identity + sovereignty authentication layer</p>
+
+    <div class="company">
+      <h3>TVK Labs FZCO 🇦🇪 (Planned)</h3>
+      <p>Upcoming Dubai-based digital finance entity for token infrastructure expansion.</p>
     </div>
   </div>
+
+  <footer>
+    &copy; 2025 TVK Group Holding LTD. All rights reserved.
+  </footer>
 </body>
 </html>
