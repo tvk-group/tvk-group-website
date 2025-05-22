@@ -17,16 +17,33 @@
     }
     nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
     nav a { color: white; text-decoration: none; font-weight: bold; }
-    .section { max-width: 1000px; margin: auto; padding: 2rem; }
+    nav a:hover { text-decoration: underline; }
+    header { background: #0b0f1a; padding: 2rem; text-align: center; }
+    h1 { margin-bottom: 0.5rem; font-size: 2.5rem; color: #66fcf1; }
+    p.lead { font-size: 1.2rem; color: #cfcfcf; }
+    .section, .content { max-width: 1000px; margin: auto; padding: 2rem; }
+    ul { line-height: 1.8; }
+    .cta { text-align: center; margin: 2rem 0; }
+    a.button {
+      background: #1f6feb;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
     footer {
       text-align: center;
       padding: 2rem;
       background: #f0f0f0;
       font-size: 0.9rem;
+      color: #666;
     }
+    select { padding: 4px; border-radius: 5px; }
   </style>
 </head>
 <body>
+
   <nav>
     <div><strong>TVK GROUP</strong></div>
     <ul>
@@ -37,67 +54,76 @@
       <li><a href="/en/privacy.html">Privacy</a></li>
       <li><a href="/en/terms.html">Terms</a></li>
       <li><a href="/en/contact.html">Contact</a></li>
+      <li>
+        <select id="lang-dropdown" onchange="window.location.href=this.value;">
+          <option disabled selected>🌐 Language</option>
+          <option value="/ar/work.html">🇸🇦 العربية</option>
+          <option value="/zh/work.html">🇨🇳 中文</option>
+          <option value="/da/work.html">🇩🇰 Dansk</option>
+          <option value="/nl/work.html">🇳🇱 Nederlands</option>
+          <option value="/en/work.html">🇬🇧 English</option>
+          <option value="/fr/work.html">🇫🇷 Français</option>
+          <option value="/de/work.html">🇩🇪 Deutsch</option>
+          <option value="/he/work.html">🇮🇱 עברית</option>
+          <option value="/hi/work.html">🇮🇳 हिन्दी</option>
+          <option value="/it/work.html">🇮🇹 Italiano</option>
+          <option value="/ja/work.html">🇯🇵 日本語</option>
+          <option value="/ko/work.html">🇰🇷 한국어</option>
+          <option value="/pl/work.html">🇵🇱 Polski</option>
+          <option value="/pt/work.html">🇵🇹 Português</option>
+          <option value="/ru/work.html">🇷🇺 Русский</option>
+          <option value="/es/work.html">🇪🇸 Español</option>
+          <option value="/sv/work.html">🇸🇪 Svenska</option>
+          <option value="/tr/work.html">🇹🇷 Türkçe</option>
+        </select>
+      </li>
     </ul>
   </nav>
 
-  <div class="section">
-    <h2>Join the TVK Ecosystem</h2>
-    <p>We are seeking forward-thinking contributors and innovators. Work with us to shape the future.</p>
-  </div>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Join the Entelekron Team – TVK Group</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: sans-serif; background: #0d1117; color: #f0f0f0; margin: 0; padding: 0; }
-        header { background: #0b0f1a; padding: 2rem; text-align: center; }
-        h1 { margin-bottom: 0.5rem; font-size: 2.5rem; color: #66fcf1; }
-        p.lead { font-size: 1.2rem; color: #cfcfcf; }
-        .content { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-        ul { line-height: 1.8; }
-        .cta { text-align: center; margin: 2rem 0; }
-        a.button { background: #1f6feb; padding: 1rem 2rem; border-radius: 5px; color: white; text-decoration: none; font-weight: bold; }
-        footer { background: #0b0f1a; text-align: center; padding: 1rem; font-size: 0.9rem; color: #666; margin-top: 2rem; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Join the Entelekron Launch Team</h1>
-        <p class="lead">We're not offering a job. We're offering you a share of history.</p>
-    </header>
-    <div class="content">
-        <p>TVK Group Holding LTD is building Entelekron – a sovereign, protocol-based ecosystem that redefines infrastructure, digital identity, AI coordination, and energy tokenization.</p>
-        <p>We are offering contributor roles in exchange for vested ownership in $ETK, the Entelekron native token.</p>
+  <header>
+    <h1>Join the Entelekron Launch Team</h1>
+    <p class="lead">We're not offering a job. We're offering you a share of history.</p>
+  </header>
 
-        <h2>Open Roles</h2>
-        <ul>
-            <li>Protocol Developer / Blockchain Engineer</li>
-            <li>Web3 Solidity & Contract Dev</li>
-            <li>AI Prompting Engineer / Model Ops</li>
-            <li>Community Manager / Social Lead</li>
-            <li>UI/UX Designer</li>
-            <li>DevOps / Infrastructure Admin</li>
-            <li>Legal / Token Regulatory Officer</li>
-            <li>Investor Relations Lead</li>
-        </ul>
+  <div class="content">
+    <p>TVK Group Holding LTD is building Entelekron – a sovereign, protocol-based ecosystem that redefines infrastructure, digital identity, AI coordination, and energy tokenization.</p>
+    <p>We are offering contributor roles in exchange for vested ownership in $ETK, the Entelekron native token.</p>
 
-        <div class="cta">
-            <a href="mailto:careers@tvk.group" class="button">Apply or Partner Now</a>
-        </div>
+    <h2>Open Roles</h2>
+    <ul>
+      <li>Chief Operating Officer (COO)</li>
+      <li>Chief Technical Architect</li>
+      <li>Protocol Lead – Entelekron</li>
+      <li>Solidity/Web3 Developer</li>
+      <li>Frontend/UX Engineer</li>
+      <li>Cybersecurity Director</li>
+      <li>DevOps / Validator Admin</li>
+      <li>Visual Designer / Brand Architect</li>
+      <li>AI Prompting & Model Ops</li>
+      <li>Business Development Manager</li>
+      <li>Content/Docs Strategist</li>
+      <li>Legal Officer / Contract Auditor</li>
+      <li>Multilingual Community Manager</li>
+      <li>Investor Relations Lead</li>
+      <li>Executive Assistant</li>
+    </ul>
 
-    <div class="content">
-      
-        <p>For detailed terms and vesting, download our contributor guide:</p>
-        <div class="cta">
-            <a href="TVK_Entelekron_Team_Invitation_DE.docx" class="button">Download PDF</a>
+    <div class="cta">
+      <a href="mailto:careers@tvk.group" class="button">Apply or Partner Now</a>
     </div>
-    <footer>
-        TVK Group Holding LTD · Entelekron Protocol © 2025
-    </footer>
-</body>
+
+    <p>For detailed terms and vesting, download our contributor guide:</p>
+    <div class="cta">
+      <a href="/docs/Entelekron_Contributor_Program_TVK.docx" class="button">Download Guide (DOCX)</a>
+    </div>
+  </div>
+
   <footer>
-    &copy; 2025 TVK Group Holding LTD. All rights reserved.
+    TVK Group Holding LTD · Entelekron Protocol © 2025
   </footer>
+
+</body>
+</html>
+
 </body>
 </html>
