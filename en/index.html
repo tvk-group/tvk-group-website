@@ -23,6 +23,7 @@
   </style>
 </head>
 <body>
+
   <nav>
     <div><strong>TVK GROUP</strong></div>
     <ul>
@@ -33,6 +34,29 @@
       <li><a href="/en/privacy.html">Privacy</a></li>
       <li><a href="/en/terms.html">Terms</a></li>
       <li><a href="/en/contact.html">Contact</a></li>
+      <li>
+        <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
+          <option disabled selected>🌐 Language</option>
+          <option value="/ar/index.html">🇸🇦 العربية</option>
+          <option value="/zh/index.html">🇨🇳 中文</option>
+          <option value="/da/index.html">🇩🇰 Dansk</option>
+          <option value="/nl/index.html">🇳🇱 Nederlands</option>
+          <option value="/en/index.html">🇬🇧 English</option>
+          <option value="/fr/index.html">🇫🇷 Français</option>
+          <option value="/de/index.html">🇩🇪 Deutsch</option>
+          <option value="/he/index.html">🇮🇱 עברית</option>
+          <option value="/hi/index.html">🇮🇳 हिन्दी</option>
+          <option value="/it/index.html">🇮🇹 Italiano</option>
+          <option value="/ja/index.html">🇯🇵 日本語</option>
+          <option value="/ko/index.html">🇰🇷 한국어</option>
+          <option value="/pl/index.html">🇵🇱 Polski</option>
+          <option value="/pt/index.html">🇵🇹 Português</option>
+          <option value="/ru/index.html">🇷🇺 Русский</option>
+          <option value="/es/index.html">🇪🇸 Español</option>
+          <option value="/sv/index.html">🇸🇪 Svenska</option>
+          <option value="/tr/index.html">🇹🇷 Türkçe</option>
+        </select>
+      </li>
     </ul>
   </nav>
 
@@ -44,8 +68,72 @@
   </div>
 
   <footer>
-    &copy; 2025 TVK Group Holding LTD. All rights reserved.<br>
-    🌐 Language: <a href="/en/index.html">EN</a> | <a href="/de/index.html">DE</a> | <a href="/fr/index.html">FR</a> | <a href="/tr/index.html">TR</a> | <a href="/it/index.html">IT</a> | <a href="/es/index.html">ES</a> | <a href="/ru/index.html">RU</a> | <a href="/pl/index.html">PL</a> | <a href="/nl/index.html">NL</a> | <a href="/pt/index.html">PT</a>
+    &copy; 2025 TVK Group Holding LTD. All rights reserved.
   </footer>
+
+  <!-- 🌐 Consent-based Language Redirect Script -->
+  <script>
+  (function() {
+    const supportedLanguages = {
+      ar: '/ar/index.html', zh: '/zh/index.html', da: '/da/index.html', nl: '/nl/index.html',
+      en: '/en/index.html', fr: '/fr/index.html', de: '/de/index.html', he: '/he/index.html',
+      hi: '/hi/index.html', it: '/it/index.html', ja: '/ja/index.html', ko: '/ko/index.html',
+      pl: '/pl/index.html', pt: '/pt/index.html', ru: '/ru/index.html', es: '/es/index.html',
+      sv: '/sv/index.html', tr: '/tr/index.html'
+    };
+
+    const defaultLang = 'en';
+    const currentPath = window.location.pathname;
+    const isInLangFolder = /^\\/(ar|zh|da|nl|en|fr|de|he|hi|it|ja|ko|pl|pt|ru|es|sv|tr)\\//.test(currentPath);
+
+    function showConsentBar(targetUrl) {
+      const bar = document.createElement('div');
+      bar.style.position = 'fixed';
+      bar.style.bottom = '0';
+      bar.style.left = '0';
+      bar.style.right = '0';
+      bar.style.background = '#222';
+      bar.style.color = '#fff';
+      bar.style.padding = '12px';
+      bar.style.textAlign = 'center';
+      bar.style.zIndex = '10000';
+      bar.innerHTML = `
+        🌐 We've detected your language. Redirect to your preferred version?
+        <button id="lang-accept" style="margin-left:10px;padding:5px 12px;">Yes</button>
+      `;
+      document.body.appendChild(bar);
+      document.getElementById('lang-accept').onclick = () => {
+        bar.remove();
+        window.location.href = targetUrl;
+      };
+    }
+
+    const savedLang = localStorage.getItem('preferredLanguage');
+    let targetUrl = null;
+
+    if (!isInLangFolder) {
+      if (savedLang && supportedLanguages[savedLang]) {
+        targetUrl = supportedLanguages[savedLang];
+      } else {
+        const browserLang = navigator.language.slice(0, 2).toLowerCase();
+        targetUrl = supportedLanguages[browserLang] || supportedLanguages[defaultLang];
+        localStorage.setItem('preferredLanguage', browserLang in supportedLanguages ? browserLang : defaultLang);
+      }
+
+      window.addEventListener('DOMContentLoaded', () => showConsentBar(targetUrl));
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const langDropdown = document.getElementById("lang-dropdown");
+      if (langDropdown) {
+        langDropdown.addEventListener("change", function() {
+          const selectedLang = this.value.split("/")[1];
+          localStorage.setItem('preferredLanguage', selectedLang);
+        });
+      }
+    });
+  })();
+  </script>
+
 </body>
 </html>
