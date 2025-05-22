@@ -5,54 +5,55 @@ n/
   <meta charset="UTF-8">
   <title>Contact – TVK Group Holding LTD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
     nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #000;
-      color: white;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; background-color: #000; color: white;
     }
     nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
+      list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0;
     }
     nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+      color: white; text-decoration: none; font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
     .section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
+      max-width: 1000px; margin: auto; padding: 2rem;
+      animation: fadeIn 0.8s ease-in-out;
     }
     .section h3 { margin-top: 2rem; }
     .contact-table {
-      width: 100%;
-      border-collapse: collapse;
+      width: 100%; border-collapse: collapse; margin-bottom: 2rem;
     }
     .contact-table th, .contact-table td {
-      padding: 0.75rem;
+      padding: 0.75rem 1rem;
       border-bottom: 1px solid #ddd;
       text-align: left;
+      vertical-align: middle;
     }
     .contact-table th {
       background-color: #f0f0f0;
     }
+    .contact-icon {
+      display: inline-block;
+      margin-right: 10px;
+      color: #0073e6;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f0f0f0;
-      font-size: 0.9rem;
+      text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem;
+    }
+    @media print {
+      nav, footer, .language-dropdown { display: none; }
+      body { background: white; color: black; }
+      .section { padding: 0; }
     }
   </style>
 </head>
@@ -68,26 +69,12 @@ n/
       <li><a href="/en/privacy.html">Privacy</a></li>
       <li><a href="/en/terms.html">Terms</a></li>
       <li><a href="/en/contact.html">Contact</a></li>
-      <li>
-        <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
+      <li class="language-dropdown">
+        <select id="lang-dropdown" onchange="window.location.href=this.value;">
           <option disabled selected>🌐 Language</option>
-          <option value="/ar/index.html">🇸🇦 العربية</option>
-          <option value="/zh/index.html">🇨🇳 中文</option>
-          <option value="/da/index.html">🇩🇰 Dansk</option>
-          <option value="/nl/index.html">🇳🇱 Nederlands</option>
           <option value="/en/index.html">🇬🇧 English</option>
-          <option value="/fr/index.html">🇫🇷 Français</option>
           <option value="/de/index.html">🇩🇪 Deutsch</option>
-          <option value="/he/index.html">🇮🇱 עברית</option>
-          <option value="/hi/index.html">🇮🇳 हिन्दी</option>
-          <option value="/it/index.html">🇮🇹 Italiano</option>
-          <option value="/ja/index.html">🇯🇵 日本語</option>
-          <option value="/ko/index.html">🇰🇷 한국어</option>
-          <option value="/pl/index.html">🇵🇱 Polski</option>
-          <option value="/pt/index.html">🇵🇹 Português</option>
-          <option value="/ru/index.html">🇷🇺 Русский</option>
-          <option value="/es/index.html">🇪🇸 Español</option>
-          <option value="/sv/index.html">🇸🇪 Svenska</option>
+          <option value="/fr/index.html">🇫🇷 Français</option>
           <option value="/tr/index.html">🇹🇷 Türkçe</option>
         </select>
       </li>
@@ -95,38 +82,84 @@ n/
   </nav>
 
   <div class="section">
-    <h2>Contact Directory</h2>
-    <p>Official contact emails for each company and division:</p>
+    <h2>📬 Contact Directory</h2>
+    <p>Official email contacts by division:</p>
 
     <h3>TVK Group Holding LTD</h3>
     <table class="contact-table">
       <tr><th>Purpose</th><th>Email</th></tr>
-      <tr><td>General Inquiries</td><td>hq@tvk.group</td></tr>
-      <tr><td>Legal & Compliance</td><td>legal@tvk.group</td></tr>
-      <tr><td>Careers / HR</td><td>careers@tvk.group</td></tr>
+      <tr><td>General Inquiries</td><td><i class="fas fa-envelope contact-icon"></i>hq@tvk.group</td></tr>
+      <tr><td>Legal & Compliance</td><td><i class="fas fa-envelope contact-icon"></i>legal@tvk.group</td></tr>
+      <tr><td>Careers / HR</td><td><i class="fas fa-envelope contact-icon"></i>careers@tvk.group</td></tr>
     </table>
 
-    <h3>TVK Labs LTD</h3>
+    <h3>EnteleKron</h3>
     <table class="contact-table">
-      <tr><td>Development Team</td><td>team@tvklabs.com</td></tr>
-      <tr><td>General Contact</td><td>contact@tvklabs.com</td></tr>
+      <tr><td>Core Protocols</td><td><i class="fas fa-envelope contact-icon"></i>core@entelekron.com</td></tr>
+      <tr><td>Validator Support</td><td><i class="fas fa-envelope contact-icon"></i>validators@entelekron.com</td></tr>
+    </table>
+
+    <h3>EnteleScan</h3>
+    <table class="contact-table">
+      <tr><td>ID Recovery & KYC</td><td><i class="fas fa-envelope contact-icon"></i>support@entelescan.com</td></tr>
+    </table>
+
+    <h3>EnteleVault</h3>
+    <table class="contact-table">
+      <tr><td>Secure Storage</td><td><i class="fas fa-envelope contact-icon"></i>contact@entelevault.com</td></tr>
+    </table>
+
+    <h3>Ava Santé</h3>
+    <table class="contact-table">
+      <tr><td>Wellness Team</td><td><i class="fas fa-envelope contact-icon"></i>team@avasante.com</td></tr>
+    </table>
+
+    <h3>Ava Sentient</h3>
+    <table class="contact-table">
+      <tr><td>AI Automation</td><td><i class="fas fa-envelope contact-icon"></i>ai@avasentient.com</td></tr>
+    </table>
+
+    <h3>Alvina</h3>
+    <table class="contact-table">
+      <tr><td>Personal Inquiries</td><td><i class="fas fa-envelope contact-icon"></i>alvina@tvk.group</td></tr>
     </table>
 
     <h3>Energiemind</h3>
     <table class="contact-table">
-      <tr><td>Support & Sales</td><td>contact@energiemind.io</td></tr>
-      <tr><td>Tech Team</td><td>team@energiemind.io</td></tr>
+      <tr><td>Support & Sales</td><td><i class="fas fa-envelope contact-icon"></i>contact@energiemind.io</td></tr>
+      <tr><td>Tech Team</td><td><i class="fas fa-envelope contact-icon"></i>team@energiemind.io</td></tr>
     </table>
 
     <h3>Sentient Signals</h3>
     <table class="contact-table">
-      <tr><td>Capital Desk</td><td>capital@sentsig.com</td></tr>
-      <tr><td>HQ Operations</td><td>hq@sentientsignals.io</td></tr>
+      <tr><td>Capital Desk</td><td><i class="fas fa-envelope contact-icon"></i>capital@sentsig.com</td></tr>
+      <tr><td>HQ Operations</td><td><i class="fas fa-envelope contact-icon"></i>hq@sentientsignals.io</td></tr>
     </table>
 
-    <h3>Network Infrastructure</h3>
+    <h3>TVK Labs LTD</h3>
     <table class="contact-table">
-      <tr><td>Validator / Node Ops</td><td>ops@tvk.network</td></tr>
+      <tr><td>Development Team</td><td><i class="fas fa-envelope contact-icon"></i>team@tvklabs.com</td></tr>
+      <tr><td>General Contact</td><td><i class="fas fa-envelope contact-icon"></i>contact@tvklabs.com</td></tr>
+    </table>
+
+    <h3>TVK Solar & Renewable Energy LTD</h3>
+    <table class="contact-table">
+      <tr><td>Mining & Solar</td><td><i class="fas fa-envelope contact-icon"></i>solar@tvk.group</td></tr>
+    </table>
+
+    <h3>TVK Prefab, Military & Transport LTD</h3>
+    <table class="contact-table">
+      <tr><td>Prefab & Logistics</td><td><i class="fas fa-envelope contact-icon"></i>prefab@tvk.group</td></tr>
+    </table>
+
+    <h3>TVK London – The Secret of Women LTD</h3>
+    <table class="contact-table">
+      <tr><td>Luxury Products</td><td><i class="fas fa-envelope contact-icon"></i>contact@secretwomen.london</td></tr>
+    </table>
+
+    <h3>TVK DE – Container & Military GmbH</h3>
+    <table class="contact-table">
+      <tr><td>German Ops</td><td><i class="fas fa-envelope contact-icon"></i>logistik@tvk.group</td></tr>
     </table>
   </div>
 
@@ -134,70 +167,5 @@ n/
     &copy; 2025 TVK Group Holding LTD. All rights reserved.
   </footer>
 
-  <!-- Language Detection Script -->
-  <script>
-  (function() {
-    const supportedLanguages = {
-      ar: '/ar/index.html', zh: '/zh/index.html', da: '/da/index.html', nl: '/nl/index.html',
-      en: '/en/index.html', fr: '/fr/index.html', de: '/de/index.html', he: '/he/index.html',
-      hi: '/hi/index.html', it: '/it/index.html', ja: '/ja/index.html', ko: '/ko/index.html',
-      pl: '/pl/index.html', pt: '/pt/index.html', ru: '/ru/index.html', es: '/es/index.html',
-      sv: '/sv/index.html', tr: '/tr/index.html'
-    };
-
-    const defaultLang = 'en';
-    const currentPath = window.location.pathname;
-    const isInLangFolder = /^\\/(ar|zh|da|nl|en|fr|de|he|hi|it|ja|ko|pl|pt|ru|es|sv|tr)\\//.test(currentPath);
-
-    function showConsentBar(targetUrl) {
-      const bar = document.createElement('div');
-      bar.style.position = 'fixed';
-      bar.style.bottom = '0';
-      bar.style.left = '0';
-      bar.style.right = '0';
-      bar.style.background = '#222';
-      bar.style.color = '#fff';
-      bar.style.padding = '12px';
-      bar.style.textAlign = 'center';
-      bar.style.zIndex = '10000';
-      bar.innerHTML = `
-        🌐 We've detected your language. Redirect to your preferred version?
-        <button id="lang-accept" style="margin-left:10px;padding:5px 12px;">Yes</button>
-      `;
-      document.body.appendChild(bar);
-      document.getElementById('lang-accept').onclick = () => {
-        bar.remove();
-        window.location.href = targetUrl;
-      };
-    }
-
-    const savedLang = localStorage.getItem('preferredLanguage');
-    let targetUrl = null;
-
-    if (!isInLangFolder) {
-      if (savedLang && supportedLanguages[savedLang]) {
-        targetUrl = supportedLanguages[savedLang];
-      } else {
-        const browserLang = navigator.language.slice(0, 2).toLowerCase();
-        targetUrl = supportedLanguages[browserLang] || supportedLanguages[defaultLang];
-        localStorage.setItem('preferredLanguage', browserLang in supportedLanguages ? browserLang : defaultLang);
-      }
-
-      window.addEventListener('DOMContentLoaded', () => showConsentBar(targetUrl));
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-      const langDropdown = document.getElementById("lang-dropdown");
-      if (langDropdown) {
-        langDropdown.addEventListener("change", function() {
-          const selectedLang = this.value.split("/")[1];
-          localStorage.setItem('preferredLanguage', selectedLang);
-        });
-      }
-    });
-  })();
-  </script>
-
 </body>
 </html>
-
