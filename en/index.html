@@ -2,30 +2,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>TVK Group Holding LTD</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TVK Group – Global Conglomerate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TVK Group – Global Conglomerate" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body { margin: 0; font-family: sans-serif; background-color: #fff; color: #111; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: #000; color: white; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; background-color: #000; color: white;
+    }
     nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
     nav a { color: white; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
     header {
       background: url('/en/tvk_group_home_hero_banner.png') no-repeat center center;
       background-size: cover;
-      width: 100%;
-      height: 120vh;
+      width: 100%; height: 120vh; display: flex; justify-content: center; align-items: center;
+      flex-direction: column; text-align: center;
     }
-    .section { padding: 3rem 2rem; max-width: 1000px; margin: auto; }
+    header img.logo { max-width: 300px; }
+    header h1 { font-size: 2.5rem; color: #fff; margin-top: 1rem; }
+    header p { font-size: 1.2rem; color: #eee; }
+    .section { padding: 3rem 2rem; max-width: 1200px; margin: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card {
+      background: #f9f9f9; padding: 1.5rem; border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+    .card img { width: 100%; border-radius: 8px; margin-bottom: 1rem; }
     footer { text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem; }
   </style>
 </head>
 <body>
-
   <nav>
-    <div><strong>TVK GROUP</strong></div>
+    <div><img src="/mnt/data/logo.tvk.group.png" alt="TVK Group Logo" style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">TVK GROUP</strong></div>
     <ul>
       <li><a href="/en/index.html">Home</a></li>
       <li><a href="/en/company.html">Company</a></li>
@@ -60,80 +72,72 @@
     </ul>
   </nav>
 
-  <header></header>
+  <header>
+    <img src="/mnt/data/logo.tvk.group.png" class="logo" alt="TVK Logo" />
+    <h1>Shaping the Future of Intelligent Infrastructure</h1>
+    <p>Discover our blockchain, AI, and energy-based ecosystems built for sovereignty and sustainability.</p>
+  </header>
 
   <div class="section">
     <h2>TVK Group Holding LTD</h2>
-    <p>Global Conglomerate for Blockchain, AI, Energy, Defense & Infrastructure.</p>
+    <p>TVK Group is a sovereign conglomerate focused on building autonomous systems across energy, finance, AI, defense, and digital identity. Operating from the UAE, UK, and Germany, we unify innovation and trust through decentralized infrastructure and strategic project brands.</p>
+  </div>
+
+  <div class="section">
+    <h2>Our Companies</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/tvklabs_logo.png" alt="TVK Labs">
+        <h3>TVK Labs & Media LTD</h3>
+        <p>Core R&D unit for AI pipelines, DApps, validators, and automation. Home to Sentient Signals, Ava Sentient, and all smart contract stacks.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/energiemind_logo.png" alt="Energiemind">
+        <h3>TVK Solar & Renewable LTD</h3>
+        <p>Commercial operator for solar mining systems, ASIC hardware deployments, and carbon tokenized yield structures under Energiemind.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/prefab_logo.png" alt="Prefab">
+        <h3>TVK Prefab & Military GmbH</h3>
+        <p>High-security prefab buildings, tactical containers, and international logistics and materials support.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/london_logo.png" alt="Secret of Women">
+        <h3>London – The Secret of Women</h3>
+        <p>Luxury wellness and feminine technology brand. Coming soon with smart health kits and sensory tools.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Our Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/entelekron_logo.png" alt="Entelekron">
+        <h3>Entelekron</h3>
+        <p>Our sovereign blockchain chain with embedded AI kernel, zk-DPoS consensus, and validator incentive layers.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelelink_logo.png" alt="Entelelink">
+        <h3>Entelelink</h3>
+        <p>Cross-chain bridge protocol for ISO-20022 compatibility, validator interoperability, and B2G network syncing.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/avasante_logo.png" alt="Ava Santé">
+        <h3>Ava Santé</h3>
+        <p>AI wellness assistant tailored for women. Tracks rituals, mental state, and wellness cycles with privacy-first AI.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/sentientsignals_logo.png" alt="Sentient Signals">
+        <h3>Sentient Signals</h3>
+        <p>Emotional AI sentiment engine for real-time market analytics, trading strategies, and social signal aggregation.</p>
+      </div>
+    </div>
   </div>
 
   <footer>
     &copy; 2025 TVK Group Holding LTD. All rights reserved.
   </footer>
-
-  <!-- 🌐 Consent-based Language Redirect Script -->
-  <script>
-  (function() {
-    const supportedLanguages = {
-      ar: '/ar/index.html', zh: '/zh/index.html', da: '/da/index.html', nl: '/nl/index.html',
-      en: '/en/index.html', fr: '/fr/index.html', de: '/de/index.html', he: '/he/index.html',
-      hi: '/hi/index.html', it: '/it/index.html', ja: '/ja/index.html', ko: '/ko/index.html',
-      pl: '/pl/index.html', pt: '/pt/index.html', ru: '/ru/index.html', es: '/es/index.html',
-      sv: '/sv/index.html', tr: '/tr/index.html'
-    };
-
-    const defaultLang = 'en';
-    const currentPath = window.location.pathname;
-    const isInLangFolder = /^\\/(ar|zh|da|nl|en|fr|de|he|hi|it|ja|ko|pl|pt|ru|es|sv|tr)\\//.test(currentPath);
-
-    function showConsentBar(targetUrl) {
-      const bar = document.createElement('div');
-      bar.style.position = 'fixed';
-      bar.style.bottom = '0';
-      bar.style.left = '0';
-      bar.style.right = '0';
-      bar.style.background = '#222';
-      bar.style.color = '#fff';
-      bar.style.padding = '12px';
-      bar.style.textAlign = 'center';
-      bar.style.zIndex = '10000';
-      bar.innerHTML = `
-        🌐 We've detected your language. Redirect to your preferred version?
-        <button id="lang-accept" style="margin-left:10px;padding:5px 12px;">Yes</button>
-      `;
-      document.body.appendChild(bar);
-      document.getElementById('lang-accept').onclick = () => {
-        bar.remove();
-        window.location.href = targetUrl;
-      };
-    }
-
-    const savedLang = localStorage.getItem('preferredLanguage');
-    let targetUrl = null;
-
-    if (!isInLangFolder) {
-      if (savedLang && supportedLanguages[savedLang]) {
-        targetUrl = supportedLanguages[savedLang];
-      } else {
-        const browserLang = navigator.language.slice(0, 2).toLowerCase();
-        targetUrl = supportedLanguages[browserLang] || supportedLanguages[defaultLang];
-        localStorage.setItem('preferredLanguage', browserLang in supportedLanguages ? browserLang : defaultLang);
-      }
-
-      window.addEventListener('DOMContentLoaded', () => showConsentBar(targetUrl));
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-      const langDropdown = document.getElementById("lang-dropdown");
-      if (langDropdown) {
-        langDropdown.addEventListener("change", function() {
-          const selectedLang = this.value.split("/")[1];
-          localStorage.setItem('preferredLanguage', selectedLang);
-        });
-      }
-    });
-  })();
-  </script>
-
 </body>
 </html>
+
