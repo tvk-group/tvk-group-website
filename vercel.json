@@ -1,4 +1,12 @@
 {
+  "i18n": {
+    "locales": [
+      "en", "de", "fr", "es", "it", "pl", "nl",
+      "tr", "ru", "uk", "pt", "ar", "hi",
+      "zh", "ja", "ko", "vi", "fa"
+    ],
+    "defaultLocale": "en"
+  },
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
