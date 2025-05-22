@@ -2,18 +2,31 @@
 <footer>
   &copy; 2025 TVK Group Holding LTD. All rights reserved.
   
-<div style="text-align:center; margin-top: 2rem;">
-  🌐 <strong>Language:</strong>
-  <a href="/en/index.html">EN</a> |
-  <a href="/de/index.html">DE</a> |
-  <a href="/fr/index.html">FR</a> |
-  <a href="/tr/index.html">TR</a> |
-  <a href="/it/index.html">IT</a> |
-  <a href="/es/index.html">ES</a> |
-  <a href="/ru/index.html">RU</a> |
-  <a href="/pl/index.html">PL</a> |
-  <a href="/nl/index.html">NL</a> |
-  <a href="/pt/index.html">PT</a>
+<!-- 🌐 Floating Language Selector -->
+<div class="language-selector">
+  <label for="lang-dropdown">🌐 Language:</label>
+  <select id="lang-dropdown" onchange="window.location.href=this.value;">
+    <option disabled selected>Select</option>
+    <option value="/en/index.html">🇬🇧 English</option>
+    <option value="/de/index.html">🇩🇪 Deutsch</option>
+    <option value="/fr/index.html">🇫🇷 Français</option>
+    <option value="/tr/index.html">🇹🇷 Türkçe</option>
+    <option value="/it/index.html">🇮🇹 Italiano</option>
+    <option value="/es/index.html">🇪🇸 Español</option>
+    <option value="/ru/index.html">🇷🇺 Русский</option>
+    <option value="/pl/index.html">🇵🇱 Polski</option>
+    <option value="/nl/index.html">🇳🇱 Nederlands</option>
+    <option value="/pt/index.html">🇵🇹 Português</option>
+    <option value="/ar/index.html">🇸🇦 العربية</option>
+    <option value="/he/index.html">🇮🇱 עברית</option>
+    <option value="/zh/index.html">🇨🇳 中文</option>
+    <option value="/ja/index.html">🇯🇵 日本語</option>
+    <option value="/ko/index.html">🇰🇷 한국어</option>
+    <option value="/hi/index.html">🇮🇳 हिन्दी</option>
+    <option value="/sv/index.html">🇸🇪 Svenska</option>
+    <option value="/da/index.html">🇩🇰 Dansk</option>
+  </select>
 </div>
+
 
 </footer>
