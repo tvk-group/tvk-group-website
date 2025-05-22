@@ -111,10 +111,55 @@
     </div>
   </div>
 
-  <footer>
-    &copy; 2025 TVK Group Holding LTD. All rights reserved.
+
+<footer>
+  &copy; 2025 TVK Group Holding LTD. All rights reserved.
   
-<!-- 🌐 Floating Language Selector -->
+<!-- 🌐 Multilingual Floating Language Selector -->
+<style>
+  .language-selector {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f8f9fa;
+    padding: 10px 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 9999;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .language-selector label {
+    margin-right: 6px;
+    font-weight: bold;
+  }
+
+  .language-selector select {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    color: #000;
+  }
+
+  /* 🌙 Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .language-selector {
+      background: #1e1e1e;
+      color: #f1f1f1;
+    }
+
+    .language-selector select {
+      background: #2a2a2a;
+      color: #f1f1f1;
+      border: 1px solid #444;
+    }
+  }
+</style>
+
 <div class="language-selector">
   <label for="lang-dropdown">🌐 Language:</label>
   <select id="lang-dropdown" onchange="window.location.href=this.value;">
@@ -140,9 +185,7 @@
   </select>
 </div>
 
-
 </footer>
 
-  </footer>
 </body>
 </html>
