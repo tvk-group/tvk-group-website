@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>T.V.K. Group – Nos Entreprises</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .company {
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f0f0f0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong>T.V.K. GROUP</strong></div>
+    <ul>
+      <li><a href="/fr/index.html">Accueil</a></li>
+      <li><a href="/fr/company.html">Entreprises</a></li>
+      <li><a href="/fr/work.html">Travailler avec nous</a></li>
+      <li><a href="/fr/legal.html">Mentions légales</a></li>
+      <li><a href="/fr/privacy.html">Confidentialité</a></li>
+      <li><a href="/fr/terms.html">Conditions</a></li>
+      <li><a href="/fr/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="section">
+    <h2>Nos Entreprises</h2>
+
+    <div class="company">
+      <h3>T.V.K. Group Holding LTD FZCO 🇦🇪</h3>
+      <h4>Société Holding Globale & Trésorerie</h4>
+      <p>Société mère supervisant toutes les opérations mondiales et la propriété intellectuelle. Basée à Ras Al Khaimah, Émirats Arabes Unis.</p>
+      <p>- Propriétaire de 100% des filiales et de la PI</p>
+      <p>- Gère l'émission de tokens</p>
+      <p>- Détient la trésorerie, les licences et contrôle les contrats intelligents DAO</p>
+      <p>- Dirige les relations avec les investisseurs et la stratégie mondiale</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Labs & Media LTD 🇬🇧</h3>
+      <h4>Entité de Recherche et Développement</h4>
+      <p>Centre R&D pour la blockchain, l'IA, Entelekron, Sentient Signals, Ava Sentient, Ava Santé, Alvina.</p>
+      <p>- Développe et maintient les contrats intelligents, DApps, outils de validation</p>
+      <p>- Héberge les pipelines IA, tableaux de bord et tous les référentiels de protocoles</p>
+      <p>- Emploie des équipes techniques et créatives</p>
+      <p>- Gère GitHub, GitBook, documentation et audits</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Solar & Renewable Energy LTD 🇬🇧</h3>
+      <h4>Entité Commerciale</h4>
+      <p>Développe des technologies minières, des projets solaires et la tokenisation du carbone via la marque Energiemind.</p>
+      <p>- Opérateur du firmware EnergieMind pour mineurs ASIC</p>
+      <p>- Développe des Antminers liés aux tokens (licence token ENM)</p>
+      <p>- Installe des infrastructures d'énergie solaire et renouvelable</p>
+      <p>- Héberge et optimise des mineurs, déploiement DePIN</p>
+      <p>- Suivi de l'efficacité carbone et tableaux de bord</p>
+      <p>- Minage dual token (Bitcoin + ENM)</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3>
+      <p>Division allemande spécialisée en logistique, technologies de conteneurs, maisons préfabriquées et systèmes de défense.</p>
+    </div>
+
+    <div class="company">
+      <h3>London - The Secret Of Women - LTD 🇬🇧</h3>
+      <p>Marque de luxe et de bien-être dédiée aux femmes, basée à Londres.</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Labs & Media FZCO 🇦🇪 (Prévu)</h3>
+      <p>Future entité basée à Dubaï pour l'expansion des infrastructures de tokens.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 T.V.K. Group Holding LTD. Tous droits réservés.
+  </footer>
+
+</body>
+</html>
