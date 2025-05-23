@@ -3,199 +3,132 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>Contact – TVK Group Holding LTD</title>
+  <title>联系 – T.V.K. Group Holding LTD</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
-    nav {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 1rem 2rem; background-color: #000; color: white;
-    }
-    nav ul {
-      list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0;
-    }
-    nav a {
-      color: white; text-decoration: none; font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      max-width: 1000px; margin: auto; padding: 2rem;
-      animation: fadeIn 1s ease-in-out;
-    }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: #000; color: white; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .section { max-width: 1000px; margin: auto; padding: 2rem; animation: fadeIn 1s ease-in-out; }
     .section h3 { margin-top: 2rem; }
-    .contact-table {
-      width: 100%; border-collapse: collapse; margin-bottom: 2rem;
-    }
-    .contact-table th, .contact-table td {
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid #ddd;
-      text-align: left;
-      vertical-align: middle;
-    }
-    .contact-table th {
-      background-color: #f0f0f0;
-    }
-    .contact-icon {
-      display: inline-block;
-      margin-right: 10px;
-      color: #0073e6;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    footer {
-      text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem;
-    }
-
-    @media print {
-      nav, footer, .language-dropdown { display: none; }
-      body { background: white; color: black; }
-      .section { padding: 0; }
-    }
+    .contact-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
+    .contact-table th, .contact-table td { padding: 0.75rem 1rem; border-bottom: 1px solid #ddd; text-align: left; vertical-align: middle; }
+    .contact-table th { background-color: #f0f0f0; }
+    .contact-icon { display: inline-block; margin-right: 10px; color: #0073e6; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    footer { text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem; }
+    @media print { nav, footer, .language-dropdown { display: none; } body { background: white; color: black; } .section { padding: 0; } }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <nav>
-    <div><strong>TVK GROUP</strong></div>
+    <div><strong>T.V.K. GROUP</strong></div>
     <ul>
-      <li><a href="/zh/index.html">Home</a></li>
-      <li><a href="/zh/company.html">Company</a></li>
-      <li><a href="/zh/work.html">Work With Us</a></li>
-      <li><a href="/zh/legal.html">Legal</a></li>
-      <li><a href="/zh/privacy.html">Privacy</a></li>
-      <li><a href="/zh/terms.html">Terms</a></li>
-      <li><a href="/zh/contact.html">Contact</a></li>
-      <li class="language-dropdown">
-        <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
-          <option disabled selected>🌐 Language</option>
-          <option value="/ar/index.html">🇸🇦 العربية</option>
-          <option value="/zh/index.html">🇨🇳 中文</option>
-          <option value="/da/index.html">🇩🇰 Dansk</option>
-          <option value="/nl/index.html">🇳🇱 Nederlands</option>
-          <option value="/zh/index.html">🇬🇧 English</option>
-          <option value="/fr/index.html">🇫🇷 Français</option>
-          <option value="/de/index.html">🇩🇪 Deutsch</option>
-          <option value="/he/index.html">🇮🇱 עברית</option>
-          <option value="/hi/index.html">🇮🇳 हिन्दी</option>
-          <option value="/it/index.html">🇮🇹 Italiano</option>
-          <option value="/ja/index.html">🇯🇵 日本語</option>
-          <option value="/ko/index.html">🇰🇷 한국어</option>
-          <option value="/pl/index.html">🇵🇱 Polski</option>
-          <option value="/pt/index.html">🇵🇹 Português</option>
-          <option value="/ru/index.html">🇷🇺 Русский</option>
-          <option value="/es/index.html">🇪🇸 Español</option>
-          <option value="/sv/index.html">🇸🇪 Svenska</option>
-          <option value="/tr/index.html">🇹🇷 Türkçe</option>
-        </select>
-      </li>
-        <select id="lang-dropdown" onchange="window.location.href=this.value;">
-          <option disabled selected>🌐 Language</option>
-          <option value="/zh/index.html">🇬🇧 English</option>
-          <option value="/de/index.html">🇩🇪 Deutsch</option>
-          <option value="/fr/index.html">🇫🇷 Français</option>
-          <option value="/tr/index.html">🇹🇷 Türkçe</option>
-        </select>
-      </li>
+      <li><a href="/zh/index.html">主页</a></li>
+      <li><a href="/zh/company.html">公司</a></li>
+      <li><a href="/zh/work.html">加入我们</a></li>
+      <li><a href="/zh/legal.html">法律声明</a></li>
+      <li><a href="/zh/privacy.html">隐私政策</a></li>
+      <li><a href="/zh/terms.html">条款</a></li>
+      <li><a href="/zh/contact.html">联系</a></li>
     </ul>
   </nav>
 
   <div class="section">
-    <h2>📬 Contact Directory</h2>
-    <p>Official contact emails for each company and division:</p>
+    <h2>📬 联系目录</h2>
+    <p>各公司及部门的官方电子邮件地址：</p>
 
-    <h3>TVK Group Holding LTD</h3>
+    <h3>T.V.K. Group Holding LTD</h3>
     <table class="contact-table">
-      <tr><th>Purpose</th><th>Email</th></tr>
-      <tr><td>General Inquiries</td><td><i class="fas fa-envelope contact-icon"></i>hq@tvk.group</td></tr>
-      <tr><td>Legal & Compliance</td><td><i class="fas fa-envelope contact-icon"></i>legal@tvk.group</td></tr>
-      <tr><td>Careers / HR</td><td><i class="fas fa-envelope contact-icon"></i>careers@tvk.group</td></tr>
+      <tr><th>用途</th><th>Email</th></tr>
+      <tr><td>一般咨询</td><td><i class="fas fa-envelope contact-icon"></i>hq@tvk.group</td></tr>
+      <tr><td>法律与合规</td><td><i class="fas fa-envelope contact-icon"></i>legal@tvk.group</td></tr>
+      <tr><td>人力资源 / 招聘</td><td><i class="fas fa-envelope contact-icon"></i>careers@tvk.group</td></tr>
     </table>
 
-    <h3>TVK Labs LTD</h3>
+    <h3>T.V.K. Labs & Media LTD</h3>
     <table class="contact-table">
-      <tr><td>Development Team</td><td><i class="fas fa-envelope contact-icon"></i>team@tvklabs.com</td></tr>
-      <tr><td>General Contact</td><td><i class="fas fa-envelope contact-icon"></i>contact@tvklabs.com</td></tr>
+      <tr><td>开发团队</td><td><i class="fas fa-envelope contact-icon"></i>team@tvklabs.com</td></tr>
+      <tr><td>一般联系</td><td><i class="fas fa-envelope contact-icon"></i>contact@tvklabs.com</td></tr>
     </table>
 
-    
-<h3>EnteleKron</h3>
-<table class="contact-table">
-  <tr><td>Core Protocols</td><td><i class="fas fa-envelope contact-icon"></i>core@entelekron.com</td></tr>
-  <tr><td>Validator Support</td><td><i class="fas fa-envelope contact-icon"></i>validators@entelekron.com</td></tr>
-</table>
-
-<h3>EnteleScan</h3>
-<table class="contact-table">
-  <tr><td>ID Recovery & KYC</td><td><i class="fas fa-envelope contact-icon"></i>support@entelescan.com</td></tr>
-</table>
-
-<h3>EnteleVault</h3>
-<table class="contact-table">
-  <tr><td>Secure Storage</td><td><i class="fas fa-envelope contact-icon"></i>contact@entelevault.com</td></tr>
-</table>
-
-<h3>Ava Santé</h3>
-<table class="contact-table">
-  <tr><td>Wellness Team</td><td><i class="fas fa-envelope contact-icon"></i>team@avasante.com</td></tr>
-</table>
-
-<h3>Ava Sentient</h3>
-<table class="contact-table">
-  <tr><td>AI Automation</td><td><i class="fas fa-envelope contact-icon"></i>ai@avasentient.com</td></tr>
-</table>
-
-<h3>Alvina</h3>
-<table class="contact-table">
-  <tr><td>Personal Inquiries</td><td><i class="fas fa-envelope contact-icon"></i>alvina@tvk.group</td></tr>
-</table>
-
-<h3>Energiemind</h3>
+    <h3>EnteleKron</h3>
     <table class="contact-table">
-      <tr><td>Support & Sales</td><td><i class="fas fa-envelope contact-icon"></i>contact@energiemind.io</td></tr>
-      <tr><td>Tech Team</td><td><i class="fas fa-envelope contact-icon"></i>team@energiemind.io</td></tr>
+      <tr><td>核心协议</td><td><i class="fas fa-envelope contact-icon"></i>core@entelekron.com</td></tr>
+      <tr><td>验证者支持</td><td><i class="fas fa-envelope contact-icon"></i>validators@entelekron.com</td></tr>
+    </table>
+
+    <h3>EnteleScan</h3>
+    <table class="contact-table">
+      <tr><td>身份恢复 / KYC</td><td><i class="fas fa-envelope contact-icon"></i>support@entelescan.com</td></tr>
+    </table>
+
+    <h3>EnteleVault</h3>
+    <table class="contact-table">
+      <tr><td>安全存储</td><td><i class="fas fa-envelope contact-icon"></i>contact@entelevault.com</td></tr>
+    </table>
+
+    <h3>Ava Santé</h3>
+    <table class="contact-table">
+      <tr><td>健康团队</td><td><i class="fas fa-envelope contact-icon"></i>team@avasante.com</td></tr>
+    </table>
+
+    <h3>Ava Sentient</h3>
+    <table class="contact-table">
+      <tr><td>AI 自动化</td><td><i class="fas fa-envelope contact-icon"></i>ai@avasentient.com</td></tr>
+    </table>
+
+    <h3>Alvina</h3>
+    <table class="contact-table">
+      <tr><td>私人咨询</td><td><i class="fas fa-envelope contact-icon"></i>alvina@tvk.group</td></tr>
+    </table>
+
+    <h3>Energiemind</h3>
+    <table class="contact-table">
+      <tr><td>支持与销售</td><td><i class="fas fa-envelope contact-icon"></i>contact@energiemind.io</td></tr>
+      <tr><td>技术团队</td><td><i class="fas fa-envelope contact-icon"></i>team@energiemind.io</td></tr>
     </table>
 
     <h3>Sentient Signals</h3>
     <table class="contact-table">
-      <tr><td>Capital Desk</td><td><i class="fas fa-envelope contact-icon"></i>capital@sentsig.com</td></tr>
-      <tr><td>HQ Operations</td><td><i class="fas fa-envelope contact-icon"></i>hq@sentientsignals.io</td></tr>
+      <tr><td>资本部门</td><td><i class="fas fa-envelope contact-icon"></i>capital@sentsig.com</td></tr>
+      <tr><td>总部运营</td><td><i class="fas fa-envelope contact-icon"></i>hq@sentientsignals.io</td></tr>
     </table>
 
-    <h3>Network Infrastructure</h3>
+    <h3>网络基础设施</h3>
     <table class="contact-table">
-      <tr><td>Validator / Node Ops</td><td><i class="fas fa-envelope contact-icon"></i>ops@tvk.network</td></tr>
+      <tr><td>验证者 / 节点运营</td><td><i class="fas fa-envelope contact-icon"></i>ops@tvk.network</td></tr>
     </table>
-  
-<h3>T.V.K. Solar & Renewable Energy LTD</h3>
-<table class="contact-table">
-  <tr><td>Solar Projects & Mining</td><td><i class="fas fa-envelope contact-icon"></i>solar@tvk.group</td></tr>
-</table>
 
-<h3>T.V.K. Prefab-Buildings & Containers, Military Systems & Int. Transport LTD</h3>
-<table class="contact-table">
-  <tr><td>Military & Container Ops</td><td><i class="fas fa-envelope contact-icon"></i>prefab@tvk.group</td></tr>
-</table>
+    <h3>T.V.K. Solar & Renewable Energy LTD</h3>
+    <table class="contact-table">
+      <tr><td>太阳能项目与挖矿</td><td><i class="fas fa-envelope contact-icon"></i>solar@tvk.group</td></tr>
+    </table>
 
-<h3>T.V.K. LoNDon – The Secret of Women – LTD</h3>
-<table class="contact-table">
-  <tr><td>Luxury Products</td><td><i class="fas fa-envelope contact-icon"></i>contact@secretwomen.london</td></tr>
-</table>
+    <h3>T.V.K. Prefab-Buildings & Containers, Military Systems & Int. Transport LTD</h3>
+    <table class="contact-table">
+      <tr><td>军事系统与集装箱</td><td><i class="fas fa-envelope contact-icon"></i>prefab@tvk.group</td></tr>
+    </table>
 
-<h3>T.V.K. Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH</h3>
-<table class="contact-table">
-  <tr><td>German Engineering Contact</td><td><i class="fas fa-envelope contact-icon"></i>logistik@tvk.group</td></tr>
-</table>
+    <h3>LoNDon – The Secret of Women – LTD</h3>
+    <table class="contact-table">
+      <tr><td>奢侈产品</td><td><i class="fas fa-envelope contact-icon"></i>contact@secretwomen.london</td></tr>
+    </table>
 
+    <h3>T.V.K. Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH</h3>
+    <table class="contact-table">
+      <tr><td>德国工程联系</td><td><i class="fas fa-envelope contact-icon"></i>logistik@tvk.group</td></tr>
+    </table>
   </div>
 
   <footer>
-    &copy; 2025 TVK Group Holding LTD. All rights reserved.
+    &copy; 2025 T.V.K. Group Holding LTD 版权所有。
   </footer>
 
 </body>
 </html>
+
