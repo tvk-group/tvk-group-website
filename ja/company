@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>T.V.K.グループ – 当社の企業</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+      color: white;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .company {
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #f0f0f0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong>TVKグループ</strong></div>
+    <ul>
+      <li><a href="/ja/index.html">ホーム</a></li>
+      <li><a href="/ja/company.html">会社情報</a></li>
+      <li><a href="/ja/work.html">採用情報</a></li>
+      <li><a href="/ja/legal.html">法的情報</a></li>
+      <li><a href="/ja/privacy.html">プライバシー</a></li>
+      <li><a href="/ja/terms.html">利用規約</a></li>
+      <li><a href="/ja/contact.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+  <div class="section">
+    <h2>当社の企業</h2>
+
+    <div class="company">
+      <h3>TVK Group Holding LTD FZCO 🇦🇪</h3>
+      <h4>グローバル持株会社 & 財務管理</h4>
+      <p>全世界の業務と知的財産を監督する親会社。アラブ首長国連邦のラス・アル・ハイマ首長国に所在。</p>
+      <p>- 全ての子会社と知的財産の100%を所有</p>
+      <p>- トークンの発行を管理</p>
+      <p>- 財務、ライセンス、DAOスマートコントラクトの管理を担当</p>
+      <p>- 投資家との関係や戦略的計画を主導</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Labs & Media LTD 🇬🇧</h3>
+      <h4>研究開発部門</h4>
+      <p>ブロックチェーン、AI、Entelekron、Sentient Signals、Ava Sentient、Ava Santé、Alvina のR&D拠点。</p>
+      <p>- スマートコントラクト、DApp、バリデーターツールを開発・管理</p>
+      <p>- AIパイプライン、ダッシュボード、プロトコルのリポジトリをホスティング</p>
+      <p>- 技術チームとクリエイティブチームを雇用</p>
+      <p>- GitHub、GitBook、ドキュメント、監査を維持</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Solar & Renewable LTD 🇬🇧</h3>
+      <h4>商業部門</h4>
+      <p>Energiemindブランドを通じてマイニング技術、太陽光発電プロジェクト、カーボントークン化を展開。</p>
+      <p>- ASICマイナー向けEnergieMindファームウェアを運用</p>
+      <p>- ENMトークンライセンス付きAntminerを開発</p>
+      <p>- 再生可能エネルギーインフラの設置</p>
+      <p>- マイナーのホスティング、最適化、DePIN展開を提供</p>
+      <p>- カーボン効率の報酬追跡とダッシュボード</p>
+      <p>- デュアルトークンマイニング（ビットコイン＋ENM）</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3>
+      <p>ドイツ部門であり、物流、コンテナ技術、プレハブ住宅、防衛システムに注力。</p>
+    </div>
+
+    <div class="company">
+      <h3>London - The Secret Of Women - LTD 🇬🇧</h3>
+      <p>ロンドンに拠点を置く女性向けラグジュアリー＆ウェルネス製品ブランド。</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Labs & Media FZCO 🇦🇪（計画中）</h3>
+      <p>トークンインフラの拡張を目的とした、ドバイ拠点の新たなデジタルファイナンス事業体。</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 T.V.K. Group Holding LTD. 無断転載を禁じます。
+  </footer>
+
+</body>
+</html>
