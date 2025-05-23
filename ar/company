@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مجموعة T.V.K. – شركاتنا</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; direction: rtl; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; background-color: #000; color: white;
+    }
+    nav ul {
+      list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0;
+    }
+    nav a {
+      color: white; text-decoration: none; font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      max-width: 1000px; margin: auto; padding: 2rem;
+    }
+    .company {
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong>مجموعة T.V.K.</strong></div>
+    <ul>
+      <li><a href="/ar/index.html">الرئيسية</a></li>
+      <li><a href="/ar/company.html">الشركة</a></li>
+      <li><a href="/ar/work.html">العمل معنا</a></li>
+      <li><a href="/ar/legal.html">القانوني</a></li>
+      <li><a href="/ar/privacy.html">الخصوصية</a></li>
+      <li><a href="/ar/terms.html">الشروط</a></li>
+      <li><a href="/ar/contact.html">الاتصال</a></li>
+    </ul>
+  </nav>
+
+  <div class="section">
+    <h2>شركاتنا</h2>
+
+    <div class="company">
+      <h3>T.V.K. Group Holding LTD FZCO 🇦🇪</h3>
+      <h4>الشركة الأم والخزانة العالمية</h4>
+      <p>الشركة الأم التي تشرف على جميع العمليات العالمية وحقوق الملكية الفكرية. مقرها في إمارة رأس الخيمة، الإمارات العربية المتحدة.</p>
+      <p>- تملك 100% من الشركات التابعة وجميع الملكية الفكرية</p>
+      <p>- تدير إصدار الرموز</p>
+      <p>- تحتفظ بالخزانة والتراخيص والتحكم في العقود الذكية للمنظمة اللامركزية (DAO)</p>
+      <p>- تقود العلاقات الاستثمارية والتخطيط الاستراتيجي العالمي</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Labs & Media LTD 🇬🇧</h3>
+      <h4>الكيان البحثي والتطويري</h4>
+      <p>مركز البحث والتطوير لتقنيات البلوكشين، الذكاء الاصطناعي، Entelekron، Sentient Signals، Ava Sentient، Ava Santé، وAlvina.</p>
+      <p>- يبني ويحافظ على العقود الذكية، التطبيقات اللامركزية، وأدوات المصادقين</p>
+      <p>- يستضيف خطوط أنابيب الذكاء الاصطناعي، لوحات القيادة، ومستودعات البروتوكول</p>
+      <p>- يوظف فرق تقنية وإبداعية</p>
+      <p>- يحافظ على GitHub، وGitBook، والتوثيق والتدقيق</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Solar & Renewable LTD 🇬🇧</h3>
+      <h4>الكيان التجاري</h4>
+      <p>يطور تقنيات التعدين، مشاريع الطاقة الشمسية، وتوكنات الكربون عبر علامة Energiemind التجارية.</p>
+      <p>- مشغل برنامج EnergieMind لأجهزة التعدين ASIC</p>
+      <p>- يطور أجهزة Antminer مرتبطة بالتوكنات (ترخيص رمز ENM)</p>
+      <p>- يثبت بنية الطاقة الشمسية والمتجددة</p>
+      <p>- يوفر استضافة لأجهزة التعدين والتحسين ونشر وحدات DePIN</p>
+      <p>- يتتبع مكافآت الكفاءة الكربونية ولوحات المعلومات</p>
+      <p>- التعدين المزدوج للتوكن (Bitcoin + ENM)</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3>
+      <p>الفرع الألماني يركز على الخدمات اللوجستية، تقنيات الحاويات، المنازل الجاهزة، وأنظمة الدفاع.</p>
+    </div>
+
+    <div class="company">
+      <h3>London - The Secret Of Women - LTD 🇬🇧</h3>
+      <p>علامة تجارية للرفاهية والمنتجات المصممة خصيصاً للنساء ومقرها لندن.</p>
+    </div>
+
+    <div class="company">
+      <h3>T.V.K. Labs & Media FZCO 🇦🇪 (قيد التخطيط)</h3>
+      <p>كيان مستقبلي في دبي للتوسع في البنية التحتية المالية الرقمية والتوكنات.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 مجموعة T.V.K. القابضة المحدودة. جميع الحقوق محفوظة.
+  </footer>
+
+</body>
+</html>
+
