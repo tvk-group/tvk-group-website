@@ -1,12 +1,162 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dansk – TVK Group</title>
+  <meta charset="UTF-8" />
+  <title>TVK Group Holding LTD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TVK Group – Globalt Konglomerat" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body { margin: 0; font-family: sans-serif; background-color: #fff; color: #111; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; background-color: #000; color: white;
+    }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    header {
+      background: url('/assets/tvk_group_home_hero_banner.png') no-repeat center center;
+      background-size: cover;
+      width: 100%; height: 120vh; display: flex; justify-content: center; align-items: center;
+      flex-direction: column; text-align: center;
+    }
+    header img.logo { max-width: 300px; }
+    header h1 { font-size: 2.5rem; color: #fff; margin-top: 1rem; }
+    header p { font-size: 1.2rem; color: #eee; }
+    .section { padding: 3rem 2rem; max-width: 1200px; margin: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card {
+      background: #f9f9f9; padding: 1.5rem; border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+    .card img { width: 100%; border-radius: 8px; margin-bottom: 1rem; }
+    footer { text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem; }
+  </style>
 </head>
 <body>
-    <h1>Welcome to TVK Group – Dansk</h1>
-    <p>This is a placeholder for the Dansk version of the website.</p>
+  <nav>
+    <div><img src="/assets/logo.tvk.group.png" alt="TVK Group Logo" style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">TVK GROUP</strong></div>
+    <ul>
+      <li><a href="/da/index.html">Hjem</a></li>
+      <li><a href="/da/company.html">Virksomhed</a></li>
+      <li><a href="/da/work.html">Arbejd med os</a></li>
+      <li><a href="/da/legal.html">Juridisk</a></li>
+      <li><a href="/da/privacy.html">Privatliv</a></li>
+      <li><a href="/da/terms.html">Vilkår</a></li>
+      <li><a href="/da/contact.html">Kontakt</a></li>
+      <li>
+        <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
+          <option disabled selected>🌐 Sprog</option>
+          <option value="/ar/index.html">🇸🇦 العربية</option>
+          <option value="/zh/index.html">🇨🇳 中文</option>
+          <option value="/da/index.html">🇩🇰 Dansk</option>
+          <option value="/nl/index.html">🇳🇱 Nederlands</option>
+          <option value="/en/index.html">🇬🇧 English</option>
+          <option value="/fr/index.html">🇫🇷 Français</option>
+          <option value="/de/index.html">🇩🇪 Deutsch</option>
+          <option value="/he/index.html">🇮🇱 עברית</option>
+          <option value="/hi/index.html">🇮🇳 हिन्दी</option>
+          <option value="/it/index.html">🇮🇹 Italiano</option>
+          <option value="/ja/index.html">🇯🇵 日本語</option>
+          <option value="/ko/index.html">🇰🇷 한국어</option>
+          <option value="/pl/index.html">🇵🇱 Polski</option>
+          <option value="/pt/index.html">🇵🇹 Português</option>
+          <option value="/ru/index.html">🇷🇺 Русский</option>
+          <option value="/es/index.html">🇪🇸 Español</option>
+          <option value="/sv/index.html">🇸🇪 Svenska</option>
+          <option value="/tr/index.html">🇹🇷 Türkçe</option>
+        </select>
+      </li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="/assets/logo.tvk.group.png" class="logo" alt="TVK Logo" style="margin-top: 2cm;"  />
+    <h1>Formning af fremtidens intelligente infrastruktur</h1>
+    <p>Udforsk vores blockchain-, AI- og energibaserede økosystemer bygget til suverænitet og bæredygtighed.</p>
+  </header>
+
+  <div class="section">
+    <h2>T.V.K. Group Holding LTD</h2>
+    <p>T.V.K. Group er et uafhængigt konglomerat med fokus på at opbygge autonome systemer inden for energi, finans, kunstig intelligens, forsvar og digital identitet. Virksomheden opererer fra UAE, Storbritannien og Tyskland og samler innovation og tillid gennem decentral infrastruktur og strategiske projektbrands.</p>
+  </div>
+
+  <div class="section">
+    <h2>Vores Virksomheder</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/tvklabs_logo.png" alt="TVK Labs">
+        <h3>T.V.K. Labs & Media LTD</h3>
+        <p>R&D-enhed for AI, DApps, validatorer, Ava Sentient og automatisering.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/tvksolar_logo.png" alt="TVK Solar Renewable">
+        <h3>T.V.K. Solar & Renewable Energy LTD</h3>
+        <p>Udvikler solenergi-minesystemer og tokeniserede carbonafkast via Energiemind.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/prefab_logo.png" alt="Prefab">
+        <h3>T.V.K. Prefab-Buildings & Containers...</h3>
+        <p>Sikkerhedscontainere, taktisk logistik og transportinfrastruktur.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/london_logo.png" alt="Secret of Women">
+        <h3>LoNDon – The Secret of Women - LTD</h3>
+        <p>Feminint teknologibrand. Sensoriske sundhedsprodukter og AI-assistent.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Vores Projekter</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/entelekron_logo.png" alt="EnteleKron">
+        <h3>EnteleKron</h3>
+        <p>Kernen i hele økosystemet. AI-baseret blockchain, DAO og styring.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelelink_logo.png" alt="EnteleLink">
+        <h3>EnteleLink</h3>
+        <p>Interoperabilitet mellem kæder med ISO-standarder og validatorforbindelser.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelescan_logo.png" alt="EnteleScan">
+        <h3>EnteleScan</h3>
+        <p>Biometrisk ID-verificering og decentral adgangsautentifikation.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelevault_logo.png" alt="EnteleVault">
+        <h3>EnteleVault</h3>
+        <p>Sikker opbevaring af nøgler, backup og DAO-aktiver.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/qp_logo.png" alt="Q-Presence">
+        <h3>Q-Presence</h3>
+        <p>Decentraliseret tilstedeværelse og digital signalregistrering på tværs af kæder.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/avasante_logo.png" alt="Ava Santé">
+        <h3>Ava Santé</h3>
+        <p>AI-sundhedsassistent for kvinder med stemme og wellnessprogrammer.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/avasentient_logo.png" alt="Ava Sentient">
+        <h3>Ava Sentient</h3>
+        <p>Virtuel AI-vært og indholdsskaber. Automatiseret social tilstedeværelse.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/alvina_logo.png" alt="Alvina App">
+        <h3>Alvina App</h3>
+        <p>Symbolsk og følelsesmæssigt lag i Ava-systemet. Sjælsbundet AI med langvarig narrativ opbygning.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TVK Group Holding LTD. Alle rettigheder forbeholdes.
+  </footer>
 </body>
 </html>
+
