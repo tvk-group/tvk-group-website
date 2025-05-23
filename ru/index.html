@@ -1,12 +1,140 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Русский – TVK Group</title>
+  <meta charset="UTF-8" />
+  <title>TVK Group Holding LTD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TVK Group – Глобальный Конгломерат" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body { margin: 0; font-family: sans-serif; background-color: #fff; color: #111; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; background-color: #000; color: white;
+    }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    header {
+      background: url('/assets/tvk_group_home_hero_banner.png') no-repeat center center;
+      background-size: cover;
+      width: 100%; height: 120vh; display: flex; justify-content: center; align-items: center;
+      flex-direction: column; text-align: center;
+    }
+    header img.logo { max-width: 300px; }
+    header h1 { font-size: 2.5rem; color: #fff; margin-top: 1rem; }
+    header p { font-size: 1.2rem; color: #eee; }
+    .section { padding: 3rem 2rem; max-width: 1200px; margin: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card {
+      background: #f9f9f9; padding: 1.5rem; border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+    .card img { width: 100%; border-radius: 8px; margin-bottom: 1rem; }
+    footer { text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem; }
+  </style>
 </head>
 <body>
-    <h1>Welcome to TVK Group – Русский</h1>
-    <p>This is a placeholder for the Русский version of the website.</p>
+  <nav>
+    <div><img src="/assets/logo.tvk.group.png" alt="TVK Group Logo" style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">TVK GROUP</strong></div>
+    <ul>
+      <li><a href="/ru/index.html">Главная</a></li>
+      <li><a href="/ru/company.html">Компания</a></li>
+      <li><a href="/ru/work.html">Карьера</a></li>
+      <li><a href="/ru/legal.html">Правовая информация</a></li>
+      <li><a href="/ru/privacy.html">Политика конфиденциальности</a></li>
+      <li><a href="/ru/terms.html">Условия</a></li>
+      <li><a href="/ru/contact.html">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="/assets/logo.tvk.group.png" class="logo" alt="TVK Logo" style="margin-top: 2cm;" />
+    <h1>Формируем будущее интеллектуальной инфраструктуры</h1>
+    <p>Откройте для себя экосистемы на базе блокчейна, ИИ и энергии, созданные для суверенитета и устойчивого развития.</p>
+  </header>
+
+  <div class="section">
+    <h2>TVK Group Holding LTD</h2>
+    <p>TVK Group — это суверенный конгломерат, сосредоточенный на создании автономных систем в области энергетики, финансов, ИИ, обороны и цифровой идентификации. Оперирует из ОАЭ, Великобритании и Германии, объединяя инновации и доверие через децентрализованную инфраструктуру и стратегические бренды проектов.</p>
+  </div>
+
+  <div class="section">
+    <h2>Наши Компании</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/tvklabs_logo.png" alt="TVK Labs">
+        <h3>TVK Labs & Media LTD</h3>
+        <p>Основное подразделение R&D для ИИ, DApps, валидаторов и автоматизации.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/tvksolar_logo.png" alt="TVK Solar">
+        <h3>TVK Solar & Renewable Energy LTD</h3>
+        <p>Коммерческий оператор солнечных систем для майнинга и токенизированных доходов под брендом Energiemind.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/prefab_logo.png" alt="Prefab">
+        <h3>TVK Prefab-Buildings & Containers...</h3>
+        <p>Высокозащищённые модульные здания, тактические контейнеры и международная логистика.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/london_logo.png" alt="Secret of Women">
+        <h3>LoNDon – The Secret of Women LTD</h3>
+        <p>Бренд роскошного женского благополучия и технологий. В ближайшее время — умные наборы здоровья.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Наши Проекты</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/entelekron_logo.png" alt="EnteleKron">
+        <h3>EnteleKron</h3>
+        <p>Фундаментальная цепочка экосистемы TVK. Модульное ядро ИИ, консенсус zk-DPoS и цифровые суверенные операции.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelelink_logo.png" alt="EnteleLink">
+        <h3>EnteleLink</h3>
+        <p>Совместимый с ISO-20022 уровень взаимодействия для связи между блокчейнами.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelescan_logo.png" alt="EnteleScan">
+        <h3>EnteleScan</h3>
+        <p>Биометрическое сканирование и децентрализованная верификация личности для выпуска TVK ID.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelevault_logo.png" alt="EnteleVault">
+        <h3>EnteleVault</h3>
+        <p>Защищённое хранилище для идентификаторов, ключей DAO и резервных данных.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/qp_logo.png" alt="Q-Presence">
+        <h3>Q-Presence</h3>
+        <p>Децентрализованный протокол присутствия, синхронизирующий сигналы пользователей и цифровые намерения.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/avasante_logo.png" alt="Ava Santé">
+        <h3>Ava Santé</h3>
+        <p>ИИ-ассистент здоровья для женщин с ритуалами благополучия и голосовым управлением.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/avasentient_logo.png" alt="Ava Sentient">
+        <h3>Ava Sentient</h3>
+        <p>Виртуальный инфлюенсер и продвинутая ИИ-сущность для контента и автоматизации.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/alvina_logo.png" alt="Alvina App">
+        <h3>Alvina App</h3>
+        <p>Символический и эмоциональный слой системы Ava. Отражает душевную ИИ-экспрессию.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TVK Group Holding LTD. Все права защищены.
+  </footer>
 </body>
 </html>
+
