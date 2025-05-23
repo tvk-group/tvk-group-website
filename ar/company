@@ -5,44 +5,84 @@
   <meta charset="UTF-8">
   <title>مجموعة T.V.K. – شركاتنا</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="T.V.K. Group – تكتل عالمي" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; direction: rtl; }
+    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
     nav {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 1rem 2rem; background-color: #000; color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #000;
+      color: white;
     }
     nav ul {
-      list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
     }
     nav a {
-      color: white; text-decoration: none; font-weight: bold;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
     .section {
-      max-width: 1000px; margin: auto; padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
     }
     .company {
       margin-bottom: 2rem;
     }
     footer {
-      text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem;
+      text-align: center;
+      padding: 2rem;
+      background: #f0f0f0;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <div><strong>مجموعة T.V.K.</strong></div>
+    <div><img src="/assets/logo.tvk.group.png" alt="شعار مجموعة T.V.K." style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">مجموعة TVK</strong></div>
     <ul>
       <li><a href="/ar/index.html">الرئيسية</a></li>
       <li><a href="/ar/company.html">الشركة</a></li>
-      <li><a href="/ar/work.html">العمل معنا</a></li>
-      <li><a href="/ar/legal.html">القانوني</a></li>
+      <li><a href="/ar/work.html">الوظائف</a></li>
+      <li><a href="/ar/legal.html">قانوني</a></li>
       <li><a href="/ar/privacy.html">الخصوصية</a></li>
       <li><a href="/ar/terms.html">الشروط</a></li>
-      <li><a href="/ar/contact.html">الاتصال</a></li>
+      <li><a href="/ar/contact.html">اتصل بنا</a></li>
+      <li>
+        <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
+          <option disabled selected>🌐 اللغة</option>
+          <option value="/ar/index.html">🇸🇦 العربية</option>
+          <option value="/zh/index.html">🇨🇳 中文</option>
+          <option value="/da/index.html">🇩🇰 Dansk</option>
+          <option value="/nl/index.html">🇳🇱 Nederlands</option>
+          <option value="/en/index.html">🇬🇧 English</option>
+          <option value="/fr/index.html">🇫🇷 Français</option>
+          <option value="/de/index.html">🇩🇪 Deutsch</option>
+          <option value="/he/index.html">🇮🇱 עברית</option>
+          <option value="/hi/index.html">🇮🇳 हिन्दी</option>
+          <option value="/it/index.html">🇮🇹 Italiano</option>
+          <option value="/ja/index.html">🇯🇵 日本語</option>
+          <option value="/ko/index.html">🇰🇷 한국어</option>
+          <option value="/pl/index.html">🇵🇱 Polski</option>
+          <option value="/pt/index.html">🇵🇹 Português</option>
+          <option value="/ru/index.html">🇷🇺 Русский</option>
+          <option value="/es/index.html">🇪🇸 Español</option>
+          <option value="/sv/index.html">🇸🇪 Svenska</option>
+          <option value="/tr/index.html">🇹🇷 Türkçe</option>
+        </select>
+      </li>
     </ul>
   </nav>
 
@@ -50,56 +90,119 @@
     <h2>شركاتنا</h2>
 
     <div class="company">
-      <h3>T.V.K. Group Holding LTD FZCO 🇦🇪</h3>
-      <h4>الشركة الأم والخزانة العالمية</h4>
-      <p>الشركة الأم التي تشرف على جميع العمليات العالمية وحقوق الملكية الفكرية. مقرها في إمارة رأس الخيمة، الإمارات العربية المتحدة.</p>
-      <p>- تملك 100% من الشركات التابعة وجميع الملكية الفكرية</p>
+      <h3>TVK Group Holding LTD FZCO 🇦🇪</h3>
+      <h4>الشركة القابضة العالمية والخزانة</h4>
+      <p>الشركة الأم التي تشرف على جميع العمليات العالمية وحقوق الملكية الفكرية. مقرها في إمارة رأس الخيمة بدولة الإمارات.</p>
+      <p>- تملك 100٪ من جميع الشركات التابعة وحقوق الملكية الفكرية</p>
       <p>- تدير إصدار الرموز</p>
-      <p>- تحتفظ بالخزانة والتراخيص والتحكم في العقود الذكية للمنظمة اللامركزية (DAO)</p>
-      <p>- تقود العلاقات الاستثمارية والتخطيط الاستراتيجي العالمي</p>
+      <p>- تمتلك الخزينة والتراخيص والتحكم في العقود الذكية الخاصة بالـ DAO</p>
+      <p>- تقود العلاقات الاستثمارية والتخطيط الاستراتيجي عالميًا</p>
     </div>
 
     <div class="company">
       <h3>T.V.K. Labs & Media LTD 🇬🇧</h3>
-      <h4>الكيان البحثي والتطويري</h4>
-      <p>مركز البحث والتطوير لتقنيات البلوكشين، الذكاء الاصطناعي، Entelekron، Sentient Signals، Ava Sentient، Ava Santé، وAlvina.</p>
-      <p>- يبني ويحافظ على العقود الذكية، التطبيقات اللامركزية، وأدوات المصادقين</p>
-      <p>- يستضيف خطوط أنابيب الذكاء الاصطناعي، لوحات القيادة، ومستودعات البروتوكول</p>
-      <p>- يوظف فرق تقنية وإبداعية</p>
-      <p>- يحافظ على GitHub، وGitBook، والتوثيق والتدقيق</p>
+      <h4>كيان البحث والتطوير</h4>
+      <p>مركز البحث والتطوير لتقنيات البلوكشين والذكاء الاصطناعي، Entelekron، Sentient Signals، Ava Sentient، Ava Santé، Alvina.</p>
+      <p>- تطوير وصيانة العقود الذكية والتطبيقات اللامركزية وأدوات التحقق</p>
+      <p>- استضافة خطوط الذكاء الاصطناعي ولوحات التحكم ومستودعات البروتوكول</p>
+      <p>- توظيف فرق تقنية وإبداعية</p>
+      <p>- صيانة GitHub و GitBook والوثائق والتدقيقات</p>
     </div>
 
     <div class="company">
       <h3>T.V.K. Solar & Renewable LTD 🇬🇧</h3>
       <h4>الكيان التجاري</h4>
-      <p>يطور تقنيات التعدين، مشاريع الطاقة الشمسية، وتوكنات الكربون عبر علامة Energiemind التجارية.</p>
-      <p>- مشغل برنامج EnergieMind لأجهزة التعدين ASIC</p>
-      <p>- يطور أجهزة Antminer مرتبطة بالتوكنات (ترخيص رمز ENM)</p>
-      <p>- يثبت بنية الطاقة الشمسية والمتجددة</p>
-      <p>- يوفر استضافة لأجهزة التعدين والتحسين ونشر وحدات DePIN</p>
-      <p>- يتتبع مكافآت الكفاءة الكربونية ولوحات المعلومات</p>
-      <p>- التعدين المزدوج للتوكن (Bitcoin + ENM)</p>
+      <p>تطوير تقنيات التعدين ومشاريع الطاقة الشمسية وتوكن الكربون تحت علامة Energiemind.</p>
+      <p>- مشغل برنامج EnergieMind لأجهزة ASIC</p>
+      <p>- تطوير أجهزة Antminer مرتبطة بالتوكن (ترخيص توكن ENM)</p>
+      <p>- تركيب بنية تحتية للطاقة المتجددة</p>
+      <p>- تقديم خدمات استضافة التعدين والتحسين ونشر DePIN</p>
+      <p>- تتبع كفاءة الكربون ولوحات التحكم</p>
+      <p>- التعدين المزدوج (بيتكوين + ENM)</p>
     </div>
 
     <div class="company">
       <h3>T.V.K. Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3>
-      <p>الفرع الألماني يركز على الخدمات اللوجستية، تقنيات الحاويات، المنازل الجاهزة، وأنظمة الدفاع.</p>
+      <p>الفرع الألماني المختص باللوجستيات، تقنيات الحاويات، المنازل الجاهزة، وأنظمة الدفاع.</p>
     </div>
 
     <div class="company">
-      <h3>London - The Secret Of Women - LTD 🇬🇧</h3>
-      <p>علامة تجارية للرفاهية والمنتجات المصممة خصيصاً للنساء ومقرها لندن.</p>
+      <h3>LoNDon - The Secret Of Women LTD 🇬🇧</h3>
+      <p>علامة فاخرة ومنتجات للعافية مخصصة للنساء ومقرها لندن.</p>
     </div>
 
     <div class="company">
-      <h3>T.V.K. Labs & Media FZCO 🇦🇪 (قيد التخطيط)</h3>
-      <p>كيان مستقبلي في دبي للتوسع في البنية التحتية المالية الرقمية والتوكنات.</p>
+      <h3>T.V.K. Labs FZCO 🇦🇪 (مخطط لها)</h3>
+      <p>كيان مالي رقمي مقره دبي لتوسيع بنية التوكن التحتية.</p>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 مجموعة T.V.K. القابضة المحدودة. جميع الحقوق محفوظة.
+    &copy; 2025 T.V.K. Group Holding LTD. جميع الحقوق محفوظة.
   </footer>
+
+  <script>
+  (function() {
+    const supportedLanguages = {
+      ar: '/ar/index.html', zh: '/zh/index.html', da: '/da/index.html', nl: '/nl/index.html',
+      en: '/en/index.html', fr: '/fr/index.html', de: '/de/index.html', he: '/he/index.html',
+      hi: '/hi/index.html', it: '/it/index.html', ja: '/ja/index.html', ko: '/ko/index.html',
+      pl: '/pl/index.html', pt: '/pt/index.html', ru: '/ru/index.html', es: '/es/index.html',
+      sv: '/sv/index.html', tr: '/tr/index.html'
+    };
+
+    const defaultLang = 'en';
+    const currentPath = window.location.pathname;
+    const isInLangFolder = /^\/(ar|zh|da|nl|en|fr|de|he|hi|it|ja|ko|pl|pt|ru|es|sv|tr)\//.test(currentPath);
+
+    function showConsentBar(targetUrl) {
+      const bar = document.createElement('div');
+      bar.style.position = 'fixed';
+      bar.style.bottom = '0';
+      bar.style.left = '0';
+      bar.style.right = '0';
+      bar.style.background = '#222';
+      bar.style.color = '#fff';
+      bar.style.padding = '12px';
+      bar.style.textAlign = 'center';
+      bar.style.zIndex = '10000';
+      bar.innerHTML = `
+        🌐 لقد اكتشفنا لغتك. هل ترغب في الانتقال إلى النسخة المناسبة؟
+        <button id="lang-accept" style="margin-left:10px;padding:5px 12px;">نعم</button>
+      `;
+      document.body.appendChild(bar);
+      document.getElementById('lang-accept').onclick = () => {
+        bar.remove();
+        window.location.href = targetUrl;
+      };
+    }
+
+    const savedLang = localStorage.getItem('preferredLanguage');
+    let targetUrl = null;
+
+    if (!isInLangFolder) {
+      if (savedLang && supportedLanguages[savedLang]) {
+        targetUrl = supportedLanguages[savedLang];
+      } else {
+        const browserLang = navigator.language.slice(0, 2).toLowerCase();
+        targetUrl = supportedLanguages[browserLang] || supportedLanguages[defaultLang];
+        localStorage.setItem('preferredLanguage', browserLang in supportedLanguages ? browserLang : defaultLang);
+      }
+
+      window.addEventListener('DOMContentLoaded', () => showConsentBar(targetUrl));
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const langDropdown = document.getElementById("lang-dropdown");
+      if (langDropdown) {
+        langDropdown.addEventListener("change", function() {
+          const selectedLang = this.value.split("/")[1];
+          localStorage.setItem('preferredLanguage', selectedLang);
+        });
+      }
+    });
+  })();
+  </script>
 
 </body>
 </html>
