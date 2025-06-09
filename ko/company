@@ -59,6 +59,29 @@
       <li><a href="/ko/terms.html">이용 약관</a></li>
       <li><a href="/ko/contact.html">연락처</a></li>
     </ul>
+          <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
+          <option disabled selected>🌐 Language</option>
+          <option value="/ar/index.html">🇸🇦 العربية</option>
+          <option value="/zh/index.html">🇨🇳 中文</option>
+          <option value="/da/index.html">🇩🇰 Dansk</option>
+          <option value="/nl/index.html">🇳🇱 Nederlands</option>
+          <option value="/en/index.html">🇬🇧 English</option>
+          <option value="/fr/index.html">🇫🇷 Français</option>
+          <option value="/de/index.html">🇩🇪 Deutsch</option>
+          <option value="/he/index.html">🇮🇱 עברית</option>
+          <option value="/hi/index.html">🇮🇳 हिन्दी</option>
+          <option value="/it/index.html">🇮🇹 Italiano</option>
+          <option value="/ja/index.html">🇯🇵 日本語</option>
+          <option value="/ko/index.html">🇰🇷 한국어</option>
+          <option value="/pl/index.html">🇵🇱 Polski</option>
+          <option value="/pt/index.html">🇵🇹 Português</option>
+          <option value="/ru/index.html">🇷🇺 Русский</option>
+          <option value="/es/index.html">🇪🇸 Español</option>
+          <option value="/sv/index.html">🇸🇪 Svenska</option>
+          <option value="/tr/index.html">🇹🇷 Türkçe</option>
+        </select>
+      </li>
+    </ul>
   </nav>
 
   <div class="section">
@@ -75,7 +98,7 @@
     </div>
 
     <div class="company">
-      <h3>T.V.K. Labs & Media LTD 🇬🇧</h3>
+      <h3>TVK Labs & Technologies LTD 🇬🇧</h3>
       <h4>연구 및 개발 부문</h4>
       <p>블록체인, 인공지능, Entelekron, Sentient Signals, Ava Sentient, Ava Santé, Alvina의 R&D 허브.</p>
       <p>- 스마트 계약, DApp, 검증자 도구 개발 및 유지</p>
@@ -85,7 +108,7 @@
     </div>
 
     <div class="company">
-      <h3>T.V.K. Solar & Renewable LTD 🇬🇧</h3>
+      <h3>TVK Infrastructure & Energy Systems LTD 🇬🇧</h3>
       <h4>상업 부문</h4>
       <p>Energiemind 브랜드를 통해 채굴 기술, 태양광 프로젝트 및 탄소 토큰화를 개발.</p>
       <p>- ASIC 채굴기를 위한 EnergieMind 펌웨어 운영</p>
@@ -107,13 +130,13 @@
     </div>
 
     <div class="company">
-      <h3>T.V.K. Labs & Media FZCO 🇦🇪 (계획됨)</h3>
+      <h3>TVK Labs & Technologies LTD 🇦🇪 (계획됨)</h3>
       <p>토큰 인프라 확장을 위한 두바이 기반의 디지털 금융 법인 예정.</p>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 T.V.K. Group Holding LTD. 모든 권리 보유.
+    &copy; 2025 TVK Group Holding LTD. 모든 권리 보유.
   </footer>
 
 </body>
