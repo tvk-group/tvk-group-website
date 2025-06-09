@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>T.V.K. Group – Nos Entreprises</title>
+  <title>TVK Group – Nos Entreprises</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
@@ -49,7 +49,7 @@
 <body>
 
   <nav>
-    <div><strong>T.V.K. GROUP</strong></div>
+    <div><strong>TVK GROUP</strong></div>
     <ul>
       <li><a href="/fr/index.html">Accueil</a></li>
       <li><a href="/fr/company.html">Entreprises</a></li>
@@ -58,6 +58,29 @@
       <li><a href="/fr/privacy.html">Confidentialité</a></li>
       <li><a href="/fr/terms.html">Conditions</a></li>
       <li><a href="/fr/contact.html">Contact</a></li>
+    </ul>
+           <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
+          <option disabled selected>🌐 Language</option>
+          <option value="/ar/index.html">🇸🇦 العربية</option>
+          <option value="/zh/index.html">🇨🇳 中文</option>
+          <option value="/da/index.html">🇩🇰 Dansk</option>
+          <option value="/nl/index.html">🇳🇱 Nederlands</option>
+          <option value="/en/index.html">🇬🇧 English</option>
+          <option value="/fr/index.html">🇫🇷 Français</option>
+          <option value="/de/index.html">🇩🇪 Deutsch</option>
+          <option value="/he/index.html">🇮🇱 עברית</option>
+          <option value="/hi/index.html">🇮🇳 हिन्दी</option>
+          <option value="/it/index.html">🇮🇹 Italiano</option>
+          <option value="/ja/index.html">🇯🇵 日本語</option>
+          <option value="/ko/index.html">🇰🇷 한국어</option>
+          <option value="/pl/index.html">🇵🇱 Polski</option>
+          <option value="/pt/index.html">🇵🇹 Português</option>
+          <option value="/ru/index.html">🇷🇺 Русский</option>
+          <option value="/es/index.html">🇪🇸 Español</option>
+          <option value="/sv/index.html">🇸🇪 Svenska</option>
+          <option value="/tr/index.html">🇹🇷 Türkçe</option>
+        </select>
+      </li>
     </ul>
   </nav>
 
@@ -75,7 +98,7 @@
     </div>
 
     <div class="company">
-      <h3>T.V.K. Labs & Media LTD 🇬🇧</h3>
+      <h3>T.V.K. Labs & Technologies LTD 🇬🇧</h3>
       <h4>Entité de Recherche et Développement</h4>
       <p>Centre R&D pour la blockchain, l'IA, Entelekron, Sentient Signals, Ava Sentient, Ava Santé, Alvina.</p>
       <p>- Développe et maintient les contrats intelligents, DApps, outils de validation</p>
@@ -85,7 +108,7 @@
     </div>
 
     <div class="company">
-      <h3>T.V.K. Solar & Renewable Energy LTD 🇬🇧</h3>
+      <h3>TVK Infrastructure & Energy Systems LTD 🇬🇧</h3>
       <h4>Entité Commerciale</h4>
       <p>Développe des technologies minières, des projets solaires et la tokenisation du carbone via la marque Energiemind.</p>
       <p>- Opérateur du firmware EnergieMind pour mineurs ASIC</p>
@@ -105,15 +128,10 @@
       <h3>London - The Secret Of Women - LTD 🇬🇧</h3>
       <p>Marque de luxe et de bien-être dédiée aux femmes, basée à Londres.</p>
     </div>
-
-    <div class="company">
-      <h3>T.V.K. Labs & Media FZCO 🇦🇪 (Prévu)</h3>
-      <p>Future entité basée à Dubaï pour l'expansion des infrastructures de tokens.</p>
-    </div>
   </div>
 
   <footer>
-    &copy; 2025 T.V.K. Group Holding LTD. Tous droits réservés.
+    &copy; 2025 TVK Group Holding LTD. Tous droits réservés.
   </footer>
 
 </body>
