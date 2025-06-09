@@ -3,7 +3,7 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <title>T.V.K. Group – Vores Virksomheder</title>
+  <title>TVK Group – Vores Virksomheder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
@@ -59,6 +59,29 @@
       <li><a href="/da/terms.html">Vilkår</a></li>
       <li><a href="/da/contact.html">Kontakt</a></li>
     </ul>
+           <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
+          <option disabled selected>🌐 Language</option>
+          <option value="/ar/index.html">🇸🇦 العربية</option>
+          <option value="/zh/index.html">🇨🇳 中文</option>
+          <option value="/da/index.html">🇩🇰 Dansk</option>
+          <option value="/nl/index.html">🇳🇱 Nederlands</option>
+          <option value="/en/index.html">🇬🇧 English</option>
+          <option value="/fr/index.html">🇫🇷 Français</option>
+          <option value="/de/index.html">🇩🇪 Deutsch</option>
+          <option value="/he/index.html">🇮🇱 עברית</option>
+          <option value="/hi/index.html">🇮🇳 हिन्दी</option>
+          <option value="/it/index.html">🇮🇹 Italiano</option>
+          <option value="/ja/index.html">🇯🇵 日本語</option>
+          <option value="/ko/index.html">🇰🇷 한국어</option>
+          <option value="/pl/index.html">🇵🇱 Polski</option>
+          <option value="/pt/index.html">🇵🇹 Português</option>
+          <option value="/ru/index.html">🇷🇺 Русский</option>
+          <option value="/es/index.html">🇪🇸 Español</option>
+          <option value="/sv/index.html">🇸🇪 Svenska</option>
+          <option value="/tr/index.html">🇹🇷 Türkçe</option>
+        </select>
+      </li>
+    </ul>
   </nav>
 
   <div class="section">
@@ -75,7 +98,7 @@
     </div>
 
     <div class="company">
-      <h3>T.V.K. Labs & Media LTD 🇬🇧</h3>
+      <h3>T.V.K. Labs & Technologies LTD 🇬🇧</h3>
       <h4>Forskning & Udvikling</h4>
       <p>R&D knudepunkt for blockchain, AI, Entelekron, Sentient Signals, Ava Sentient, Ava Santé, Alvina.</p>
       <p>- Udvikler og vedligeholder smart contracts, DApps, validatorværktøjer</p>
@@ -85,7 +108,7 @@
     </div>
 
     <div class="company">
-      <h3>T.V.K. Solar & Renewable LTD 🇬🇧</h3>
+      <h3>TVK Infrastructure & Energy Systems LTD 🇬🇧</h3>
       <h4>Kommerciel Enhed</h4>
       <p>Udvikler minedriftsteknologi, solenergi og CO2-tokenisering via Energiemind-brandet.</p>
       <p>- Operatør af EnergieMind firmware til ASIC-minere</p>
@@ -97,7 +120,7 @@
     </div>
 
     <div class="company">
-      <h3>T.V.K. Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3>
+      <h3>TVK Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3>
       <p>Tysk afdeling med fokus på logistik, containerteknologi, præfabrikerede huse og forsvarssystemer.</p>
     </div>
 
@@ -105,15 +128,10 @@
       <h3>London - The Secret Of Women - LTD 🇬🇧</h3>
       <p>Luksus- og wellnessmærke til kvinder, baseret i London.</p>
     </div>
-
-    <div class="company">
-      <h3>T.V.K. Labs & Media FZCO 🇦🇪 (Planlagt)</h3>
-      <p>Kommende Dubai-baseret digital finansenhed til udvidelse af tokeninfrastruktur.</p>
-    </div>
   </div>
 
   <footer>
-    &copy; 2025 T.V.K. Group Holding LTD. Alle rettigheder forbeholdes.
+    &copy; 2025 TVK Group Holding LTD. Alle rettigheder forbeholdes.
   </footer>
 
 </body>
