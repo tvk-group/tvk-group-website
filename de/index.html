@@ -2,41 +2,53 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>TVK Group Holding LTD</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TVK Group – Global Conglomerate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TVK Group – Globaler Konzern" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body { margin: 0; font-family: sans-serif; background-color: #fff; color: #111; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: #000; color: white; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem 2rem; background-color: #000; color: white;
+    }
     nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
     nav a { color: white; text-decoration: none; font-weight: bold; }
     nav a:hover { text-decoration: underline; }
     header {
-      background: url('../de/tvk_group_home_hero_banner.png') no-repeat center center;
+      background: url('/assets/tvk_group_home_hero_banner.png') no-repeat center center;
       background-size: cover;
-      width: 100%;
-      height: 90vh;
+      width: 100%; height: 120vh; display: flex; justify-content: center; align-items: center;
+      flex-direction: column; text-align: center;
     }
-    .section { padding: 3rem 2rem; max-width: 1000px; margin: auto; }
+    header img.logo { max-width: 300px; }
+    header h1 { font-size: 2.5rem; color: #fff; margin-top: 1rem; }
+    header p { font-size: 1.2rem; color: #eee; }
+    .section { padding: 3rem 2rem; max-width: 1200px; margin: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .card {
+      background: #f9f9f9; padding: 1.5rem; border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+    .card img { width: 100%; border-radius: 8px; margin-bottom: 1rem; }
     footer { text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem; }
   </style>
 </head>
 <body>
-  
   <nav>
-    <div><strong>TVK GROUP</strong></div>
+    <div><img src="/assets/logo.tvk.group.png" alt="TVK Group Logo" style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">TVK GROUP</strong></div>
     <ul>
       <li><a href="/de/index.html">Startseite</a></li>
       <li><a href="/de/company.html">Unternehmen</a></li>
       <li><a href="/de/work.html">Karriere</a></li>
       <li><a href="/de/legal.html">Rechtliches</a></li>
       <li><a href="/de/privacy.html">Datenschutz</a></li>
-      <li><a href="/de/terms.html">AGB</a></li>
+      <li><a href="/de/terms.html">Nutzungsbedingungen</a></li>
       <li><a href="/de/contact.html">Kontakt</a></li>
-    </ul>
-           <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
-          <option disabled selected>🌐 Language</option>
+      <li>
+        <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
+          <option disabled selected>🌐 Sprache</option>
           <option value="/ar/index.html">🇸🇦 العربية</option>
           <option value="/zh/index.html">🇨🇳 中文</option>
           <option value="/da/index.html">🇩🇰 Dansk</option>
@@ -60,15 +72,113 @@
     </ul>
   </nav>
 
-  <header></header>
+  <header>
+    <img src="/assets/logo.tvk.group.png" class="logo" alt="TVK Logo" style="margin-top: 2cm;"  />
+    <h1>Die Zukunft intelligenter Infrastrukturen gestalten</h1>
+    <p>Entdecke unsere Blockchain-, KI- und Energie-Ökosysteme für Souveränität und Nachhaltigkeit.</p>
+  </header>
 
   <div class="section">
     <h2>TVK Group Holding LTD</h2>
-    <p>Global Conglomerate for Blockchain, AI, Energy, Defense & Infrastructure.</p>
+    <p>TVK Group ist ein souveräner Konzern, der sich auf den Aufbau autonomer Systeme in den Bereichen Energie, Finanzen, KI, Verteidigung und digitale Identität konzentriert. Mit Niederlassungen in den VAE, dem Vereinigten Königreich und Deutschland vereinen wir Innovation und Vertrauen durch dezentralisierte Infrastruktur und strategische Projektmarken.</p>
+  </div>
+
+  <div class="section">
+    <h2>Unsere Unternehmen</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/tvklabs_logo.png" alt="TVK Labs">
+        <h3>TVK Labs & Technologies LTD</h3>
+        <p>Innovation für Intelligenz, Antrieb für die Zukunft
+        TVK Labs ist das F&E-Zentrum der TVK Group für KI, Blockchain-Protokolle, intelligente Automatisierung und souveräne digitale Infrastruktur.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/tvk_logo_1024px_transparent.png" alt="TVK Infra Energy Systems LTD">
+        <h3>TVK Infrastructure & Energy Systems LTD</h3>
+        <p>Intelligente Infrastrukturen & grüne Energie
+        Planung und Umsetzung von modularer Architektur, Solarsystemen und energieunabhängigen Lösungen für resiliente Umgebungen.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/prefab_logo.png" alt="Prefab">
+        <h3>TVK Container Fertighäuser Militärischer Transport GmbH</h3>
+        <p>Schneller Einsatz, sichere Logistik, globale Reichweite
+        Modulare Containerlösungen, militärische Ausrüstung & Transportstrukturen für Regierungen, NGOs und Einsätze in Konfliktzonen.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/london_logo.png" alt="Secret of Women">
+        <h3>LoNDon – The Secret of Women - LTD</h3>
+        <p>Intelligente Schönheit & ganzheitliche Wellness
+        Eine Londoner Luxusmarke für Pflege, Vitalität und weibliche Stärke – basierend auf Tradition und moderner KI-gestützter Ästhetik.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Unsere Projekte</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/entelekron_logo.png" alt="EnteleKron">
+        <h3>EnteleKron</h3>
+        <p>Modularer KI-Kern, zk-DPoS-Konsens & digitale Souveränität – das Fundament des gesamten TVK Ökosystems.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelelink_logo.png" alt="EnteleLink">
+        <h3>EnteleLink</h3>
+        <p>ISO-20022-konforme Interoperabilitäts-Schicht für nahtlose Kommunikation zwischen Blockchains.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelescan_logo.png" alt="EnteleScan">
+        <h3>EnteleScan</h3>
+        <p>Biometrisches Scanning und dezentrale Identitätsprüfung für TVK ID-Registrierung und Governance.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/entelevault_logo.png" alt="EnteleVault">
+        <h3>EnteleVault</h3>
+        <p>Hochsicherer Tresor für Identitäts-Tokens, DAO-Schlüssel und digitale Sicherungen.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/qp_logo.png" alt="Q-Presence">
+        <h3>Q-Presence</h3>
+        <p>Dezentrales Präsenzprotokoll für Absichtserkennung, Gerätebewusstsein und Identitätssignale.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/sentientsignals_logo.png" alt="Sentient Signals">
+        <h3>Sentient Signals</h3>
+        <p>Emotionsbasierte Handels-KI – bald verfügbar als Erweiterung des EnteleKron Netzwerks.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/tvkid_logo.png" alt="TVK ID">
+        <h3>TVK ID</h3>
+        <p>Universeller Identitätsnachweis – verbunden mit EnteleScan für DAO-Logins und Abstimmungen.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/cyberlab_logo.png" alt="TVK CyberLab">
+        <h3>TVK CyberLab & Operation Shield</h3>
+        <p>Cyber-Sicherheitsarchitektur & Vorfallanalyse integriert in Validatoren und Wallet-Systeme.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/avasante_logo.png" alt="Ava Santé">
+        <h3>Ava Santé</h3>
+        <p>KI-gestützter Gesundheitsassistent mit Sprachdialog, Ritualen und Frauen-Wellness.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/avasentient_logo.png" alt="Ava Sentient">
+        <h3>Ava Sentient</h3>
+        <p>Virtuelle Influencerin & lernfähige KI für soziale Interaktion und Content-Erstellung.</p>
+      </div>
+      <div class="card">
+        <img src="/assets/alvina_logo.png" alt="Alvina App">
+        <h3>Alvina App</h3>
+        <h3>Alvina Flow</h3>
+        <h3>Alvina World</h3>
+        <p>Symbolische emotionale Ausdrucksschicht der Ava-KI – verbunden mit Bewusstseinsentwicklung & Langzeitnarrativen.</p>
+      </div>
+    </div>
   </div>
 
   <footer>
-    &copy; 2025 TVK Group Holding LTD. All rights reserved.<br>
+    &copy; 2025 TVK Group Holding LTD Alle Rechte vorbehalten.
   </footer>
 </body>
 </html>
+
