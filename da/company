@@ -48,8 +48,8 @@
 </head>
 <body>
 
-  <nav>
-    <div><strong>TVK GROUP</strong></div>
+ <nav>
+    <div><img src="/assets/logo.tvk.group.png" alt="TVK Group Logo" style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">TVK GROUP</strong></div>
     <ul>
       <li><a href="/da/index.html">Hjem</a></li>
       <li><a href="/da/company.html">Virksomhed</a></li>
@@ -58,9 +58,9 @@
       <li><a href="/da/privacy.html">Privatliv</a></li>
       <li><a href="/da/terms.html">Vilkår</a></li>
       <li><a href="/da/contact.html">Kontakt</a></li>
-    </ul>
-           <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
-          <option disabled selected>🌐 Language</option>
+      <li>
+        <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
+          <option disabled selected>🌐 Sprog</option>
           <option value="/ar/index.html">🇸🇦 العربية</option>
           <option value="/zh/index.html">🇨🇳 中文</option>
           <option value="/da/index.html">🇩🇰 Dansk</option>
@@ -98,7 +98,7 @@
     </div>
 
     <div class="company">
-      <h3>T.V.K. Labs & Technologies LTD 🇬🇧</h3>
+      <h3>TVK Labs & Technologies LTD 🇬🇧</h3>
       <h4>Forskning & Udvikling</h4>
       <p>R&D knudepunkt for blockchain, AI, Entelekron, Sentient Signals, Ava Sentient, Ava Santé, Alvina.</p>
       <p>- Udvikler og vedligeholder smart contracts, DApps, validatorværktøjer</p>
