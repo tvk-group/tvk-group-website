@@ -663,11 +663,11 @@ body[dir="rtl"] { direction: rtl; }
 }
 
 .tvk-showcase-visual.tvk-showcase-sovra {
-  background: radial-gradient(ellipse at 30% 40%, #1a1040 0%, #0a1628 55%, #061018 100%);
+  background: radial-gradient(ellipse at 50% 45%, #2d1b4e 0%, #120a24 45%, #060410 100%);
 }
 
 .tvk-showcase-visual.tvk-showcase-entele {
-  background: radial-gradient(ellipse at 70% 50%, #0c2447 0%, #0a1628 50%, #040d18 100%);
+  background: radial-gradient(ellipse at 50% 50%, #0a1e3d 0%, #050d1a 50%, #020608 100%);
 }
 
 .tvk-showcase-canvas {
@@ -695,13 +695,13 @@ body[dir="rtl"] { direction: rtl; }
 }
 
 .tvk-showcase-visual.tvk-showcase-sovra .tvk-showcase-badge {
-  color: #c4b5fd;
-  border-color: rgba(167, 139, 250, 0.25);
+  color: #e8c468;
+  border-color: rgba(232, 196, 104, 0.3);
 }
 
 .tvk-showcase-visual.tvk-showcase-entele .tvk-showcase-badge {
-  color: #67e8f9;
-  border-color: rgba(103, 232, 249, 0.25);
+  color: #5eead4;
+  border-color: rgba(94, 234, 212, 0.3);
 }
 
 .tvk-showcase-logo {
