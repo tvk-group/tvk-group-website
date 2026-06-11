@@ -437,6 +437,15 @@
     observer.observe(canvas);
     active = true;
     loop();
+
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && canvas.getBoundingClientRect().width > 0) {
+        active = true;
+        cancelAnimationFrame(raf);
+        loop();
+      }
+    });
+
     return observer;
   }
 
@@ -453,8 +462,8 @@
 
     function resize() {
       const rect = canvas.parentElement.getBoundingClientRect();
-      w = canvas.width = rect.width;
-      h = canvas.height = rect.height;
+      w = canvas.width = Math.max(rect.width, 300);
+      h = canvas.height = Math.max(rect.height, 300);
       cx = w * 0.5;
       cy = h * 0.5;
     }
@@ -608,8 +617,8 @@
 
     function resize() {
       const rect = canvas.parentElement.getBoundingClientRect();
-      w = canvas.width = rect.width;
-      h = canvas.height = rect.height;
+      w = canvas.width = Math.max(rect.width, 300);
+      h = canvas.height = Math.max(rect.height, 300);
       cx = w * 0.5;
       cy = h * 0.5;
     }

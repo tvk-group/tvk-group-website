@@ -175,7 +175,7 @@ const COMPANIES = [
   { img: 'tvk_logo_1024px_transparent.png', url: 'https://energiemind.com', title: 'TVK Infrastructure & Energy Systems LTD', desc: 'Empowering Resilience with Smart Infrastructure and Green Energy. Designs and delivers next-generation prefab architecture, solar energy systems, and intelligent IoT-based logistics solutions.' },
   { img: 'prefab_logo.png', url: 'https://t-v-k.com', title: 'TVK Container Fertighäuser Militärischem Material Internationaler Transport GmbH', desc: 'Rapid Deployment. Secure Logistics. Global Reach. Specializes in modular containers, prefabricated housing, and secure military-grade infrastructure with international logistics.' },
   { img: 'london_logo.png', url: 'https://london-thesecretofwomen.com', title: 'LoNDon – The Secret of Women - LTD', desc: 'Timeless Elegance. Intelligent Wellness. A luxury beauty and wellness brand combining ancient rituals with cutting-edge wellness technologies.' },
-  { img: 'logo.tvk.group.png', url: '', title: 'TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi', desc: 'Technology Investment. Import & Export. Trade & Industry. Turkish operations entity driving technology investment, international trade, import-export coordination, and industrial development for TVK Group across Türkiye and regional markets.' }
+  { img: 'logo.tvk.group.png', url: '', title: 'TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi 🇹🇷', desc: 'Technology Investment. Import & Export. Trade & Industry. Turkish operations entity driving technology investment, international trade, import-export coordination, and industrial development for TVK Group across Türkiye and regional markets.' }
 ];
 
 const PROJECTS = [
@@ -221,7 +221,7 @@ function generatePage(lang) {
   <meta name="description" content="${t(lang.code, 'description')}" />
   <link rel="icon" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/css/tvk-master.css" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=3" />
 </head>
 <body${dir}>
   <canvas id="tvk-neural-canvas"></canvas>
@@ -484,7 +484,7 @@ function generatePage(lang) {
   <script>
     window.TVK_ECOSYSTEMS = ${JSON.stringify(ECOSYSTEMS)};
   </script>
-  <script src="/assets/js/tvk-master.js"></script>
+  <script src="/assets/js/tvk-master.js?v=3"></script>
 </body>
 </html>`;
 }
