@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>TVK Group Holding LTD — Building the Infrastructure of Intelligent Civilization</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TVK Group — Technology Holding, AI Infrastructure, Blockchain, Energy Systems, Digital Identity, Future Civilization Architect" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css" />
+</head>
+<body>
+  <canvas id="tvk-neural-canvas"></canvas>
+  <canvas id="tvk-particles-canvas"></canvas>
+
+  <div class="tvk-page-content">
+    <nav class="tvk-nav">
+      <a href="/cs/index.html" class="tvk-nav-brand">
+        <img src="/assets/logo.tvk.group.png" alt="TVK Group" />
+        <strong>TVK GROUP</strong>
+      </a>
+      <button class="tvk-nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      <ul class="tvk-nav-links">
+        <li><a href="/cs/index.html">Domů</a></li>
+        <li><a href="/cs/company.html">Společnost</a></li>
+        <li><a href="/cs/work.html">Kariéra</a></li>
+        <li><a href="/cs/legal.html">Právní</a></li>
+        <li><a href="/cs/privacy.html">Soukromí</a></li>
+        <li><a href="/cs/terms.html">Podmínky</a></li>
+        <li><a href="/cs/contact.html">Kontakt</a></li>
+        <li>
+          <select class="tvk-lang-select" onchange="window.location.href=this.value;">
+            <option disabled>🌐 Language</option>
+            <option value="/ar/index.html">🇸🇦 العربية</option>
+          <option value="/zh/index.html">🇨🇳 中文</option>
+          <option value="/da/index.html">🇩🇰 Dansk</option>
+          <option value="/nl/index.html">🇳🇱 Nederlands</option>
+          <option value="/en/index.html">🇬🇧 English</option>
+          <option value="/fr/index.html">🇫🇷 Français</option>
+          <option value="/de/index.html">🇩🇪 Deutsch</option>
+          <option value="/he/index.html">🇮🇱 עברית</option>
+          <option value="/hi/index.html">🇮🇳 हिन्दी</option>
+          <option value="/it/index.html">🇮🇹 Italiano</option>
+          <option value="/ja/index.html">🇯🇵 日本語</option>
+          <option value="/ko/index.html">🇰🇷 한국어</option>
+          <option value="/pl/index.html">🇵🇱 Polski</option>
+          <option value="/pt/index.html">🇵🇹 Português</option>
+          <option value="/ru/index.html">🇷🇺 Русский</option>
+          <option value="/es/index.html">🇪🇸 Español</option>
+          <option value="/sv/index.html">🇸🇪 Svenska</option>
+          <option value="/tr/index.html">🇹🇷 Türkçe</option>
+          <option value="/fi/index.html">🇫🇮 Suomi</option>
+          <option value="/no/index.html">🇳🇴 Norsk</option>
+          <option value="/id/index.html">🇮🇩 Bahasa Indonesia</option>
+          <option value="/vi/index.html">🇻🇳 Tiếng Việt</option>
+          <option value="/th/index.html">🇹🇭 ไทย</option>
+          <option value="/uk/index.html">🇺🇦 Українська</option>
+          <option value="/cs/index.html" selected>🇨🇿 Čeština</option>
+          <option value="/el/index.html">🇬🇷 Ελληνικά</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="tvk-hero" id="hero">
+      <div class="tvk-hero-bg"></div>
+      <div class="tvk-hero-overlay"></div>
+      <div class="tvk-hero-grid"></div>
+      <div class="tvk-hero-content tvk-reveal visible">
+        <img src="/assets/logo.tvk.group.png" class="tvk-hero-logo" alt="TVK Group" />
+        <h1>Building the Infrastructure of Intelligent Civilization.</h1>
+        <p class="tvk-hero-sub">Technology. Intelligence. Sovereignty. TVK Group builds, owns, develops, funds, and coordinates multiple future-facing ecosystems.</p>
+        <div class="tvk-hero-pillars">
+          <span class="tvk-pillar">AI Networks</span>
+          <span class="tvk-pillar">Energy Systems</span>
+          <span class="tvk-pillar">Digital Identity</span>
+          <span class="tvk-pillar">Blockchain Infrastructure</span>
+          <span class="tvk-pillar">Global Connectivity</span>
+        </div>
+        <a href="#ecosystem" class="tvk-hero-cta">Explore the Ecosystem <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
+      <div class="tvk-hero-viz">
+        <canvas id="tvk-hero-viz-canvas"></canvas>
+      </div>
+    </section>
+
+    <section class="tvk-section" id="about">
+      <div class="tvk-container tvk-about tvk-reveal">
+        <h2>TVK Group Holding LTD</h2>
+        <p>TVK Group is a sovereign conglomerate focused on building autonomous systems across energy, finance, AI, defense, and digital identity. Operating from the UAE, UK, and Germany, we unify innovation and trust through decentralized infrastructure and strategic project brands.</p>
+        <div class="tvk-identity-pills">
+          <span class="tvk-identity-pill">Technology Holding</span>
+          <span class="tvk-identity-pill">AI Infrastructure Company</span>
+          <span class="tvk-identity-pill">Blockchain Infrastructure Builder</span>
+          <span class="tvk-identity-pill">Energy Systems Developer</span>
+          <span class="tvk-identity-pill">Digital Identity Innovator</span>
+          <span class="tvk-identity-pill">Future Civilization Architect</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section tvk-section-alt" id="ecosystem">
+      <div class="tvk-container">
+        <div class="tvk-section-header tvk-reveal">
+          <span class="tvk-section-label">Ecosystem Galaxy</span>
+          <h2>The TVK Ecosystem Universe</h2>
+          <p>A sovereign constellation of interconnected technologies — each ecosystem orbiting the central intelligence of TVK Group.</p>
+        </div>
+        <div class="tvk-galaxy-wrap tvk-reveal">
+          <canvas id="tvk-galaxy-canvas"></canvas>
+          <div class="tvk-galaxy-tooltip" id="tvk-galaxy-tooltip"><h4></h4><p></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section" id="structure">
+      <div class="tvk-container">
+        <div class="tvk-section-header tvk-reveal">
+          <span class="tvk-section-label">Holding Structure</span>
+          <h2>Organizational Intelligence Map</h2>
+          <p>TVK Group coordinates divisions across technology, intelligence, and infrastructure at global scale.</p>
+        </div>
+        <div class="tvk-org-chart tvk-reveal">
+          <div class="tvk-org-root">TVK GROUP</div>
+          <div class="tvk-org-connector"></div>
+          <div class="tvk-org-divisions">
+            <div class="tvk-org-node">Technology Division</div>
+            <div class="tvk-org-node">AI Division</div>
+            <div class="tvk-org-node">Blockchain Division</div>
+            <div class="tvk-org-node">Energy Division</div>
+            <div class="tvk-org-node">Health Division</div>
+            <div class="tvk-org-node">Infrastructure Division</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section tvk-section-alt" id="global">
+      <div class="tvk-container">
+        <div class="tvk-section-header tvk-reveal">
+          <span class="tvk-section-label">Global Operations</span>
+          <h2>Global Operations Center</h2>
+          <p>Ecosystem presence, partnerships, infrastructure deployment, and research across continents.</p>
+        </div>
+        <div class="tvk-map-container tvk-reveal">
+          <svg id="tvk-world-map" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1000" height="500" fill="#f1f5f9"/>
+            <path d="M150,120 Q200,80 280,100 T400,90 T500,110 T600,95 T750,105 T850,115 L880,140 Q850,180 800,200 T700,220 T600,210 T500,230 T400,215 T300,225 T200,210 T150,180 Z" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+            <path d="M120,250 Q180,230 250,245 T380,235 T520,250 T650,240 T780,255 T900,245 L920,280 Q880,320 800,330 T650,340 T500,350 T350,335 T200,345 T130,320 Z" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+            <path d="M480,130 Q520,125 540,140 T560,160 T550,180 T530,175 T500,170 T480,155 Z" fill="#cbd5e1"/>
+            <path d="M200,180 Q250,170 300,185 T350,200 T320,220 T270,215 T220,200 Z" fill="#cbd5e1"/>
+            <path d="M600,280 Q680,270 750,290 T820,310 T780,340 T700,335 T620,320 Z" fill="#cbd5e1"/>
+            <path d="M750,170 Q800,165 830,180 T850,200 T820,215 T780,210 T750,195 Z" fill="#cbd5e1"/>
+          </svg>
+          <div class="tvk-map-legend">
+            <div class="tvk-map-legend-item"><span class="tvk-map-dot" style="background:#0891b2"></span>Ecosystem Presence</div>
+            <div class="tvk-map-legend-item"><span class="tvk-map-dot" style="background:#6366f1"></span>Partnerships</div>
+            <div class="tvk-map-legend-item"><span class="tvk-map-dot" style="background:#0d9488"></span>Infrastructure</div>
+            <div class="tvk-map-legend-item"><span class="tvk-map-dot" style="background:#1e40af"></span>Research</div>
+            <div class="tvk-map-legend-item"><span class="tvk-map-dot" style="background:#f59e0b"></span>Future Expansion</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section" id="labs">
+      <div class="tvk-container">
+        <div class="tvk-section-header tvk-reveal">
+          <span class="tvk-section-label">Research Core</span>
+          <h2>TVK Labs</h2>
+          <p>The research and development core driving innovation across AI, blockchain, infrastructure, security, and energy systems.</p>
+        </div>
+        <div class="tvk-labs-grid tvk-reveal">
+          
+          <div class="tvk-lab-card">
+            <div class="tvk-lab-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>AI Research</h3>
+            <p>Sovereign AI kernels, reasoning systems, and intelligent agents.</p>
+          </div>
+          <div class="tvk-lab-card">
+            <div class="tvk-lab-icon"><i class="fa-solid fa-link"></i></div>
+            <h3>Blockchain Research</h3>
+            <p>Protocol design, consensus mechanisms, and cross-chain interoperability.</p>
+          </div>
+          <div class="tvk-lab-card">
+            <div class="tvk-lab-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>Infrastructure Research</h3>
+            <p>Scalable systems, DePIN networks, and intelligent automation.</p>
+          </div>
+          <div class="tvk-lab-card">
+            <div class="tvk-lab-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Security Research</h3>
+            <p>Cyber defense, validator security, and cryptographic protocols.</p>
+          </div>
+          <div class="tvk-lab-card">
+            <div class="tvk-lab-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>Energy Research</h3>
+            <p>Renewable integration, smart grids, and carbon-efficient mining.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section tvk-section-dark" id="investment">
+      <div class="tvk-container">
+        <div class="tvk-section-header tvk-reveal">
+          <span class="tvk-section-label">Investment & Ventures</span>
+          <h2>Building Future Infrastructure</h2>
+          <p>TVK Group is a builder — developing, funding, and coordinating strategic ventures that shape intelligent civilization.</p>
+        </div>
+        <div class="tvk-invest-grid tvk-reveal">
+          
+          <div class="tvk-invest-card">
+            <h3>Current Projects</h3>
+            <p>Active ecosystem deployments across blockchain, AI, identity, and energy infrastructure.</p>
+          </div>
+          <div class="tvk-invest-card">
+            <h3>Strategic Ventures</h3>
+            <p>Long-term partnerships and joint ventures advancing sovereign technology systems.</p>
+          </div>
+          <div class="tvk-invest-card">
+            <h3>Future Infrastructure</h3>
+            <p>Next-generation programs in digital identity, autonomous governance, and intelligent energy.</p>
+          </div>
+          <div class="tvk-invest-card">
+            <h3>Innovation Programs</h3>
+            <p>R&D initiatives through TVK Labs advancing protocol, security, and civilization-scale systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section tvk-section-alt" id="tech">
+      <div class="tvk-container">
+        <div class="tvk-section-header tvk-reveal">
+          <span class="tvk-section-label">Technology Stack</span>
+          <h2>Integrated Technology Architecture</h2>
+          <p>Eight interconnected domains forming the foundation of the TVK intelligent infrastructure stack.</p>
+        </div>
+        <div class="tvk-tech-viz tvk-reveal">
+          <canvas id="tvk-tech-canvas"></canvas>
+        </div>
+        <div class="tvk-tech-labels tvk-reveal">
+          <span class="tvk-tech-tag">AI</span>
+          <span class="tvk-tech-tag">Blockchain</span>
+          <span class="tvk-tech-tag">Identity</span>
+          <span class="tvk-tech-tag">Energy</span>
+          <span class="tvk-tech-tag">Security</span>
+          <span class="tvk-tech-tag">Governance</span>
+          <span class="tvk-tech-tag">Analytics</span>
+          <span class="tvk-tech-tag">Infrastructure</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section" id="sovra">
+      <div class="tvk-container">
+        <div class="tvk-showcase tvk-reveal">
+          <div class="tvk-showcase-visual">
+            <div class="tvk-dashboard">
+              <div class="tvk-dash-bar"><div class="tvk-dash-bar-fill" style="width:75%"></div></div>
+              <div class="tvk-dash-bar"><div class="tvk-dash-bar-fill" style="width:60%"></div></div>
+              <div class="tvk-dash-panel"></div>
+              <div class="tvk-dash-panel" style="flex:0.6"></div>
+            </div>
+          </div>
+          <div class="tvk-showcase-content">
+            <h3>SOVRA</h3>
+            <p>The intelligence layer of the TVK ecosystem. SOVRA powers reasoning engines, knowledge systems, and sovereign AI coordination across all connected platforms.</p>
+            <ul class="tvk-feature-list">
+              <li>Intelligence Dashboards</li>
+              <li>Reasoning Panels</li>
+              <li>Knowledge Systems</li>
+              <li>AI Demonstrations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section tvk-section-alt" id="entelekron">
+      <div class="tvk-container">
+        <div class="tvk-showcase tvk-showcase-reverse tvk-reveal">
+          <div class="tvk-showcase-content">
+            <h3>ENTELΞKRON</h3>
+            <p>The sovereign coordination layer. Foundational chain of the TVK ecosystem with modular AI kernel, zk-DPoS consensus, and sovereign digital operations core.</p>
+            <ul class="tvk-feature-list">
+              <li>Identity</li>
+              <li>Governance</li>
+              <li>Validators</li>
+              <li>Wallets</li>
+              <li>Protocol</li>
+              <li>Intelligence</li>
+            </ul>
+            <a href="https://entelescan.com" target="_blank" class="tvk-showcase-link">Explore EnteleSCAN → <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="tvk-showcase-visual">
+            <div class="tvk-dashboard">
+              <div class="tvk-dash-panel" style="flex:1.2"></div>
+              <div style="display:flex;gap:1rem">
+                <div class="tvk-dash-panel" style="flex:1"></div>
+                <div class="tvk-dash-panel" style="flex:1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section" id="future">
+      <div class="tvk-container">
+        <div class="tvk-section-header tvk-reveal">
+          <span class="tvk-section-label">Strategic Initiatives</span>
+          <h2>Future Infrastructure Programs</h2>
+          <p>Strategic initiatives advancing the infrastructure of intelligent civilization.</p>
+        </div>
+        <div class="tvk-future-grid tvk-reveal">
+          
+          <div class="tvk-future-card">
+            <h3>Digital Identity</h3>
+            <p>Universal sovereign identity credentials linked across chains, platforms, and governance systems.</p>
+          </div>
+          <div class="tvk-future-card">
+            <h3>Sovereign AI</h3>
+            <p>Autonomous intelligence kernels operating within decentralized, privacy-preserving frameworks.</p>
+          </div>
+          <div class="tvk-future-card">
+            <h3>Intelligent Energy</h3>
+            <p>Carbon-efficient mining, renewable integration, and smart energy grid coordination.</p>
+          </div>
+          <div class="tvk-future-card">
+            <h3>Advanced Analytics</h3>
+            <p>Market intelligence, signal processing, and civilization-scale data reasoning systems.</p>
+          </div>
+          <div class="tvk-future-card">
+            <h3>Security Systems</h3>
+            <p>Validator protection, breach detection, and on-chain wallet security infrastructure.</p>
+          </div>
+          <div class="tvk-future-card">
+            <h3>Autonomous Governance</h3>
+            <p>DAO frameworks, voting protocols, and self-governing ecosystem coordination.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section tvk-section-alt" id="companies">
+      <div class="tvk-container">
+        <div class="tvk-section-header tvk-reveal">
+          <h2>Our Companies</h2>
+        </div>
+        <div class="tvk-card-grid tvk-reveal">
+          
+          <div class="tvk-card">
+            <a href="https://tvklabs.com" target="_blank"><img src="/assets/tvklabs_logo.png" alt="TVK Labs & Technologies LTD" loading="lazy" /></a>
+            <h3><a href="https://tvklabs.com" target="_blank">TVK Labs & Technologies LTD</a></h3>
+            <p>Innovating Intelligence, Powering the Future. TVK Labs serves as the advanced research and development core of TVK Group, driving innovation across artificial intelligence, blockchain protocols, software systems, and intelligent automation.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://energiemind.com" target="_blank"><img src="/assets/tvk_logo_1024px_transparent.png" alt="TVK Infrastructure & Energy Systems LTD" loading="lazy" /></a>
+            <h3><a href="https://energiemind.com" target="_blank">TVK Infrastructure & Energy Systems LTD</a></h3>
+            <p>Empowering Resilience with Smart Infrastructure and Green Energy. Designs and delivers next-generation prefab architecture, solar energy systems, and intelligent IoT-based logistics solutions.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://t-v-k.com" target="_blank"><img src="/assets/prefab_logo.png" alt="TVK Container Fertighäuser Militärischem Material Internationaler Transport GmbH" loading="lazy" /></a>
+            <h3><a href="https://t-v-k.com" target="_blank">TVK Container Fertighäuser Militärischem Material Internationaler Transport GmbH</a></h3>
+            <p>Rapid Deployment. Secure Logistics. Global Reach. Specializes in modular containers, prefabricated housing, and secure military-grade infrastructure with international logistics.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://london-thesecretofwomen.com" target="_blank"><img src="/assets/london_logo.png" alt="LoNDon – The Secret of Women - LTD" loading="lazy" /></a>
+            <h3><a href="https://london-thesecretofwomen.com" target="_blank">LoNDon – The Secret of Women - LTD</a></h3>
+            <p>Timeless Elegance. Intelligent Wellness. A luxury beauty and wellness brand combining ancient rituals with cutting-edge wellness technologies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tvk-section" id="projects">
+      <div class="tvk-container">
+        <div class="tvk-section-header tvk-reveal">
+          <h2>Our Projects</h2>
+        </div>
+        <div class="tvk-card-grid tvk-reveal">
+          
+          <div class="tvk-card">
+            <a href="https://entelekron.org" target="_blank"><img src="/assets/entelekron_logo.png" alt="EnteleKron" loading="lazy" /></a>
+            <h3><a href="https://entelekron.org" target="_blank">EnteleKron</a></h3>
+            <p>Foundational chain of the TVK ecosystem. Modular AI kernel, zk-DPoS consensus, and sovereign digital operations core.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://entelelink.com" target="_blank"><img src="/assets/entelelink_logo.png" alt="EnteleLink" loading="lazy" /></a>
+            <h3><a href="https://entelelink.com" target="_blank">EnteleLink</a></h3>
+            <p>ISO-20022-compliant interoperability layer for seamless chain-to-chain communication and validator integration.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://entelescan.com" target="_blank"><img src="/assets/entelescan_logo.png" alt="EnteleScan" loading="lazy" /></a>
+            <h3><a href="https://entelescan.com" target="_blank">EnteleScan</a></h3>
+            <p>Biometric scanning and decentralized identity authentication system supporting TVK ID issuance and verification.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://entelevault.com" target="_blank"><img src="/assets/entelevault_logo.png" alt="EnteleVault" loading="lazy" /></a>
+            <h3><a href="https://entelevault.com" target="_blank">EnteleVault</a></h3>
+            <p>Vault-grade secure storage for identity tokens, voting keys, backup secrets, and DAO governance assets.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://q-presence.com" target="_blank"><img src="/assets/qp_logo.png" alt="Q-Presence" loading="lazy" /></a>
+            <h3><a href="https://q-presence.com" target="_blank">Q-Presence</a></h3>
+            <p>Decentralized presence protocol that maps user signals, digital intent, and multi-device awareness across chains.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://sentientsignals.io" target="_blank"><img src="/assets/sentientsignals_logo.png" alt="Sentient Signals" loading="lazy" /></a>
+            <h3><a href="https://sentientsignals.io" target="_blank">Sentient Signals</a></h3>
+            <p>Market intelligence and civilization-scale signal processing within the TVK ecosystem.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://tvkidentity.com" target="_blank"><img src="/assets/tvkid_logo.png" alt="TVK ID" loading="lazy" /></a>
+            <h3><a href="https://tvkidentity.com" target="_blank">TVK ID</a></h3>
+            <p>Universal user identity credential linked to EnteleScan, used for cross-chain DAO voting, login, and governance.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://tvkcyberlab.com" target="_blank"><img src="/assets/cyberlab_logo.png" alt="TVK CyberLab & Operation Shield" loading="lazy" /></a>
+            <h3><a href="https://tvkcyberlab.com" target="_blank">TVK CyberLab & Operation Shield</a></h3>
+            <p>Cybersecurity and breach detection system integrated into validator operations and on-chain wallet security.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://avasante.com" target="_blank"><img src="/assets/avasante_logo.png" alt="Ava Santé" loading="lazy" /></a>
+            <h3><a href="https://avasante.com" target="_blank">Ava Santé</a></h3>
+            <p>AI-powered health and lifestyle assistant for women, with wellness rituals and multilingual voice interaction.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://avasentient.com" target="_blank"><img src="/assets/avasentient_logo.png" alt="Ava Sentient" loading="lazy" /></a>
+            <h3><a href="https://avasentient.com" target="_blank">Ava Sentient</a></h3>
+            <p>Virtual influencer and advanced AI entity built for interactive presence, social automation, and content creation.</p>
+          </div>
+          <div class="tvk-card">
+            <a href="https://alvina.app" target="_blank"><img src="/assets/alvina_logo.png" alt="Alvina App / Flow / World" loading="lazy" /></a>
+            <div class="tvk-card-links"><a href="https://alvina.app" target="_blank">Alvina App</a><a href="https://alvinaflow.com" target="_blank">Alvina Flow</a><a href="https://alvinaworld.com" target="_blank">Alvina World</a></div>
+            <p>Symbolic and emotional layer of Ava system. Represents soul-linked AI expression and long-term story arc modules.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="tvk-footer">
+      <p class="tvk-footer-tagline">Building the infrastructure of the next intelligent civilization.</p>
+      <p>© 2025 TVK Group Holding LTD. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    window.TVK_ECOSYSTEMS = [{"id":"entelekron","name":"ENTELΞKRON","desc":"Foundational chain with zk-DPoS consensus and sovereign AI kernel.","url":"https://entelekron.org"},{"id":"sovra","name":"SOVRA","desc":"Intelligence layer powering reasoning and knowledge systems.","url":""},{"id":"tvklabs","name":"TVK Labs","desc":"Research and development core for AI, blockchain, and infrastructure.","url":"https://tvklabs.com"},{"id":"entelescan","name":"EnteleSCAN","desc":"Biometric ID and decentralized identity authentication.","url":"https://entelescan.com"},{"id":"entelelink","name":"EnteleLINK","desc":"ISO-20022 interoperability layer for chain communication.","url":"https://entelelink.com"},{"id":"entelevault","name":"EnteleVAULT","desc":"Vault-grade secure storage for identity and governance assets.","url":"https://entelevault.com"},{"id":"chronoseal","name":"ChronoSeal","desc":"Temporal integrity and timestamp verification systems.","url":""},{"id":"graphvault","name":"GraphVAULT","desc":"Graph-based knowledge and data vault infrastructure.","url":""},{"id":"qpresence","name":"Q-Presence","desc":"Decentralized presence protocol across chains.","url":"https://q-presence.com"},{"id":"entelewallet","name":"EnteleWallet","desc":"Sovereign wallet infrastructure for ecosystem assets.","url":""},{"id":"enteleledger","name":"EnteleLEDGER","desc":"Distributed ledger coordination and audit systems.","url":""},{"id":"cerebthra","name":"Cerebthra","desc":"Cognitive architecture and neural reasoning framework.","url":""},{"id":"energiemind","name":"Energiemind","desc":"Intelligent energy systems and carbon-efficient mining.","url":"https://energiemind.com"},{"id":"avasante","name":"Ava Santé","desc":"AI-powered health and wellness for women.","url":"https://avasante.com"},{"id":"alvina","name":"ALVINA","desc":"Emotional AI layer and soul-linked expression systems.","url":"https://alvina.app"},{"id":"sentsig","name":"Sentient Signals","desc":"Market intelligence and civilization-scale signal processing.","url":"https://sentientsignals.io"},{"id":"cyberlab","name":"TVK CyberLab","desc":"Cybersecurity and Operation Shield validator protection.","url":"https://tvkcyberlab.com"}];
+  </script>
+  <script src="/assets/js/tvk-master.js"></script>
+</body>
+</html>

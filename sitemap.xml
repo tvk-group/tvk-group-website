@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://tvk.group/</loc></url>
-  <url><loc>https://tvk.group/legal.html</loc></url>
-  <url><loc>https://tvk.group/privacy.html</loc></url>
-  <url><loc>https://tvk.group/terms.html</loc></url>
-  <url><loc>https://tvk.group/company.html</loc></url>
+  <url><loc>https://tvk.group/en/</loc></url>
+  <url><loc>https://tvk.group/ar/</loc></url>
+  <url><loc>https://tvk.group/zh/</loc></url>
+  <url><loc>https://tvk.group/da/</loc></url>
+  <url><loc>https://tvk.group/nl/</loc></url>
+  <url><loc>https://tvk.group/fr/</loc></url>
+  <url><loc>https://tvk.group/de/</loc></url>
+  <url><loc>https://tvk.group/he/</loc></url>
+  <url><loc>https://tvk.group/hi/</loc></url>
+  <url><loc>https://tvk.group/it/</loc></url>
+  <url><loc>https://tvk.group/ja/</loc></url>
+  <url><loc>https://tvk.group/ko/</loc></url>
+  <url><loc>https://tvk.group/pl/</loc></url>
+  <url><loc>https://tvk.group/pt/</loc></url>
+  <url><loc>https://tvk.group/ru/</loc></url>
+  <url><loc>https://tvk.group/es/</loc></url>
+  <url><loc>https://tvk.group/sv/</loc></url>
+  <url><loc>https://tvk.group/tr/</loc></url>
+  <url><loc>https://tvk.group/fi/</loc></url>
+  <url><loc>https://tvk.group/no/</loc></url>
+  <url><loc>https://tvk.group/id/</loc></url>
+  <url><loc>https://tvk.group/vi/</loc></url>
+  <url><loc>https://tvk.group/th/</loc></url>
+  <url><loc>https://tvk.group/uk/</loc></url>
+  <url><loc>https://tvk.group/cs/</loc></url>
+  <url><loc>https://tvk.group/el/</loc></url>
 </urlset>
