@@ -391,13 +391,9 @@ function generatePage(lang) {
     <section class="tvk-section" id="sovra">
       <div class="tvk-container">
         <div class="tvk-showcase tvk-reveal">
-          <div class="tvk-showcase-visual">
-            <div class="tvk-dashboard">
-              <div class="tvk-dash-bar"><div class="tvk-dash-bar-fill" style="width:75%"></div></div>
-              <div class="tvk-dash-bar"><div class="tvk-dash-bar-fill" style="width:60%"></div></div>
-              <div class="tvk-dash-panel"></div>
-              <div class="tvk-dash-panel" style="flex:0.6"></div>
-            </div>
+          <div class="tvk-showcase-visual tvk-showcase-sovra">
+            <span class="tvk-showcase-badge">Intelligence Layer</span>
+            <canvas id="tvk-sovra-canvas" class="tvk-showcase-canvas" aria-label="SOVRA intelligence network animation"></canvas>
           </div>
           <div class="tvk-showcase-content">
             <h3>${t(lang.code, 'sovraH3')}</h3>
@@ -421,14 +417,10 @@ function generatePage(lang) {
             </ul>
             <a href="https://entelescan.com" target="_blank" class="tvk-showcase-link">${t(lang.code, 'enteleLink')} <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-          <div class="tvk-showcase-visual">
-            <div class="tvk-dashboard">
-              <div class="tvk-dash-panel" style="flex:1.2"></div>
-              <div style="display:flex;gap:1rem">
-                <div class="tvk-dash-panel" style="flex:1"></div>
-                <div class="tvk-dash-panel" style="flex:1"></div>
-              </div>
-            </div>
+          <div class="tvk-showcase-visual tvk-showcase-entele">
+            <span class="tvk-showcase-badge">Sovereign Coordination</span>
+            <canvas id="tvk-entelekron-canvas" class="tvk-showcase-canvas" aria-label="ENTELΞKRON blockchain coordination animation"></canvas>
+            <img src="/assets/entelekron_logo.png" alt="" class="tvk-showcase-logo" />
           </div>
         </div>
       </div>
