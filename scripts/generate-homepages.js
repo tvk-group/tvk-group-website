@@ -46,7 +46,7 @@ const CONTENT = {
     heroCta: 'Explore the Ecosystem',
     pillars: ['AI Networks', 'Energy Systems', 'Digital Identity', 'Blockchain Infrastructure', 'Global Connectivity'],
     aboutH2: 'TVK Group Holding LTD',
-    aboutP: 'TVK Group is a sovereign conglomerate focused on building autonomous systems across energy, finance, AI, defense, and digital identity. Operating from the UAE, UK, and Germany, we unify innovation and trust through decentralized infrastructure and strategic project brands.',
+    aboutP: 'TVK Group is a sovereign conglomerate focused on building autonomous systems across energy, finance, AI, defense, and digital identity. Operating from the UAE, UK, Germany, and Türkiye, we unify innovation and trust through decentralized infrastructure and strategic project brands.',
     identities: ['Technology Holding', 'AI Infrastructure Company', 'Blockchain Infrastructure Builder', 'Energy Systems Developer', 'Digital Identity Innovator', 'Future Civilization Architect'],
     galaxyLabel: 'Ecosystem Galaxy', galaxyH2: 'The TVK Ecosystem Universe', galaxyP: 'A sovereign constellation of interconnected technologies — each ecosystem orbiting the central intelligence of TVK Group.',
     orgLabel: 'Holding Structure', orgH2: 'Organizational Intelligence Map', orgP: 'TVK Group coordinates divisions across technology, intelligence, and infrastructure at global scale.',
@@ -93,7 +93,7 @@ const CONTENT = {
     heroH1: 'Die Infrastruktur der intelligenten Zivilisation aufbauen.',
     heroSub: 'Technologie. Intelligenz. Souveränität. TVK Group baut, besitzt, entwickelt, finanziert und koordiniert zukunftsorientierte Ökosysteme.',
     heroCta: 'Ökosystem erkunden',
-    aboutP: 'TVK Group ist ein souveräner Konzern, der sich auf den Aufbau autonomer Systeme in den Bereichen Energie, Finanzen, KI, Verteidigung und digitale Identität konzentriert. Mit Niederlassungen in den VAE, dem Vereinigten Königreich und Deutschland vereinen wir Innovation und Vertrauen durch dezentralisierte Infrastruktur und strategische Projektmarken.',
+    aboutP: 'TVK Group ist ein souveräner Konzern, der sich auf den Aufbau autonomer Systeme in den Bereichen Energie, Finanzen, KI, Verteidigung und digitale Identität konzentriert. Mit Niederlassungen in den VAE, dem Vereinigten Königreich, Deutschland und der Türkei vereinen wir Innovation und Vertrauen durch dezentralisierte Infrastruktur und strategische Projektmarken.',
     companiesH2: 'Unsere Unternehmen', projectsH2: 'Unsere Projekte'
   },
   fr: {
@@ -129,6 +129,12 @@ const CONTENT = {
     heroH1: 'Создаём инфраструктуру интеллектуальной цивилизации.',
     heroSub: 'Технологии. Интеллект. Суверенитет. TVK Group строит, владеет, развивает, финансирует и координирует экосистемы будущего.',
     companiesH2: 'Наши компании', projectsH2: 'Наши проекты'
+  },
+  tr: {
+    heroH1: 'Akıllı Medeniyetin Altyapısını İnşa Ediyoruz.',
+    heroSub: 'Teknoloji. Zeka. Egemenlik. TVK Group, geleceğe yönelik çoklu ekosistemleri inşa eder, sahiplenir, geliştirir, finanse eder ve koordine eder.',
+    aboutP: 'TVK Group; enerji, finans, yapay zeka, savunma ve dijital kimlik alanlarında özerk sistemler inşa eden egemen bir holdingdir. BAE, Birleşik Krallık, Almanya ve Türkiye\'de faaliyet göstererek merkeziyetsiz altyapı ve stratejik proje markalarıyla inovasyon ve güveni birleştiriyoruz.',
+    companiesH2: 'Şirketlerimiz', projectsH2: 'Projelerimiz'
   }
 };
 
@@ -168,7 +174,8 @@ const COMPANIES = [
   { img: 'tvklabs_logo.png', url: 'https://tvklabs.com', title: 'TVK Labs & Technologies LTD', desc: 'Innovating Intelligence, Powering the Future. TVK Labs serves as the advanced research and development core of TVK Group, driving innovation across artificial intelligence, blockchain protocols, software systems, and intelligent automation.' },
   { img: 'tvk_logo_1024px_transparent.png', url: 'https://energiemind.com', title: 'TVK Infrastructure & Energy Systems LTD', desc: 'Empowering Resilience with Smart Infrastructure and Green Energy. Designs and delivers next-generation prefab architecture, solar energy systems, and intelligent IoT-based logistics solutions.' },
   { img: 'prefab_logo.png', url: 'https://t-v-k.com', title: 'TVK Container Fertighäuser Militärischem Material Internationaler Transport GmbH', desc: 'Rapid Deployment. Secure Logistics. Global Reach. Specializes in modular containers, prefabricated housing, and secure military-grade infrastructure with international logistics.' },
-  { img: 'london_logo.png', url: 'https://london-thesecretofwomen.com', title: 'LoNDon – The Secret of Women - LTD', desc: 'Timeless Elegance. Intelligent Wellness. A luxury beauty and wellness brand combining ancient rituals with cutting-edge wellness technologies.' }
+  { img: 'london_logo.png', url: 'https://london-thesecretofwomen.com', title: 'LoNDon – The Secret of Women - LTD', desc: 'Timeless Elegance. Intelligent Wellness. A luxury beauty and wellness brand combining ancient rituals with cutting-edge wellness technologies.' },
+  { img: 'logo.tvk.group.png', url: '', title: 'TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi', desc: 'Technology Investment. Import & Export. Trade & Industry. Turkish operations entity driving technology investment, international trade, import-export coordination, and industrial development for TVK Group across Türkiye and regional markets.' }
 ];
 
 const PROJECTS = [
@@ -452,8 +459,8 @@ function generatePage(lang) {
         <div class="tvk-card-grid tvk-reveal">
           ${COMPANIES.map(c => `
           <div class="tvk-card">
-            <a href="${c.url}" target="_blank"><img src="/assets/${c.img}" alt="${c.title}" loading="lazy" /></a>
-            <h3><a href="${c.url}" target="_blank">${c.title}</a></h3>
+            ${c.url ? `<a href="${c.url}" target="_blank"><img src="/assets/${c.img}" alt="${c.title}" loading="lazy" /></a>` : `<img src="/assets/${c.img}" alt="${c.title}" loading="lazy" />`}
+            <h3>${c.url ? `<a href="${c.url}" target="_blank">${c.title}</a>` : c.title}</h3>
             <p>${c.desc}</p>
           </div>`).join('')}
         </div>

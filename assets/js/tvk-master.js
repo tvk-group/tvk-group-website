@@ -339,7 +339,8 @@
       { x: 200, y: 200, label: 'Americas — Expansion', type: 'expansion' },
       { x: 750, y: 190, label: 'Asia-Pacific — Research', type: 'research' },
       { x: 600, y: 280, label: 'Africa — Infrastructure', type: 'infra' },
-      { x: 480, y: 300, label: 'Middle East — Energy', type: 'infra' }
+      { x: 480, y: 300, label: 'Middle East — Energy', type: 'infra' },
+      { x: 535, y: 158, label: 'Türkiye — TVK Group Teknoloji', type: 'hq' }
     ];
 
     const colors = {
