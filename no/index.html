@@ -7,7 +7,7 @@
   <meta name="description" content="TVK Group — Technology Holding, AI Infrastructure, Blockchain, Energy Systems, Digital Identity, Future Civilization Architect" />
   <link rel="icon" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/css/tvk-master.css" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=3" />
 </head>
 <body>
   <canvas id="tvk-neural-canvas"></canvas>
@@ -30,7 +30,7 @@
         <li><a href="/no/contact.html">Kontakt</a></li>
         <li>
           <select class="tvk-lang-select" onchange="window.location.href=this.value;">
-            <option disabled>🌐 Language</option>
+            <option disabled>🌐 Språk</option>
             <option value="/ar/index.html">🇸🇦 العربية</option>
           <option value="/zh/index.html">🇨🇳 中文</option>
           <option value="/da/index.html">🇩🇰 Dansk</option>
@@ -87,7 +87,7 @@
     <section class="tvk-section" id="about">
       <div class="tvk-container tvk-about tvk-reveal">
         <h2>TVK Group Holding LTD</h2>
-        <p>TVK Group is a sovereign conglomerate focused on building autonomous systems across energy, finance, AI, defense, and digital identity. Operating from the UAE, UK, and Germany, we unify innovation and trust through decentralized infrastructure and strategic project brands.</p>
+        <p>TVK Group is a sovereign conglomerate focused on building autonomous systems across energy, finance, AI, defense, and digital identity. Operating from the UAE, UK, Germany, and Türkiye, we unify innovation and trust through decentralized infrastructure and strategic project brands.</p>
         <div class="tvk-identity-pills">
           <span class="tvk-identity-pill">Technology Holding</span>
           <span class="tvk-identity-pill">AI Infrastructure Company</span>
@@ -256,13 +256,9 @@
     <section class="tvk-section" id="sovra">
       <div class="tvk-container">
         <div class="tvk-showcase tvk-reveal">
-          <div class="tvk-showcase-visual">
-            <div class="tvk-dashboard">
-              <div class="tvk-dash-bar"><div class="tvk-dash-bar-fill" style="width:75%"></div></div>
-              <div class="tvk-dash-bar"><div class="tvk-dash-bar-fill" style="width:60%"></div></div>
-              <div class="tvk-dash-panel"></div>
-              <div class="tvk-dash-panel" style="flex:0.6"></div>
-            </div>
+          <div class="tvk-showcase-visual tvk-showcase-sovra">
+            <span class="tvk-showcase-badge">Sovereign Radiance</span>
+            <canvas id="tvk-sovra-canvas" class="tvk-showcase-canvas" aria-label="SOVRA intelligence network animation"></canvas>
           </div>
           <div class="tvk-showcase-content">
             <h3>SOVRA</h3>
@@ -294,14 +290,10 @@
             </ul>
             <a href="https://entelescan.com" target="_blank" class="tvk-showcase-link">Explore EnteleSCAN → <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-          <div class="tvk-showcase-visual">
-            <div class="tvk-dashboard">
-              <div class="tvk-dash-panel" style="flex:1.2"></div>
-              <div style="display:flex;gap:1rem">
-                <div class="tvk-dash-panel" style="flex:1"></div>
-                <div class="tvk-dash-panel" style="flex:1"></div>
-              </div>
-            </div>
+          <div class="tvk-showcase-visual tvk-showcase-entele">
+            <span class="tvk-showcase-badge">Temporal Entelechy</span>
+            <canvas id="tvk-entelekron-canvas" class="tvk-showcase-canvas" aria-label="ENTELΞKRON blockchain coordination animation"></canvas>
+            <img src="/assets/entelekron_logo.png" alt="" class="tvk-showcase-logo" />
           </div>
         </div>
       </div>
@@ -370,6 +362,11 @@
             <a href="https://london-thesecretofwomen.com" target="_blank"><img src="/assets/london_logo.png" alt="LoNDon – The Secret of Women - LTD" loading="lazy" /></a>
             <h3><a href="https://london-thesecretofwomen.com" target="_blank">LoNDon – The Secret of Women - LTD</a></h3>
             <p>Timeless Elegance. Intelligent Wellness. A luxury beauty and wellness brand combining ancient rituals with cutting-edge wellness technologies.</p>
+          </div>
+          <div class="tvk-card">
+            <img src="/assets/logo.tvk.group.png" alt="TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi 🇹🇷" loading="lazy" />
+            <h3>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi 🇹🇷</h3>
+            <p>Technology Investment. Import & Export. Trade & Industry. Turkish operations entity driving technology investment, international trade, import-export coordination, and industrial development for TVK Group across Türkiye and regional markets.</p>
           </div>
         </div>
       </div>
@@ -450,6 +447,6 @@
   <script>
     window.TVK_ECOSYSTEMS = [{"id":"entelekron","name":"ENTELΞKRON","desc":"Foundational chain with zk-DPoS consensus and sovereign AI kernel.","url":"https://entelekron.org"},{"id":"sovra","name":"SOVRA","desc":"Intelligence layer powering reasoning and knowledge systems.","url":""},{"id":"tvklabs","name":"TVK Labs","desc":"Research and development core for AI, blockchain, and infrastructure.","url":"https://tvklabs.com"},{"id":"entelescan","name":"EnteleSCAN","desc":"Biometric ID and decentralized identity authentication.","url":"https://entelescan.com"},{"id":"entelelink","name":"EnteleLINK","desc":"ISO-20022 interoperability layer for chain communication.","url":"https://entelelink.com"},{"id":"entelevault","name":"EnteleVAULT","desc":"Vault-grade secure storage for identity and governance assets.","url":"https://entelevault.com"},{"id":"chronoseal","name":"ChronoSeal","desc":"Temporal integrity and timestamp verification systems.","url":""},{"id":"graphvault","name":"GraphVAULT","desc":"Graph-based knowledge and data vault infrastructure.","url":""},{"id":"qpresence","name":"Q-Presence","desc":"Decentralized presence protocol across chains.","url":"https://q-presence.com"},{"id":"entelewallet","name":"EnteleWallet","desc":"Sovereign wallet infrastructure for ecosystem assets.","url":""},{"id":"enteleledger","name":"EnteleLEDGER","desc":"Distributed ledger coordination and audit systems.","url":""},{"id":"cerebthra","name":"Cerebthra","desc":"Cognitive architecture and neural reasoning framework.","url":""},{"id":"energiemind","name":"Energiemind","desc":"Intelligent energy systems and carbon-efficient mining.","url":"https://energiemind.com"},{"id":"avasante","name":"Ava Santé","desc":"AI-powered health and wellness for women.","url":"https://avasante.com"},{"id":"alvina","name":"ALVINA","desc":"Emotional AI layer and soul-linked expression systems.","url":"https://alvina.app"},{"id":"sentsig","name":"Sentient Signals","desc":"Market intelligence and civilization-scale signal processing.","url":"https://sentientsignals.io"},{"id":"cyberlab","name":"TVK CyberLab","desc":"Cybersecurity and Operation Shield validator protection.","url":"https://tvkcyberlab.com"}];
   </script>
-  <script src="/assets/js/tvk-master.js"></script>
+  <script src="/assets/js/tvk-master.js?v=3"></script>
 </body>
 </html>

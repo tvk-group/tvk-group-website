@@ -339,7 +339,8 @@
       { x: 200, y: 200, label: 'Americas — Expansion', type: 'expansion' },
       { x: 750, y: 190, label: 'Asia-Pacific — Research', type: 'research' },
       { x: 600, y: 280, label: 'Africa — Infrastructure', type: 'infra' },
-      { x: 480, y: 300, label: 'Middle East — Energy', type: 'infra' }
+      { x: 480, y: 300, label: 'Middle East — Energy', type: 'infra' },
+      { x: 535, y: 158, label: 'Türkiye — TVK Group Teknoloji', type: 'hq' }
     ];
 
     const colors = {
@@ -414,6 +415,364 @@
     }
   }
 
+  /* ── Visibility-gated animation helper ── */
+  function runWhenVisible(canvas, drawFrame) {
+    let active = false;
+    let raf = 0;
+
+    function loop() {
+      if (!active) return;
+      drawFrame();
+      raf = requestAnimationFrame(loop);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      active = entries[0].isIntersecting;
+      if (active) {
+        cancelAnimationFrame(raf);
+        loop();
+      }
+    }, { threshold: 0.12 });
+
+    observer.observe(canvas);
+    active = true;
+    loop();
+
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && canvas.getBoundingClientRect().width > 0) {
+        active = true;
+        cancelAnimationFrame(raf);
+        loop();
+      }
+    });
+
+    return observer;
+  }
+
+  /* ── SOVRA: Sovereign Radiance (SOV + RA) ── */
+  function initSovraViz() {
+    const canvas = document.getElementById('tvk-sovra-canvas');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    let w, h, cx, cy, t = 0;
+
+    const letters = ['S', 'O', 'V', 'R', 'A'];
+    const auroraBands = 5;
+
+    function resize() {
+      const rect = canvas.parentElement.getBoundingClientRect();
+      w = canvas.width = Math.max(rect.width, 300);
+      h = canvas.height = Math.max(rect.height, 300);
+      cx = w * 0.5;
+      cy = h * 0.5;
+    }
+
+    function drawSovereignRays(count, innerR, outerR, rotation, color, width) {
+      for (let i = 0; i < count; i++) {
+        const a = rotation + (i / count) * Math.PI * 2;
+        const spread = (Math.PI * 2 / count) * 0.35;
+        const pulse = 0.7 + Math.sin(t * 2.5 + i * 1.2) * 0.3;
+        const r2 = outerR * pulse;
+
+        ctx.beginPath();
+        ctx.moveTo(cx + Math.cos(a - spread) * innerR, cy + Math.sin(a - spread) * innerR);
+        ctx.lineTo(cx + Math.cos(a) * r2, cy + Math.sin(a) * r2);
+        ctx.lineTo(cx + Math.cos(a + spread) * innerR, cy + Math.sin(a + spread) * innerR);
+        ctx.closePath();
+        const g = ctx.createRadialGradient(cx, cy, innerR, cx, cy, r2);
+        g.addColorStop(0, color);
+        g.addColorStop(1, 'rgba(0,0,0,0)');
+        ctx.fillStyle = g;
+        ctx.fill();
+      }
+      ctx.strokeStyle = color.replace('0.25', '0.5').replace('0.3', '0.55');
+      ctx.lineWidth = width;
+      for (let i = 0; i < count; i++) {
+        const a = rotation + (i / count) * Math.PI * 2;
+        const r2 = outerR * (0.7 + Math.sin(t * 2.5 + i * 1.2) * 0.3);
+        ctx.beginPath();
+        ctx.moveTo(cx + Math.cos(a) * innerR, cy + Math.sin(a) * innerR);
+        ctx.lineTo(cx + Math.cos(a) * r2, cy + Math.sin(a) * r2);
+        ctx.stroke();
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      t += 0.016;
+      const scale = Math.min(w, h);
+
+      for (let b = 0; b < auroraBands; b++) {
+        const bandY = cy + Math.sin(t * 0.6 + b * 1.4) * 12;
+        const bandR = scale * (0.42 + b * 0.06);
+        ctx.beginPath();
+        ctx.ellipse(cx, bandY, bandR, bandR * 0.22, t * 0.08 + b * 0.3, 0, Math.PI * 2);
+        ctx.strokeStyle = `rgba(${180 - b * 20}, ${140 - b * 15}, ${255 - b * 10}, ${0.06 + b * 0.02})`;
+        ctx.lineWidth = 2;
+        ctx.stroke();
+      }
+
+      [0.38, 0.48, 0.58].forEach((fr, i) => {
+        const ringR = scale * fr;
+        const rot = t * (0.15 + i * 0.08) * (i % 2 === 0 ? 1 : -1);
+        ctx.beginPath();
+        ctx.arc(cx, cy, ringR, rot, rot + Math.PI * 1.35);
+        ctx.strokeStyle = `rgba(232, 196, 104, ${0.15 - i * 0.03})`;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(cx, cy, ringR, rot + Math.PI, rot + Math.PI * 2.35);
+        ctx.strokeStyle = `rgba(167, 139, 250, ${0.2 - i * 0.04})`;
+        ctx.stroke();
+      });
+
+      drawSovereignRays(12, scale * 0.12, scale * 0.46, t * 0.12, 'rgba(232, 196, 104, 0.18)', 0.8);
+      drawSovereignRays(12, scale * 0.14, scale * 0.4, -t * 0.18 + 0.3, 'rgba(167, 139, 250, 0.15)', 0.6);
+
+      letters.forEach((letter, i) => {
+        const a = -Math.PI / 2 + (i / letters.length) * Math.PI * 2 + t * 0.2;
+        const r = scale * 0.28;
+        const lx = cx + Math.cos(a) * r;
+        const ly = cy + Math.sin(a) * r;
+        const glow = 0.5 + Math.sin(t * 3 + i * 1.5) * 0.5;
+
+        ctx.beginPath();
+        ctx.arc(lx, ly, 16, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(232, 196, 104, ${0.08 + glow * 0.12})`;
+        ctx.fill();
+        ctx.strokeStyle = `rgba(232, 196, 104, ${0.3 + glow * 0.4})`;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+
+        ctx.fillStyle = `rgba(255, 248, 220, ${0.6 + glow * 0.4})`;
+        ctx.font = 'bold 14px Playfair Display, Georgia, serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(letter, lx, ly);
+
+        const px = cx + (lx - cx) * ((t * 0.3 + i * 0.2) % 1);
+        const py = cy + (ly - cy) * ((t * 0.3 + i * 0.2) % 1);
+        ctx.beginPath();
+        ctx.arc(px, py, 2, 0, Math.PI * 2);
+        ctx.fillStyle = '#e8c468';
+        ctx.fill();
+      });
+
+      const haloR = scale * 0.14 + Math.sin(t * 2) * 4;
+      const halo = ctx.createRadialGradient(cx, cy, 0, cx, cy, haloR * 2.5);
+      halo.addColorStop(0, 'rgba(255, 248, 220, 0.5)');
+      halo.addColorStop(0.35, 'rgba(232, 196, 104, 0.25)');
+      halo.addColorStop(0.7, 'rgba(139, 92, 246, 0.12)');
+      halo.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = halo;
+      ctx.beginPath();
+      ctx.arc(cx, cy, haloR * 2.5, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(cx, cy, haloR, 0, Math.PI * 2);
+      const core = ctx.createRadialGradient(cx, cy, 0, cx, cy, haloR);
+      core.addColorStop(0, '#fff8dc');
+      core.addColorStop(0.5, '#c4a035');
+      core.addColorStop(1, '#6d28d9');
+      ctx.fillStyle = core;
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(255, 248, 220, 0.6)';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      ctx.fillStyle = '#1a0a2e';
+      ctx.font = 'bold 18px Playfair Display, Georgia, serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('SOVRA', cx, cy - 1);
+
+      ctx.fillStyle = 'rgba(232, 196, 104, 0.7)';
+      ctx.font = '600 7px Inter, sans-serif';
+      ctx.fillText('SOVEREIGN · RADIANCE', cx, cy + haloR + 22);
+    }
+
+    resize();
+    window.addEventListener('resize', resize);
+    runWhenVisible(canvas, draw);
+  }
+
+  /* ── ENTELΞKRON: Temporal Entelechy (Entele + Kron + Ξ) ── */
+  function initEntelekronViz() {
+    const canvas = document.getElementById('tvk-entelekron-canvas');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    let w, h, cx, cy, t = 0;
+
+    const epochCount = 10;
+    let epochPhase = 0;
+    const entelechyParticles = Array.from({ length: 40 }, () => ({
+      angle: Math.random() * Math.PI * 2,
+      dist: 0.6 + Math.random() * 0.35,
+      speed: 0.003 + Math.random() * 0.004,
+      life: Math.random()
+    }));
+
+    function resize() {
+      const rect = canvas.parentElement.getBoundingClientRect();
+      w = canvas.width = Math.max(rect.width, 300);
+      h = canvas.height = Math.max(rect.height, 300);
+      cx = w * 0.5;
+      cy = h * 0.5;
+    }
+
+    function drawXi(x, y, size, glow) {
+      const sw = size * 0.14;
+      ctx.strokeStyle = `rgba(94, 234, 212, ${0.5 + glow * 0.5})`;
+      ctx.lineWidth = sw;
+      ctx.lineCap = 'round';
+      ctx.shadowColor = '#5eead4';
+      ctx.shadowBlur = 12 * glow;
+
+      ctx.beginPath();
+      ctx.moveTo(x - size * 0.35, y - size * 0.4);
+      ctx.lineTo(x + size * 0.35, y + size * 0.4);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(x + size * 0.35, y - size * 0.4);
+      ctx.lineTo(x - size * 0.35, y + size * 0.4);
+      ctx.stroke();
+
+      ctx.shadowBlur = 0;
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      t += 0.016;
+      epochPhase += 0.004;
+      const scale = Math.min(w, h);
+
+      const rings = [
+        { r: 0.44, speed: 0.06, color: 'rgba(94, 234, 212, 0.12)', ticks: 24 },
+        { r: 0.34, speed: -0.1, color: 'rgba(251, 191, 36, 0.15)', ticks: 12 },
+        { r: 0.24, speed: 0.15, color: 'rgba(56, 189, 248, 0.18)', ticks: 8 }
+      ];
+
+      rings.forEach((ring, ri) => {
+        const r = scale * ring.r;
+        const rot = t * ring.speed;
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, 0, Math.PI * 2);
+        ctx.strokeStyle = ring.color;
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        for (let i = 0; i < ring.ticks; i++) {
+          const a = rot + (i / ring.ticks) * Math.PI * 2;
+          const tickLen = i % (ring.ticks / 4) === 0 ? 10 : 5;
+          ctx.beginPath();
+          ctx.moveTo(cx + Math.cos(a) * (r - tickLen), cy + Math.sin(a) * (r - tickLen));
+          ctx.lineTo(cx + Math.cos(a) * (r + 2), cy + Math.sin(a) * (r + 2));
+          ctx.strokeStyle = i % (ring.ticks / 4) === 0 ? 'rgba(251, 191, 36, 0.5)' : 'rgba(94, 234, 212, 0.25)';
+          ctx.lineWidth = i % (ring.ticks / 4) === 0 ? 2 : 1;
+          ctx.stroke();
+        }
+      });
+
+      const orbitR = scale * 0.44;
+      const epochPositions = [];
+      for (let i = 0; i < epochCount; i++) {
+        const a = epochPhase + (i / epochCount) * Math.PI * 2;
+        epochPositions.push({ x: cx + Math.cos(a) * orbitR, y: cy + Math.sin(a) * orbitR, a });
+      }
+      ctx.beginPath();
+      epochPositions.forEach((ep, i) => {
+        if (i === 0) ctx.moveTo(ep.x, ep.y);
+        else ctx.lineTo(ep.x, ep.y);
+      });
+      ctx.closePath();
+      ctx.strokeStyle = 'rgba(94, 234, 212, 0.15)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      const leadIdx = Math.floor((epochPhase / (Math.PI * 2)) * epochCount) % epochCount;
+      epochPositions.forEach((ep, i) => {
+        const ex = ep.x;
+        const ey = ep.y;
+        const isLead = i === leadIdx;
+
+        const bw = 14;
+        const bh = 10;
+        ctx.fillStyle = isLead ? 'rgba(94, 234, 212, 0.35)' : 'rgba(255,255,255,0.08)';
+        ctx.strokeStyle = isLead ? '#5eead4' : 'rgba(94, 234, 212, 0.4)';
+        ctx.lineWidth = isLead ? 1.5 : 1;
+        ctx.beginPath();
+        ctx.rect(ex - bw / 2, ey - bh / 2, bw, bh);
+        ctx.fill();
+        ctx.stroke();
+
+        if (isLead) {
+          ctx.beginPath();
+          ctx.arc(ex, ey, 12, 0, Math.PI * 2);
+          ctx.strokeStyle = 'rgba(94, 234, 212, 0.3)';
+          ctx.stroke();
+        }
+      });
+
+      entelechyParticles.forEach(p => {
+        p.dist -= p.speed;
+        p.life += 0.01;
+        if (p.dist < 0.15) {
+          p.dist = 0.55 + Math.random() * 0.35;
+          p.angle = Math.random() * Math.PI * 2;
+          p.life = 0;
+        }
+        const spiral = p.angle + p.life * 4;
+        const px = cx + Math.cos(spiral) * scale * p.dist;
+        const py = cy + Math.sin(spiral) * scale * p.dist;
+        const alpha = (1 - p.life % 1) * 0.7;
+        ctx.beginPath();
+        ctx.arc(px, py, 1.5, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(251, 191, 36, ${alpha})`;
+        ctx.fill();
+      });
+
+      const xiGlow = 0.6 + Math.sin(t * 2.5) * 0.4;
+      const xiSize = scale * 0.11;
+      const xiHalo = ctx.createRadialGradient(cx, cy, 0, cx, cy, xiSize * 2);
+      xiHalo.addColorStop(0, `rgba(94, 234, 212, ${0.25 * xiGlow})`);
+      xiHalo.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = xiHalo;
+      ctx.beginPath();
+      ctx.arc(cx, cy, xiSize * 2, 0, Math.PI * 2);
+      ctx.fill();
+
+      drawXi(cx, cy, xiSize, xiGlow);
+
+      ctx.fillStyle = '#fff';
+      ctx.font = 'bold 11px Inter, sans-serif';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('ENTEL', cx - xiSize * 0.55, cy);
+
+      ctx.textAlign = 'left';
+      ctx.fillText('KRON', cx + xiSize * 0.55, cy);
+
+      ctx.fillStyle = 'rgba(94, 234, 212, 0.6)';
+      ctx.font = '600 7px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('TEMPORAL · ENTELECHY · zk-DPoS', cx, cy + scale * 0.44 + 24);
+
+      const sweep = t * 0.4;
+      ctx.beginPath();
+      ctx.arc(cx, cy, scale * 0.44, sweep, sweep + 0.4);
+      ctx.strokeStyle = 'rgba(251, 191, 36, 0.4)';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    resize();
+    window.addEventListener('resize', resize);
+    runWhenVisible(canvas, draw);
+  }
+
   /* ── Hero infrastructure canvas ── */
   function initHeroViz() {
     const canvas = document.getElementById('tvk-hero-viz-canvas');
@@ -461,6 +820,8 @@
     initScrollReveal();
     initNav();
     initHeroViz();
+    initSovraViz();
+    initEntelekronViz();
   }
 
   if (document.readyState === 'loading') {
