@@ -22,7 +22,7 @@ ${S.pageHero(S.t(lang, 'aboutH1'), S.t(lang, 'aboutLead'))}
 }
 
 function companies(lang) {
-  const cards = S.GROUP_COMPANIES.map(c => `
+  const cards = S.getGroupCompanies(lang).map(c => `
     <div class="tvk-company-detail" id="${c.id}">
       <div class="tvk-company-detail-header">
         ${c.img ? `<img src="/assets/${c.img}" alt="${c.title}" />` : `<span class="tvk-company-flag">${c.flag}</span>`}
@@ -38,7 +38,7 @@ ${S.pageHero(S.t(lang, 'companiesH2'), S.t(lang, 'companiesLead'))}
 }
 
 function ecosystem(lang) {
-  const cats = S.ECOSYSTEM_CATEGORIES.map(c => S.ecosystemCategoryHtml(c)).join('');
+  const cats = S.getEcosystemCategories(lang).map(c => S.ecosystemCategoryHtml(c)).join('');
   return shell(lang, 'ecosystem.html', S.t(lang, 'ecosystemTitle'), S.t(lang, 'ecosystemLead'), `
 ${S.pageHero(S.t(lang, 'ecosystemH2'), S.t(lang, 'ecosystemLead'))}
 <section class="tvk-section tvk-section-alt"><div class="tvk-container"><div class="tvk-galaxy-wrap tvk-reveal"><canvas id="tvk-galaxy-canvas"></canvas><div class="tvk-galaxy-tooltip" id="tvk-galaxy-tooltip"><h4></h4><p></p></div></div></div></section>

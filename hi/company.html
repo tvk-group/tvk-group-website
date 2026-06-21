@@ -1,161 +1,196 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <title>TVK Group – हमारी कंपनियाँ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #000;
-      color: white;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .company {
-      margin-bottom: 2rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f0f0f0;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-
-   <nav>
-    <div><img src="/assets/logo.tvk.group.png" alt="टीवीके समूह लोगो" style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">TVK GROUP</strong></div>
-    <ul>
-      <li><a href="/hi/index.html">होम</a></li>
-      <li><a href="/hi/company.html">कंपनी</a></li>
-      <li><a href="/hi/work.html">हमारे साथ काम करें</a></li>
-      <li><a href="/hi/legal.html">कानूनी</a></li>
-      <li><a href="/hi/privacy.html">गोपनीयता</a></li>
-      <li><a href="/hi/terms.html">शर्तें</a></li>
-      <li><a href="/hi/contact.html">संपर्क करें</a></li>
-    </ul>
-         <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
-          <option disabled>🌐 Language</option>
-          <option value="/ar/company.html">🇸🇦 العربية</option>
-          <option value="/zh/company.html">🇨🇳 中文</option>
-          <option value="/da/company.html">🇩🇰 Dansk</option>
-          <option value="/nl/company.html">🇳🇱 Nederlands</option>
-          <option value="/en/company.html">🇬🇧 English</option>
-          <option value="/fr/company.html">🇫🇷 Français</option>
-          <option value="/de/company.html">🇩🇪 Deutsch</option>
-          <option value="/he/company.html">🇮🇱 עברית</option>
-          <option value="/hi/company.html" selected>🇮🇳 हिन्दी</option>
-          <option value="/it/company.html">🇮🇹 Italiano</option>
-          <option value="/ja/company.html">🇯🇵 日本語</option>
-          <option value="/ko/company.html">🇰🇷 한국어</option>
-          <option value="/pl/company.html">🇵🇱 Polski</option>
-          <option value="/pt/company.html">🇵🇹 Português</option>
-          <option value="/ru/company.html">🇷🇺 Русский</option>
-          <option value="/es/company.html">🇪🇸 Español</option>
-          <option value="/sv/company.html">🇸🇪 Svenska</option>
-          <option value="/tr/company.html">🇹🇷 Türkçe</option>
-          <option value="/fi/company.html">🇫🇮 Suomi</option>
-          <option value="/no/company.html">🇳🇴 Norsk</option>
-          <option value="/id/company.html">🇮🇩 Bahasa Indonesia</option>
-          <option value="/vi/company.html">🇻🇳 Tiếng Việt</option>
-          <option value="/th/company.html">🇹🇭 ไทย</option>
-          <option value="/uk/company.html">🇺🇦 Українська</option>
-          <option value="/cs/company.html">🇨🇿 Čeština</option>
-          <option value="/el/company.html">🇬🇷 Ελληνικά</option>
-        </select>
-      </li>
+  <meta charset="UTF-8" />
+  <title>TVK Group कंपनी निर्देशिका</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TVK Group होल्डिंग संरचना के भीतर सभी संचालन और नियोजित इकाइयों की विस्तृत निर्देशिका।" />
+  <meta name="theme-color" content="#071A3D" />
+  <link rel="canonical" href="https://tvk.group/hi/company.html" />
+  <link rel="alternate" hreflang="en" href="https://tvk.group/en/company.html" />
+  <link rel="alternate" hreflang="tr" href="https://tvk.group/tr/company.html" />
+  <link rel="alternate" hreflang="de" href="https://tvk.group/de/company.html" />
+  <link rel="alternate" hreflang="fr" href="https://tvk.group/fr/company.html" />
+  <link rel="alternate" hreflang="es" href="https://tvk.group/es/company.html" />
+  <link rel="alternate" hreflang="ar" href="https://tvk.group/ar/company.html" />
+  <link rel="alternate" hreflang="zh" href="https://tvk.group/zh/company.html" />
+  <link rel="alternate" hreflang="ja" href="https://tvk.group/ja/company.html" />
+  <link rel="alternate" hreflang="ru" href="https://tvk.group/ru/company.html" />
+  <link rel="alternate" hreflang="he" href="https://tvk.group/he/company.html" />
+  <link rel="alternate" hreflang="it" href="https://tvk.group/it/company.html" />
+  <link rel="alternate" hreflang="ko" href="https://tvk.group/ko/company.html" />
+  <link rel="alternate" hreflang="pl" href="https://tvk.group/pl/company.html" />
+  <link rel="alternate" hreflang="pt" href="https://tvk.group/pt/company.html" />
+  <link rel="alternate" hreflang="nl" href="https://tvk.group/nl/company.html" />
+  <link rel="alternate" hreflang="da" href="https://tvk.group/da/company.html" />
+  <link rel="alternate" hreflang="sv" href="https://tvk.group/sv/company.html" />
+  <link rel="alternate" hreflang="fi" href="https://tvk.group/fi/company.html" />
+  <link rel="alternate" hreflang="no" href="https://tvk.group/no/company.html" />
+  <link rel="alternate" hreflang="hi" href="https://tvk.group/hi/company.html" />
+  <link rel="alternate" hreflang="id" href="https://tvk.group/id/company.html" />
+  <link rel="alternate" hreflang="vi" href="https://tvk.group/vi/company.html" />
+  <link rel="alternate" hreflang="th" href="https://tvk.group/th/company.html" />
+  <link rel="alternate" hreflang="uk" href="https://tvk.group/uk/company.html" />
+  <link rel="alternate" hreflang="cs" href="https://tvk.group/cs/company.html" />
+  <link rel="alternate" hreflang="el" href="https://tvk.group/el/company.html" />
+  <link rel="alternate" hreflang="x-default" href="https://tvk.group/en/company.html" />
+  <meta property="og:title" content="TVK Group कंपनी निर्देशिका" />
+  <meta property="og:description" content="TVK Group होल्डिंग संरचना के भीतर सभी संचालन और नियोजित इकाइयों की विस्तृत निर्देशिका।" />
+  <meta property="og:url" content="https://tvk.group/hi/company.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tvk.group/og-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=6" />
+</head><body><canvas id="tvk-neural-canvas"></canvas><canvas id="tvk-particles-canvas"></canvas><div class="tvk-page-content"><nav class="tvk-nav">
+    <a href="/hi/index.html" class="tvk-nav-brand"><img src="/assets/logo.tvk.group.png" alt="TVK Group" /><strong>TVK GROUP</strong></a>
+    <button class="tvk-nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="tvk-nav-links"><li><a href="/hi/index.html">होम</a></li>
+        <li><a href="/hi/about.html">TVK Group के बारे में</a></li>
+        <li><a href="/hi/companies.html">कंपनियाँ</a></li>
+        <li><a href="/hi/ecosystem.html">इकोसिस्टम</a></li>
+        <li><a href="/hi/technologies.html">प्रौद्योगिकी</a></li>
+        <li><a href="/hi/industries.html">उद्योग</a></li>
+        <li><a href="/hi/strategic-partnerships.html">साझेदारी</a></li>
+        <li><a href="/hi/investor-relations.html">निवेशक संबंध</a></li>
+        <li><a href="/hi/insights.html">समाचार</a></li>
+        <li><a href="/hi/contact.html">संपर्क</a></li>
+      <li><select class="tvk-lang-select" onchange="location.href=this.value"><option disabled>🌐 भाषा</option><option value="/en/company.html">🇬🇧 English</option>
+            <option value="/tr/company.html">🇹🇷 Türkçe</option>
+            <option value="/de/company.html">🇩🇪 Deutsch</option>
+            <option value="/fr/company.html">🇫🇷 Français</option>
+            <option value="/es/company.html">🇪🇸 Español</option>
+            <option value="/ar/company.html">🇸🇦 العربية</option>
+            <option value="/zh/company.html">🇨🇳 中文</option>
+            <option value="/ja/company.html">🇯🇵 日本語</option>
+            <option value="/ru/company.html">🇷🇺 Русский</option>
+            <option value="/he/company.html">🇮🇱 עברית</option>
+            <option value="/it/company.html">🇮🇹 Italiano</option>
+            <option value="/ko/company.html">🇰🇷 한국어</option>
+            <option value="/pl/company.html">🇵🇱 Polski</option>
+            <option value="/pt/company.html">🇵🇹 Português</option>
+            <option value="/nl/company.html">🇳🇱 Nederlands</option>
+            <option value="/da/company.html">🇩🇰 Dansk</option>
+            <option value="/sv/company.html">🇸🇪 Svenska</option>
+            <option value="/fi/company.html">🇫🇮 Suomi</option>
+            <option value="/no/company.html">🇳🇴 Norsk</option>
+            <option value="/hi/company.html" selected>🇮🇳 हिन्दी</option>
+            <option value="/id/company.html">🇮🇩 Bahasa Indonesia</option>
+            <option value="/vi/company.html">🇻🇳 Tiếng Việt</option>
+            <option value="/th/company.html">🇹🇭 ไทย</option>
+            <option value="/uk/company.html">🇺🇦 Українська</option>
+            <option value="/cs/company.html">🇨🇿 Čeština</option>
+            <option value="/el/company.html">🇬🇷 Ελληνικά</option></select></li>
     </ul>
   </nav>
-
-  <div class="section">
-    <h2>हमारी कंपनियाँ</h2>
-
-    <div class="company">
-      <h3>टीवीके ग्रुप होल्डिंग एलटीडी एफजेडसीओ 🇦🇪</h3>
-      <h4>ग्लोबल होल्डिंग और ट्रेजरी</h4>
-      <p>यूएई के रस अल खैमाह में स्थित मूल कंपनी जो सभी वैश्विक संचालन और बौद्धिक संपदा की निगरानी करती है।</p>
-      <p>- सभी सहायक कंपनियों और आईपी की 100% स्वामित्व</p>
-      <p>- टोकन जारी करने का प्रबंधन करती है</p>
-      <p>- कोष, लाइसेंस और DAO स्मार्ट अनुबंध नियंत्रण रखती है</p>
-      <p>- वैश्विक निवेशक संबंध और रणनीतिक योजना का नेतृत्व करती है</p>
+<section class="tvk-page-hero"><div class="tvk-container tvk-reveal visible"><h1>कंपनी निर्देशिका</h1><p class="tvk-page-hero-lead">TVK Group होल्डिंग संरचना के भीतर सभी संचालन और नियोजित इकाइयों की विस्तृत निर्देशिका।</p></div></section>
+<section class="tvk-section">
+  <div class="tvk-container tvk-company-list tvk-reveal">
+    <div class="tvk-company-detail" id="holding">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🇦🇪</span>
+        <div><h3>TVK Group Holding LTD FZCO 🇦🇪</h3><span class="tvk-company-sub">Global Holding</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Parent entity coordinating group strategy, intellectual property and international structure.</p>
+      
+      <div class="tvk-company-focus"><strong>फोकस क्षेत्र:</strong><ul><li>Group coordination</li><li>Strategic planning</li><li>International representation</li><li>Ecosystem governance</li></ul></div>
+      
     </div>
-
-    <div class="company">
-      <h3>टीवीके लैब्स एंड मीडिया एलटीडी 🇬🇧</h3>
-      <h4>अनुसंधान और विकास इकाई</h4>
-      <p>ब्लॉकचेन, एआई, Entelekron, Sentient Signals, Ava Sentient, Ava Santé, Alvina पर अनुसंधान और विकास का केंद्र।</p>
-      <p>- स्मार्ट कॉन्ट्रैक्ट, DApps और वेलिडेटर टूल्स का निर्माण और रखरखाव</p>
-      <p>- एआई पाइपलाइन, डैशबोर्ड और सभी प्रोटोकॉल रिपॉजिटरी होस्ट करता है</p>
-      <p>- तकनीकी और रचनात्मक टीमों को नियुक्त करता है</p>
-      <p>- GitHub, GitBook, दस्तावेज और ऑडिट का रखरखाव करता है</p>
+    <div class="tvk-company-detail" id="labs">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/tvklabs_logo.png" alt="TVK Labs & Technologies LTD" />
+        <div><h3>TVK Labs & Technologies LTD 🇬🇧</h3><span class="tvk-company-sub">Research & Development</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">R&D hub for blockchain, AI, cybersecurity and protocol development across the ecosystem.</p>
+      
+      <div class="tvk-company-focus"><strong>फोकस क्षेत्र:</strong><ul><li>AI & protocol research</li><li>Software systems</li><li>Technical documentation</li><li>Innovation pipelines</li></ul></div>
+      <a href="https://tvklabs.com" target="_blank" rel="noopener" class="tvk-link-arrow">वेबसाइट देखें <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>टीवीके सोलर एंड रिन्युएबल एलटीडी 🇬🇧</h3>
-      <h4>व्यावसायिक इकाई</h4>
-      <p>Energiemind ब्रांड के माध्यम से खनन तकनीक, सौर परियोजनाएं और कार्बन टोकनकरण का विकास करती है।</p>
-      <p>- ASIC माइनरों के लिए EnergieMind फर्मवेयर संचालित करता है</p>
-      <p>- ENM टोकन लाइसेंस के साथ टोकन-लिंक्ड Antminers का विकास करता है</p>
-      <p>- सौर और अक्षय ऊर्जा बुनियादी ढांचे की स्थापना करता है</p>
-      <p>- माइनर-होस्टिंग, अनुकूलन और DePIN परिनियोजन प्रदान करता है</p>
-      <p>- कार्बन दक्षता पुरस्कार ट्रैकिंग और डैशबोर्ड</p>
-      <p>- डुअल टोकन माइनिंग (Bitcoin + ENM)</p>
+    <div class="tvk-company-detail" id="energy">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/tvk_logo_1024px_transparent.png" alt="TVK Infrastructure & Energy Systems LTD" />
+        <div><h3>TVK Infrastructure & Energy Systems LTD 🇬🇧</h3><span class="tvk-company-sub">Infrastructure & Energy</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Develops energy intelligence, infrastructure systems and industrial technology investments.</p>
+      
+      <div class="tvk-company-focus"><strong>फोकस क्षेत्र:</strong><ul><li>Energy intelligence</li><li>Infrastructure systems</li><li>Industrial technology</li><li>EnergieMIND initiatives</li></ul></div>
+      <a href="https://energiemind.com" target="_blank" rel="noopener" class="tvk-link-arrow">वेबसाइट देखें <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>टीवीके कंटेनर और पूर्वनिर्मित घर और सैन्य सामग्री और अंतरराष्ट्रीय परिवहन GmbH 🇩🇪</h3>
-      <p>लॉजिस्टिक्स, कंटेनर तकनीक, पूर्वनिर्मित आवास और रक्षा प्रणालियों पर केंद्रित जर्मन डिवीजन।</p>
+    <div class="tvk-company-detail" id="gmbh">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/prefab_logo.png" alt="TVK Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH" />
+        <div><h3>TVK Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3><span class="tvk-company-sub">Logistics & Infrastructure</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">German division focused on logistics, container technology, prefabricated housing and secure infrastructure.</p>
+      
+      <div class="tvk-company-focus"><strong>फोकस क्षेत्र:</strong><ul><li>Modular infrastructure</li><li>International logistics</li><li>Industrial deployment</li></ul></div>
+      <a href="https://t-v-k.com" target="_blank" rel="noopener" class="tvk-link-arrow">वेबसाइट देखें <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>लंदन - द सीक्रेट ऑफ वुमन - एलटीडी 🇬🇧</h3>
-      <p>लंदन स्थित महिलाओं के लिए लक्ज़री और वेलनेस उत्पाद ब्रांड।</p>
+    <div class="tvk-company-detail" id="london">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/london_logo.png" alt="LoNDon – The Secret of Women LTD" />
+        <div><h3>LoNDon – The Secret of Women LTD 🇬🇧</h3><span class="tvk-company-sub">Wellness & Lifestyle</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Luxury wellness and lifestyle brand within the group portfolio.</p>
+      
+      <div class="tvk-company-focus"><strong>फोकस क्षेत्र:</strong><ul><li>Wellness technologies</li><li>Lifestyle brand development</li></ul></div>
+      <a href="https://london-thesecretofwomen.com" target="_blank" rel="noopener" class="tvk-link-arrow">वेबसाइट देखें <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>टीवीके लैब्स एंड मीडिया एफजेडसीओ 🇦🇪 (योजना में)</h3>
-      <p>टोकन इन्फ्रास्ट्रक्चर विस्तार के लिए दुबई स्थित भविष्य की डिजिटल वित्त इकाई।</p>
+    <div class="tvk-company-detail" id="turkey">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/logo.tvk.group.png" alt="TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi LTD" />
+        <div><h3>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi LTD 🇹🇷</h3><span class="tvk-company-sub">Türkiye Operations</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Turkish operating entity for technology investment, trade, import/export and regional business development.</p>
+      
+      <div class="tvk-company-focus"><strong>फोकस क्षेत्र:</strong><ul><li>Technology investment</li><li>Import & export</li><li>Regional expansion</li><li>Industrial development</li></ul></div>
+      
     </div>
-    <div class="company">
-      <h3>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi 🇹🇷</h3>
-      <h4>Turkey Operations Entity</h4>
-      <p>Turkish subsidiary focused on technology investment, import-export operations, trade, and industrial development across the TVK ecosystem.</p>
-      <p>- Technology investment and commercial operations in Türkiye</p>
-      <p>- Import and export coordination for TVK Group products and infrastructure</p>
-      <p>- Trade and industrial development for regional ecosystem expansion</p>
-      <p>- Bridge entity connecting Middle East, European, and Eurasian markets</p>
+    <div class="tvk-company-detail" id="fzco">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🇦🇪</span>
+        <div><h3>TVK Group Holding LTD FZCO 🇦🇪</h3><span class="tvk-company-sub">UAE Structure (Planned)</span><span class="tvk-stage-badge">Planned</span></div>
+      </div>
+      <p class="tvk-company-role">Planned UAE entity for international holding operations and regional coordination.</p>
+      
+      <div class="tvk-company-focus"><strong>फोकस क्षेत्र:</strong><ul><li>Holding structure</li><li>Regional coordination</li></ul></div>
+      
     </div>
-
+    <div class="tvk-company-detail" id="foundation">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🇨🇭</span>
+        <div><h3>TVK – EnteleKRON Foundation 🇨🇭</h3><span class="tvk-company-sub">Foundation (Planned)</span><span class="tvk-stage-badge">Planned</span></div>
+      </div>
+      <p class="tvk-company-role">Planned Switzerland-based entity for digital infrastructure and ecosystem governance development.</p>
+      
+      <div class="tvk-company-focus"><strong>फोकस क्षेत्र:</strong><ul><li>Ecosystem governance</li><li>Digital infrastructure</li></ul></div>
+      
+    </div>
+    <div class="tvk-company-detail" id="ventures">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🌐</span>
+        <div><h3>Future Ventures 🌐</h3><span class="tvk-company-sub">Venture Development</span><span class="tvk-stage-badge">Under development</span></div>
+      </div>
+      <p class="tvk-company-role">Pipeline for sector-specific ventures and future group companies under structured validation.</p>
+      
+      <div class="tvk-company-focus"><strong>फोकस क्षेत्र:</strong><ul><li>Venture building</li><li>Sector pilots</li><li>Strategic validation</li></ul></div>
+      
+    </div></div>
+  <div class="tvk-section-cta tvk-reveal">
+    <a href="/hi/companies.html" class="tvk-btn tvk-btn-outline">कंपनियों का पृष्ठ देखें <i class="fa-solid fa-arrow-right"></i></a>
   </div>
-
-  <footer>
-    &copy; 2025 टीवीके ग्रुप होल्डिंग एलटीडी। सर्वाधिकार सुरक्षित।
-  </footer>
-
+</section><footer class="tvk-footer">
+    <p class="tvk-footer-tagline">अगली डिजिटल अर्थव्यवस्था के लिए प्रौद्योगिकी, अवसंरचना और नवाचार।</p>
+    <div class="tvk-footer-links">
+      <a href="/hi/legal.html">कानूनी</a>
+      <a href="/hi/privacy.html">गोपनीयता</a>
+      <a href="/hi/terms.html">शर्तें</a>
+      <a href="/hi/work.html">करियर</a>
+      <a href="/hi/company.html">कंपनी निर्देशिका</a>
+    </div>
+    <p>© 2025 TVK Group Holding LTD. All rights reserved.</p>
+  </footer></div>
+<script src="/assets/js/tvk-master.js?v=6"></script>
 </body>
 </html>

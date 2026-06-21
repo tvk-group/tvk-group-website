@@ -1,161 +1,196 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>T.V.K. 그룹 – 우리 회사</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #000;
-      color: white;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .company {
-      margin-bottom: 2rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f0f0f0;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <div><strong>TVK 그룹</strong></div>
-    <ul>
-      <li><a href="/ko/index.html">홈</a></li>
-      <li><a href="/ko/company.html">회사 소개</a></li>
-      <li><a href="/ko/work.html">채용 정보</a></li>
-      <li><a href="/ko/legal.html">법적 고지</a></li>
-      <li><a href="/ko/privacy.html">개인정보처리방침</a></li>
-      <li><a href="/ko/terms.html">이용 약관</a></li>
-      <li><a href="/ko/contact.html">연락처</a></li>
-    </ul>
-          <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
-          <option disabled>🌐 Language</option>
-          <option value="/ar/company.html">🇸🇦 العربية</option>
-          <option value="/zh/company.html">🇨🇳 中文</option>
-          <option value="/da/company.html">🇩🇰 Dansk</option>
-          <option value="/nl/company.html">🇳🇱 Nederlands</option>
-          <option value="/en/company.html">🇬🇧 English</option>
-          <option value="/fr/company.html">🇫🇷 Français</option>
-          <option value="/de/company.html">🇩🇪 Deutsch</option>
-          <option value="/he/company.html">🇮🇱 עברית</option>
-          <option value="/hi/company.html">🇮🇳 हिन्दी</option>
-          <option value="/it/company.html">🇮🇹 Italiano</option>
-          <option value="/ja/company.html">🇯🇵 日本語</option>
-          <option value="/ko/company.html" selected>🇰🇷 한국어</option>
-          <option value="/pl/company.html">🇵🇱 Polski</option>
-          <option value="/pt/company.html">🇵🇹 Português</option>
-          <option value="/ru/company.html">🇷🇺 Русский</option>
-          <option value="/es/company.html">🇪🇸 Español</option>
-          <option value="/sv/company.html">🇸🇪 Svenska</option>
-          <option value="/tr/company.html">🇹🇷 Türkçe</option>
-          <option value="/fi/company.html">🇫🇮 Suomi</option>
-          <option value="/no/company.html">🇳🇴 Norsk</option>
-          <option value="/id/company.html">🇮🇩 Bahasa Indonesia</option>
-          <option value="/vi/company.html">🇻🇳 Tiếng Việt</option>
-          <option value="/th/company.html">🇹🇭 ไทย</option>
-          <option value="/uk/company.html">🇺🇦 Українська</option>
-          <option value="/cs/company.html">🇨🇿 Čeština</option>
-          <option value="/el/company.html">🇬🇷 Ελληνικά</option>
-        </select>
-      </li>
+  <meta charset="UTF-8" />
+  <title>TVK Group 회사 디렉토리</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TVK Group 홀딩 구조 내 모든 운영 및 계획 기업의 상세 디렉토리." />
+  <meta name="theme-color" content="#071A3D" />
+  <link rel="canonical" href="https://tvk.group/ko/company.html" />
+  <link rel="alternate" hreflang="en" href="https://tvk.group/en/company.html" />
+  <link rel="alternate" hreflang="tr" href="https://tvk.group/tr/company.html" />
+  <link rel="alternate" hreflang="de" href="https://tvk.group/de/company.html" />
+  <link rel="alternate" hreflang="fr" href="https://tvk.group/fr/company.html" />
+  <link rel="alternate" hreflang="es" href="https://tvk.group/es/company.html" />
+  <link rel="alternate" hreflang="ar" href="https://tvk.group/ar/company.html" />
+  <link rel="alternate" hreflang="zh" href="https://tvk.group/zh/company.html" />
+  <link rel="alternate" hreflang="ja" href="https://tvk.group/ja/company.html" />
+  <link rel="alternate" hreflang="ru" href="https://tvk.group/ru/company.html" />
+  <link rel="alternate" hreflang="he" href="https://tvk.group/he/company.html" />
+  <link rel="alternate" hreflang="it" href="https://tvk.group/it/company.html" />
+  <link rel="alternate" hreflang="ko" href="https://tvk.group/ko/company.html" />
+  <link rel="alternate" hreflang="pl" href="https://tvk.group/pl/company.html" />
+  <link rel="alternate" hreflang="pt" href="https://tvk.group/pt/company.html" />
+  <link rel="alternate" hreflang="nl" href="https://tvk.group/nl/company.html" />
+  <link rel="alternate" hreflang="da" href="https://tvk.group/da/company.html" />
+  <link rel="alternate" hreflang="sv" href="https://tvk.group/sv/company.html" />
+  <link rel="alternate" hreflang="fi" href="https://tvk.group/fi/company.html" />
+  <link rel="alternate" hreflang="no" href="https://tvk.group/no/company.html" />
+  <link rel="alternate" hreflang="hi" href="https://tvk.group/hi/company.html" />
+  <link rel="alternate" hreflang="id" href="https://tvk.group/id/company.html" />
+  <link rel="alternate" hreflang="vi" href="https://tvk.group/vi/company.html" />
+  <link rel="alternate" hreflang="th" href="https://tvk.group/th/company.html" />
+  <link rel="alternate" hreflang="uk" href="https://tvk.group/uk/company.html" />
+  <link rel="alternate" hreflang="cs" href="https://tvk.group/cs/company.html" />
+  <link rel="alternate" hreflang="el" href="https://tvk.group/el/company.html" />
+  <link rel="alternate" hreflang="x-default" href="https://tvk.group/en/company.html" />
+  <meta property="og:title" content="TVK Group 회사 디렉토리" />
+  <meta property="og:description" content="TVK Group 홀딩 구조 내 모든 운영 및 계획 기업의 상세 디렉토리." />
+  <meta property="og:url" content="https://tvk.group/ko/company.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tvk.group/og-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=6" />
+</head><body><canvas id="tvk-neural-canvas"></canvas><canvas id="tvk-particles-canvas"></canvas><div class="tvk-page-content"><nav class="tvk-nav">
+    <a href="/ko/index.html" class="tvk-nav-brand"><img src="/assets/logo.tvk.group.png" alt="TVK Group" /><strong>TVK GROUP</strong></a>
+    <button class="tvk-nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="tvk-nav-links"><li><a href="/ko/index.html">홈</a></li>
+        <li><a href="/ko/about.html">TVK Group 소개</a></li>
+        <li><a href="/ko/companies.html">회사</a></li>
+        <li><a href="/ko/ecosystem.html">생태계</a></li>
+        <li><a href="/ko/technologies.html">기술</a></li>
+        <li><a href="/ko/industries.html">산업</a></li>
+        <li><a href="/ko/strategic-partnerships.html">파트너십</a></li>
+        <li><a href="/ko/investor-relations.html">투자자 정보</a></li>
+        <li><a href="/ko/insights.html">뉴스</a></li>
+        <li><a href="/ko/contact.html">연락처</a></li>
+      <li><select class="tvk-lang-select" onchange="location.href=this.value"><option disabled>🌐 언어</option><option value="/en/company.html">🇬🇧 English</option>
+            <option value="/tr/company.html">🇹🇷 Türkçe</option>
+            <option value="/de/company.html">🇩🇪 Deutsch</option>
+            <option value="/fr/company.html">🇫🇷 Français</option>
+            <option value="/es/company.html">🇪🇸 Español</option>
+            <option value="/ar/company.html">🇸🇦 العربية</option>
+            <option value="/zh/company.html">🇨🇳 中文</option>
+            <option value="/ja/company.html">🇯🇵 日本語</option>
+            <option value="/ru/company.html">🇷🇺 Русский</option>
+            <option value="/he/company.html">🇮🇱 עברית</option>
+            <option value="/it/company.html">🇮🇹 Italiano</option>
+            <option value="/ko/company.html" selected>🇰🇷 한국어</option>
+            <option value="/pl/company.html">🇵🇱 Polski</option>
+            <option value="/pt/company.html">🇵🇹 Português</option>
+            <option value="/nl/company.html">🇳🇱 Nederlands</option>
+            <option value="/da/company.html">🇩🇰 Dansk</option>
+            <option value="/sv/company.html">🇸🇪 Svenska</option>
+            <option value="/fi/company.html">🇫🇮 Suomi</option>
+            <option value="/no/company.html">🇳🇴 Norsk</option>
+            <option value="/hi/company.html">🇮🇳 हिन्दी</option>
+            <option value="/id/company.html">🇮🇩 Bahasa Indonesia</option>
+            <option value="/vi/company.html">🇻🇳 Tiếng Việt</option>
+            <option value="/th/company.html">🇹🇭 ไทย</option>
+            <option value="/uk/company.html">🇺🇦 Українська</option>
+            <option value="/cs/company.html">🇨🇿 Čeština</option>
+            <option value="/el/company.html">🇬🇷 Ελληνικά</option></select></li>
     </ul>
   </nav>
-
-  <div class="section">
-    <h2>우리 회사</h2>
-
-    <div class="company">
-      <h3>TVK Group Holding LTD FZCO 🇦🇪</h3>
-      <h4>글로벌 지주회사 및 재무 관리</h4>
-      <p>모든 글로벌 운영 및 지적 재산권을 감독하는 모회사. 아랍에미리트 라스알카이마에 본사 위치.</p>
-      <p>- 모든 자회사 및 IP의 100% 소유</p>
-      <p>- 토큰 발행 관리</p>
-      <p>- 금고, 라이선스 및 DAO 스마트 계약 관리</p>
-      <p>- 투자자 관계 및 전략 기획 주도</p>
+<section class="tvk-page-hero"><div class="tvk-container tvk-reveal visible"><h1>회사 디렉토리</h1><p class="tvk-page-hero-lead">TVK Group 홀딩 구조 내 모든 운영 및 계획 기업의 상세 디렉토리.</p></div></section>
+<section class="tvk-section">
+  <div class="tvk-container tvk-company-list tvk-reveal">
+    <div class="tvk-company-detail" id="holding">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🇦🇪</span>
+        <div><h3>TVK Group Holding LTD FZCO 🇦🇪</h3><span class="tvk-company-sub">Global Holding</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Parent entity coordinating group strategy, intellectual property and international structure.</p>
+      
+      <div class="tvk-company-focus"><strong>중점 분야:</strong><ul><li>Group coordination</li><li>Strategic planning</li><li>International representation</li><li>Ecosystem governance</li></ul></div>
+      
     </div>
-
-    <div class="company">
-      <h3>TVK Labs & Technologies LTD 🇬🇧</h3>
-      <h4>연구 및 개발 부문</h4>
-      <p>블록체인, 인공지능, Entelekron, Sentient Signals, Ava Sentient, Ava Santé, Alvina의 R&D 허브.</p>
-      <p>- 스마트 계약, DApp, 검증자 도구 개발 및 유지</p>
-      <p>- AI 파이프라인, 대시보드 및 프로토콜 저장소 호스팅</p>
-      <p>- 기술 및 크리에이티브 팀 고용</p>
-      <p>- GitHub, GitBook, 문서 및 감사를 유지</p>
+    <div class="tvk-company-detail" id="labs">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/tvklabs_logo.png" alt="TVK Labs & Technologies LTD" />
+        <div><h3>TVK Labs & Technologies LTD 🇬🇧</h3><span class="tvk-company-sub">Research & Development</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">R&D hub for blockchain, AI, cybersecurity and protocol development across the ecosystem.</p>
+      
+      <div class="tvk-company-focus"><strong>중점 분야:</strong><ul><li>AI & protocol research</li><li>Software systems</li><li>Technical documentation</li><li>Innovation pipelines</li></ul></div>
+      <a href="https://tvklabs.com" target="_blank" rel="noopener" class="tvk-link-arrow">웹사이트 방문 <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>TVK Infrastructure & Energy Systems LTD 🇬🇧</h3>
-      <h4>상업 부문</h4>
-      <p>Energiemind 브랜드를 통해 채굴 기술, 태양광 프로젝트 및 탄소 토큰화를 개발.</p>
-      <p>- ASIC 채굴기를 위한 EnergieMind 펌웨어 운영</p>
-      <p>- ENM 토큰 라이선스를 사용하는 Antminer 개발</p>
-      <p>- 재생 에너지 인프라 설치</p>
-      <p>- 채굴기 호스팅, 최적화 및 DePIN 배치 제공</p>
-      <p>- 탄소 효율 보상 추적 및 대시보드</p>
-      <p>- 듀얼 토큰 마이닝 (비트코인 + ENM)</p>
+    <div class="tvk-company-detail" id="energy">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/tvk_logo_1024px_transparent.png" alt="TVK Infrastructure & Energy Systems LTD" />
+        <div><h3>TVK Infrastructure & Energy Systems LTD 🇬🇧</h3><span class="tvk-company-sub">Infrastructure & Energy</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Develops energy intelligence, infrastructure systems and industrial technology investments.</p>
+      
+      <div class="tvk-company-focus"><strong>중점 분야:</strong><ul><li>Energy intelligence</li><li>Infrastructure systems</li><li>Industrial technology</li><li>EnergieMIND initiatives</li></ul></div>
+      <a href="https://energiemind.com" target="_blank" rel="noopener" class="tvk-link-arrow">웹사이트 방문 <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>T.V.K. Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3>
-      <p>물류, 컨테이너 기술, 조립식 주택 및 방위 시스템에 중점을 둔 독일 지사.</p>
+    <div class="tvk-company-detail" id="gmbh">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/prefab_logo.png" alt="TVK Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH" />
+        <div><h3>TVK Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3><span class="tvk-company-sub">Logistics & Infrastructure</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">German division focused on logistics, container technology, prefabricated housing and secure infrastructure.</p>
+      
+      <div class="tvk-company-focus"><strong>중점 분야:</strong><ul><li>Modular infrastructure</li><li>International logistics</li><li>Industrial deployment</li></ul></div>
+      <a href="https://t-v-k.com" target="_blank" rel="noopener" class="tvk-link-arrow">웹사이트 방문 <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>London - The Secret Of Women - LTD 🇬🇧</h3>
-      <p>여성을 위한 럭셔리 및 웰빙 제품 브랜드로 런던에 기반을 둠.</p>
+    <div class="tvk-company-detail" id="london">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/london_logo.png" alt="LoNDon – The Secret of Women LTD" />
+        <div><h3>LoNDon – The Secret of Women LTD 🇬🇧</h3><span class="tvk-company-sub">Wellness & Lifestyle</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Luxury wellness and lifestyle brand within the group portfolio.</p>
+      
+      <div class="tvk-company-focus"><strong>중점 분야:</strong><ul><li>Wellness technologies</li><li>Lifestyle brand development</li></ul></div>
+      <a href="https://london-thesecretofwomen.com" target="_blank" rel="noopener" class="tvk-link-arrow">웹사이트 방문 <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>TVK Labs & Technologies LTD 🇦🇪 (계획됨)</h3>
-      <p>토큰 인프라 확장을 위한 두바이 기반의 디지털 금융 법인 예정.</p>
+    <div class="tvk-company-detail" id="turkey">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/logo.tvk.group.png" alt="TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi LTD" />
+        <div><h3>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi LTD 🇹🇷</h3><span class="tvk-company-sub">Türkiye Operations</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Turkish operating entity for technology investment, trade, import/export and regional business development.</p>
+      
+      <div class="tvk-company-focus"><strong>중점 분야:</strong><ul><li>Technology investment</li><li>Import & export</li><li>Regional expansion</li><li>Industrial development</li></ul></div>
+      
     </div>
-    <div class="company">
-      <h3>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi 🇹🇷</h3>
-      <h4>Turkey Operations Entity</h4>
-      <p>Turkish subsidiary focused on technology investment, import-export operations, trade, and industrial development across the TVK ecosystem.</p>
-      <p>- Technology investment and commercial operations in Türkiye</p>
-      <p>- Import and export coordination for TVK Group products and infrastructure</p>
-      <p>- Trade and industrial development for regional ecosystem expansion</p>
-      <p>- Bridge entity connecting Middle East, European, and Eurasian markets</p>
+    <div class="tvk-company-detail" id="fzco">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🇦🇪</span>
+        <div><h3>TVK Group Holding LTD FZCO 🇦🇪</h3><span class="tvk-company-sub">UAE Structure (Planned)</span><span class="tvk-stage-badge">Planned</span></div>
+      </div>
+      <p class="tvk-company-role">Planned UAE entity for international holding operations and regional coordination.</p>
+      
+      <div class="tvk-company-focus"><strong>중점 분야:</strong><ul><li>Holding structure</li><li>Regional coordination</li></ul></div>
+      
     </div>
-
+    <div class="tvk-company-detail" id="foundation">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🇨🇭</span>
+        <div><h3>TVK – EnteleKRON Foundation 🇨🇭</h3><span class="tvk-company-sub">Foundation (Planned)</span><span class="tvk-stage-badge">Planned</span></div>
+      </div>
+      <p class="tvk-company-role">Planned Switzerland-based entity for digital infrastructure and ecosystem governance development.</p>
+      
+      <div class="tvk-company-focus"><strong>중점 분야:</strong><ul><li>Ecosystem governance</li><li>Digital infrastructure</li></ul></div>
+      
+    </div>
+    <div class="tvk-company-detail" id="ventures">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🌐</span>
+        <div><h3>Future Ventures 🌐</h3><span class="tvk-company-sub">Venture Development</span><span class="tvk-stage-badge">Under development</span></div>
+      </div>
+      <p class="tvk-company-role">Pipeline for sector-specific ventures and future group companies under structured validation.</p>
+      
+      <div class="tvk-company-focus"><strong>중점 분야:</strong><ul><li>Venture building</li><li>Sector pilots</li><li>Strategic validation</li></ul></div>
+      
+    </div></div>
+  <div class="tvk-section-cta tvk-reveal">
+    <a href="/ko/companies.html" class="tvk-btn tvk-btn-outline">회사 페이지 보기 <i class="fa-solid fa-arrow-right"></i></a>
   </div>
-
-  <footer>
-    &copy; 2025 TVK Group Holding LTD. 모든 권리 보유.
-  </footer>
-
+</section><footer class="tvk-footer">
+    <p class="tvk-footer-tagline">다음 디지털 경제를 위한 기술, 인프라 및 혁신.</p>
+    <div class="tvk-footer-links">
+      <a href="/ko/legal.html">법률</a>
+      <a href="/ko/privacy.html">개인정보</a>
+      <a href="/ko/terms.html">약관</a>
+      <a href="/ko/work.html">채용</a>
+      <a href="/ko/company.html">회사 디렉토리</a>
+    </div>
+    <p>© 2025 TVK Group Holding LTD. All rights reserved.</p>
+  </footer></div>
+<script src="/assets/js/tvk-master.js?v=6"></script>
 </body>
 </html>
