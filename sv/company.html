@@ -1,231 +1,196 @@
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>TVK Group – Our Companies</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="T.V.K. Group – Global Conglomerate" />
+  <meta charset="UTF-8" />
+  <title>TVK Group-företagskatalog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detaljerad katalog över alla operativa och planerade enheter inom TVK Group holdingstruktur." />
+  <meta name="theme-color" content="#071A3D" />
+  <link rel="canonical" href="https://tvk.group/sv/company.html" />
+  <link rel="alternate" hreflang="en" href="https://tvk.group/en/company.html" />
+  <link rel="alternate" hreflang="tr" href="https://tvk.group/tr/company.html" />
+  <link rel="alternate" hreflang="de" href="https://tvk.group/de/company.html" />
+  <link rel="alternate" hreflang="fr" href="https://tvk.group/fr/company.html" />
+  <link rel="alternate" hreflang="es" href="https://tvk.group/es/company.html" />
+  <link rel="alternate" hreflang="ar" href="https://tvk.group/ar/company.html" />
+  <link rel="alternate" hreflang="zh" href="https://tvk.group/zh/company.html" />
+  <link rel="alternate" hreflang="ja" href="https://tvk.group/ja/company.html" />
+  <link rel="alternate" hreflang="ru" href="https://tvk.group/ru/company.html" />
+  <link rel="alternate" hreflang="he" href="https://tvk.group/he/company.html" />
+  <link rel="alternate" hreflang="it" href="https://tvk.group/it/company.html" />
+  <link rel="alternate" hreflang="ko" href="https://tvk.group/ko/company.html" />
+  <link rel="alternate" hreflang="pl" href="https://tvk.group/pl/company.html" />
+  <link rel="alternate" hreflang="pt" href="https://tvk.group/pt/company.html" />
+  <link rel="alternate" hreflang="nl" href="https://tvk.group/nl/company.html" />
+  <link rel="alternate" hreflang="da" href="https://tvk.group/da/company.html" />
+  <link rel="alternate" hreflang="sv" href="https://tvk.group/sv/company.html" />
+  <link rel="alternate" hreflang="fi" href="https://tvk.group/fi/company.html" />
+  <link rel="alternate" hreflang="no" href="https://tvk.group/no/company.html" />
+  <link rel="alternate" hreflang="hi" href="https://tvk.group/hi/company.html" />
+  <link rel="alternate" hreflang="id" href="https://tvk.group/id/company.html" />
+  <link rel="alternate" hreflang="vi" href="https://tvk.group/vi/company.html" />
+  <link rel="alternate" hreflang="th" href="https://tvk.group/th/company.html" />
+  <link rel="alternate" hreflang="uk" href="https://tvk.group/uk/company.html" />
+  <link rel="alternate" hreflang="cs" href="https://tvk.group/cs/company.html" />
+  <link rel="alternate" hreflang="el" href="https://tvk.group/el/company.html" />
+  <link rel="alternate" hreflang="x-default" href="https://tvk.group/en/company.html" />
+  <meta property="og:title" content="TVK Group-företagskatalog" />
+  <meta property="og:description" content="Detaljerad katalog över alla operativa och planerade enheter inom TVK Group holdingstruktur." />
+  <meta property="og:url" content="https://tvk.group/sv/company.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tvk.group/og-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #000;
-      color: white;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .company {
-      margin-bottom: 2rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f0f0f0;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <div><img src="/assets/logo.tvk.group.png" alt="T.V.K. Group Logo" style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">TVK GROUP</strong></div>
-    <ul>
-      <li><a href="/sv/index.html">Home</a></li>
-      <li><a href="/sv/company.html">Company</a></li>
-      <li><a href="/sv/work.html">Work With Us</a></li>
-      <li><a href="/sv/legal.html">Legal</a></li>
-      <li><a href="/sv/privacy.html">Privacy</a></li>
-      <li><a href="/sv/terms.html">Terms</a></li>
-      <li><a href="/sv/contact.html">Contact</a></li>
-      <li>
-        <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
-          <option disabled>🌐 Language</option>
-          <option value="/ar/company.html">🇸🇦 العربية</option>
-          <option value="/zh/company.html">🇨🇳 中文</option>
-          <option value="/da/company.html">🇩🇰 Dansk</option>
-          <option value="/nl/company.html">🇳🇱 Nederlands</option>
-          <option value="/sv/company.html" selected>🇬🇧 English</option>
-          <option value="/fr/company.html">🇫🇷 Français</option>
-          <option value="/de/company.html">🇩🇪 Deutsch</option>
-          <option value="/he/company.html">🇮🇱 עברית</option>
-          <option value="/hi/company.html">🇮🇳 हिन्दी</option>
-          <option value="/it/company.html">🇮🇹 Italiano</option>
-          <option value="/ja/company.html">🇯🇵 日本語</option>
-          <option value="/ko/company.html">🇰🇷 한국어</option>
-          <option value="/pl/company.html">🇵🇱 Polski</option>
-          <option value="/pt/company.html">🇵🇹 Português</option>
-          <option value="/ru/company.html">🇷🇺 Русский</option>
-          <option value="/es/company.html">🇪🇸 Español</option>
-          <option value="/sv/company.html">🇸🇪 Svenska</option>
-          <option value="/tr/company.html">🇹🇷 Türkçe</option>
-          <option value="/fi/company.html">🇫🇮 Suomi</option>
-          <option value="/no/company.html">🇳🇴 Norsk</option>
-          <option value="/id/company.html">🇮🇩 Bahasa Indonesia</option>
-          <option value="/vi/company.html">🇻🇳 Tiếng Việt</option>
-          <option value="/th/company.html">🇹🇭 ไทย</option>
-          <option value="/uk/company.html">🇺🇦 Українська</option>
-          <option value="/cs/company.html">🇨🇿 Čeština</option>
-          <option value="/el/company.html">🇬🇷 Ελληνικά</option>
-        </select>
-      </li>
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=6" />
+</head><body><canvas id="tvk-neural-canvas"></canvas><canvas id="tvk-particles-canvas"></canvas><div class="tvk-page-content"><nav class="tvk-nav">
+    <a href="/sv/index.html" class="tvk-nav-brand"><img src="/assets/logo.tvk.group.png" alt="TVK Group" /><strong>TVK GROUP</strong></a>
+    <button class="tvk-nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="tvk-nav-links"><li><a href="/sv/index.html">Hem</a></li>
+        <li><a href="/sv/about.html">Om TVK Group</a></li>
+        <li><a href="/sv/companies.html">Företag</a></li>
+        <li><a href="/sv/ecosystem.html">Ekosystem</a></li>
+        <li><a href="/sv/technologies.html">Teknologier</a></li>
+        <li><a href="/sv/industries.html">Branscher</a></li>
+        <li><a href="/sv/strategic-partnerships.html">Partnerskap</a></li>
+        <li><a href="/sv/investor-relations.html">Investor Relations</a></li>
+        <li><a href="/sv/insights.html">Nyheter</a></li>
+        <li><a href="/sv/contact.html">Kontakt</a></li>
+      <li><select class="tvk-lang-select" onchange="location.href=this.value"><option disabled>🌐 Språk</option><option value="/en/company.html">🇬🇧 English</option>
+            <option value="/tr/company.html">🇹🇷 Türkçe</option>
+            <option value="/de/company.html">🇩🇪 Deutsch</option>
+            <option value="/fr/company.html">🇫🇷 Français</option>
+            <option value="/es/company.html">🇪🇸 Español</option>
+            <option value="/ar/company.html">🇸🇦 العربية</option>
+            <option value="/zh/company.html">🇨🇳 中文</option>
+            <option value="/ja/company.html">🇯🇵 日本語</option>
+            <option value="/ru/company.html">🇷🇺 Русский</option>
+            <option value="/he/company.html">🇮🇱 עברית</option>
+            <option value="/it/company.html">🇮🇹 Italiano</option>
+            <option value="/ko/company.html">🇰🇷 한국어</option>
+            <option value="/pl/company.html">🇵🇱 Polski</option>
+            <option value="/pt/company.html">🇵🇹 Português</option>
+            <option value="/nl/company.html">🇳🇱 Nederlands</option>
+            <option value="/da/company.html">🇩🇰 Dansk</option>
+            <option value="/sv/company.html" selected>🇸🇪 Svenska</option>
+            <option value="/fi/company.html">🇫🇮 Suomi</option>
+            <option value="/no/company.html">🇳🇴 Norsk</option>
+            <option value="/hi/company.html">🇮🇳 हिन्दी</option>
+            <option value="/id/company.html">🇮🇩 Bahasa Indonesia</option>
+            <option value="/vi/company.html">🇻🇳 Tiếng Việt</option>
+            <option value="/th/company.html">🇹🇭 ไทย</option>
+            <option value="/uk/company.html">🇺🇦 Українська</option>
+            <option value="/cs/company.html">🇨🇿 Čeština</option>
+            <option value="/el/company.html">🇬🇷 Ελληνικά</option></select></li>
     </ul>
   </nav>
-
-  <div class="section">
-    <h2>Our Companies</h2>
-
-    <div class="company">
-      <h3>TVK Group Holding LTD FZCO 🇦🇪</h3>
-      <h4>Global Holding & Treasury</h4>
-      <p>Parent company overseeing all global operations and intellectual property. Based in the Emirate of Ras Al Khaimah in the U.A.E.</p>
-      <p>- Owns 100% of all subsidiaries and IP</p>
-      <p>- Manages token issuance</p>
-      <p>- Holds treasury, licenses, and DAO smart contract control</p>
-      <p>- Leads global investor relationships and strategic planning</p>
+<section class="tvk-page-hero"><div class="tvk-container tvk-reveal visible"><h1>Företagskatalog</h1><p class="tvk-page-hero-lead">Detaljerad katalog över alla operativa och planerade enheter inom TVK Group holdingstruktur.</p></div></section>
+<section class="tvk-section">
+  <div class="tvk-container tvk-company-list tvk-reveal">
+    <div class="tvk-company-detail" id="holding">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🇦🇪</span>
+        <div><h3>TVK Group Holding LTD FZCO 🇦🇪</h3><span class="tvk-company-sub">Global Holding</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Parent entity coordinating group strategy, intellectual property and international structure.</p>
+      
+      <div class="tvk-company-focus"><strong>Fokusområden:</strong><ul><li>Group coordination</li><li>Strategic planning</li><li>International representation</li><li>Ecosystem governance</li></ul></div>
+      
     </div>
-
-    <div class="company">
-      <h3>TVK Labs & Technologies LTD 🇬🇧</h3>
-      <h4>Research & Development Entity</h4>
-      <p>R&D hub for blockchain, AI, Entelekron, Sentient Signals, Ava Sentient, Ava Santé, Alvina.</p>
-      <p>- Builds and maintains smart contracts, DApps, validator tools</p>
-      <p>- Hosts AI pipelines, dashboards, and all protocol repositories</p>
-      <p>- Employs technical and creative teams</p>
-      <p>- Maintains GitHub, GitBook, documentation and audits</p>
+    <div class="tvk-company-detail" id="labs">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/tvklabs_logo.png" alt="TVK Labs & Technologies LTD" />
+        <div><h3>TVK Labs & Technologies LTD 🇬🇧</h3><span class="tvk-company-sub">Research & Development</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">R&D hub for blockchain, AI, cybersecurity and protocol development across the ecosystem.</p>
+      
+      <div class="tvk-company-focus"><strong>Fokusområden:</strong><ul><li>AI & protocol research</li><li>Software systems</li><li>Technical documentation</li><li>Innovation pipelines</li></ul></div>
+      <a href="https://tvklabs.com" target="_blank" rel="noopener" class="tvk-link-arrow">Besök webbplats <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>TVK Infrastructure & Energy Systems LTD 🇬🇧</h3>
-      <h4>Commercial Entity</h4>
-      <p>Develops mining technology, solar power projects, and carbon tokenization via Energiemind brand.</p>
-      <p>- Operator of EnergieMind firmware for ASIC miners</p>
-      <p>- Develops token-linked Antminers (ENM token licensing)</p>
-      <p>- Installs solar and renewable energy infrastructure</p>
-      <p>- Offers miner-hosting, optimization, and DePIN deployment</p>
-      <p>- Carbon efficiency reward tracking and dashboards</p>
-      <p>- Dual token mining (Bitcoin + ENM)</p>
+    <div class="tvk-company-detail" id="energy">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/tvk_logo_1024px_transparent.png" alt="TVK Infrastructure & Energy Systems LTD" />
+        <div><h3>TVK Infrastructure & Energy Systems LTD 🇬🇧</h3><span class="tvk-company-sub">Infrastructure & Energy</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Develops energy intelligence, infrastructure systems and industrial technology investments.</p>
+      
+      <div class="tvk-company-focus"><strong>Fokusområden:</strong><ul><li>Energy intelligence</li><li>Infrastructure systems</li><li>Industrial technology</li><li>EnergieMIND initiatives</li></ul></div>
+      <a href="https://energiemind.com" target="_blank" rel="noopener" class="tvk-link-arrow">Besök webbplats <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>TVK Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3>
-      <p>German division focused on logistics, container technology, prefabricated housing and defense systems.</p>
+    <div class="tvk-company-detail" id="gmbh">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/prefab_logo.png" alt="TVK Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH" />
+        <div><h3>TVK Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH 🇩🇪</h3><span class="tvk-company-sub">Logistics & Infrastructure</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">German division focused on logistics, container technology, prefabricated housing and secure infrastructure.</p>
+      
+      <div class="tvk-company-focus"><strong>Fokusområden:</strong><ul><li>Modular infrastructure</li><li>International logistics</li><li>Industrial deployment</li></ul></div>
+      <a href="https://t-v-k.com" target="_blank" rel="noopener" class="tvk-link-arrow">Besök webbplats <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-
-    <div class="company">
-      <h3>LoNDon - The Secret Of Women LTD 🇬🇧</h3>
-      <p>Luxury and wellness product brand tailored for women, based in London.</p>
+    <div class="tvk-company-detail" id="london">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/london_logo.png" alt="LoNDon – The Secret of Women LTD" />
+        <div><h3>LoNDon – The Secret of Women LTD 🇬🇧</h3><span class="tvk-company-sub">Wellness & Lifestyle</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Luxury wellness and lifestyle brand within the group portfolio.</p>
+      
+      <div class="tvk-company-focus"><strong>Fokusområden:</strong><ul><li>Wellness technologies</li><li>Lifestyle brand development</li></ul></div>
+      <a href="https://london-thesecretofwomen.com" target="_blank" rel="noopener" class="tvk-link-arrow">Besök webbplats <i class="fa-solid fa-arrow-right"></i></a>
     </div>
-    <div class="company">
-      <h3>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi 🇹🇷</h3>
-      <h4>Turkey Operations Entity</h4>
-      <p>Turkish subsidiary focused on technology investment, import-export operations, trade, and industrial development across the TVK ecosystem.</p>
-      <p>- Technology investment and commercial operations in Türkiye</p>
-      <p>- Import and export coordination for TVK Group products and infrastructure</p>
-      <p>- Trade and industrial development for regional ecosystem expansion</p>
-      <p>- Bridge entity connecting Middle East, European, and Eurasian markets</p>
+    <div class="tvk-company-detail" id="turkey">
+      <div class="tvk-company-detail-header">
+        <img src="/assets/logo.tvk.group.png" alt="TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi LTD" />
+        <div><h3>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi LTD 🇹🇷</h3><span class="tvk-company-sub">Türkiye Operations</span><span class="tvk-stage-badge">Active</span></div>
+      </div>
+      <p class="tvk-company-role">Turkish operating entity for technology investment, trade, import/export and regional business development.</p>
+      
+      <div class="tvk-company-focus"><strong>Fokusområden:</strong><ul><li>Technology investment</li><li>Import & export</li><li>Regional expansion</li><li>Industrial development</li></ul></div>
+      
     </div>
-
-
-
-    <div class="company">
-
-
-      <h3>TVK - EnteleKRON Foundation 🇨🇭 (Planned)</h3>
-      <p>Upcoming Switzerland-based digital finance entity for token infrastructure expansion.</p>
+    <div class="tvk-company-detail" id="fzco">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🇦🇪</span>
+        <div><h3>TVK Group Holding LTD FZCO 🇦🇪</h3><span class="tvk-company-sub">UAE Structure (Planned)</span><span class="tvk-stage-badge">Planned</span></div>
+      </div>
+      <p class="tvk-company-role">Planned UAE entity for international holding operations and regional coordination.</p>
+      
+      <div class="tvk-company-focus"><strong>Fokusområden:</strong><ul><li>Holding structure</li><li>Regional coordination</li></ul></div>
+      
     </div>
+    <div class="tvk-company-detail" id="foundation">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🇨🇭</span>
+        <div><h3>TVK – EnteleKRON Foundation 🇨🇭</h3><span class="tvk-company-sub">Foundation (Planned)</span><span class="tvk-stage-badge">Planned</span></div>
+      </div>
+      <p class="tvk-company-role">Planned Switzerland-based entity for digital infrastructure and ecosystem governance development.</p>
+      
+      <div class="tvk-company-focus"><strong>Fokusområden:</strong><ul><li>Ecosystem governance</li><li>Digital infrastructure</li></ul></div>
+      
+    </div>
+    <div class="tvk-company-detail" id="ventures">
+      <div class="tvk-company-detail-header">
+        <span class="tvk-company-flag">🌐</span>
+        <div><h3>Future Ventures 🌐</h3><span class="tvk-company-sub">Venture Development</span><span class="tvk-stage-badge">Under development</span></div>
+      </div>
+      <p class="tvk-company-role">Pipeline for sector-specific ventures and future group companies under structured validation.</p>
+      
+      <div class="tvk-company-focus"><strong>Fokusområden:</strong><ul><li>Venture building</li><li>Sector pilots</li><li>Strategic validation</li></ul></div>
+      
+    </div></div>
+  <div class="tvk-section-cta tvk-reveal">
+    <a href="/sv/companies.html" class="tvk-btn tvk-btn-outline">Visa företagssida <i class="fa-solid fa-arrow-right"></i></a>
   </div>
-
-  <footer>
-    &copy; 2025 TVK Group Holding LTD. All rights reserved.
-  </footer>
-
-  <script>
-  (function() {
-    const supportedLanguages = {
-      ar: '/ar/index.html', zh: '/zh/index.html', da: '/da/index.html', nl: '/nl/index.html',
-      en: '/sv/index.html', fr: '/fr/index.html', de: '/de/index.html', he: '/he/index.html',
-      hi: '/hi/index.html', it: '/it/index.html', ja: '/ja/index.html', ko: '/ko/index.html',
-      pl: '/pl/index.html', pt: '/pt/index.html', ru: '/ru/index.html', es: '/es/index.html',
-      sv: '/sv/index.html', tr: '/tr/index.html'
-    };
-
-    const defaultLang = 'en';
-    const currentPath = window.location.pathname;
-    const isInLangFolder = /^\\/(ar|zh|da|nl|en|fr|de|he|hi|it|ja|ko|pl|pt|ru|es|sv|tr)\\//.test(currentPath);
-
-    function showConsentBar(targetUrl) {
-      const bar = document.createElement('div');
-      bar.style.position = 'fixed';
-      bar.style.bottom = '0';
-      bar.style.left = '0';
-      bar.style.right = '0';
-      bar.style.background = '#222';
-      bar.style.color = '#fff';
-      bar.style.padding = '12px';
-      bar.style.textAlign = 'center';
-      bar.style.zIndex = '10000';
-      bar.innerHTML = `
-        🌐 We've detected your language. Redirect to your preferred version?
-        <button id="lang-accept" style="margin-left:10px;padding:5px 12px;">Yes</button>
-      `;
-      document.body.appendChild(bar);
-      document.getElementById('lang-accept').onclick = () => {
-        bar.remove();
-        window.location.href = targetUrl;
-      };
-    }
-
-    const savedLang = localStorage.getItem('preferredLanguage');
-    let targetUrl = null;
-
-    if (!isInLangFolder) {
-      if (savedLang && supportedLanguages[savedLang]) {
-        targetUrl = supportedLanguages[savedLang];
-      } else {
-        const browserLang = navigator.language.slice(0, 2).toLowerCase();
-        targetUrl = supportedLanguages[browserLang] || supportedLanguages[defaultLang];
-        localStorage.setItem('preferredLanguage', browserLang in supportedLanguages ? browserLang : defaultLang);
-      }
-
-      window.addEventListener('DOMContentLoaded', () => showConsentBar(targetUrl));
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-      const langDropdown = document.getElementById("lang-dropdown");
-      if (langDropdown) {
-        langDropdown.addEventListener("change", function() {
-          const selectedLang = this.value.split("/")[1];
-          localStorage.setItem('preferredLanguage', selectedLang);
-        });
-      }
-    });
-  })();
-  </script>
-
+</section><footer class="tvk-footer">
+    <p class="tvk-footer-tagline">Teknik, infrastruktur och innovation för nästa digitala ekonomi.</p>
+    <div class="tvk-footer-links">
+      <a href="/sv/legal.html">Juridik</a>
+      <a href="/sv/privacy.html">Integritet</a>
+      <a href="/sv/terms.html">Villkor</a>
+      <a href="/sv/work.html">Karriär</a>
+      <a href="/sv/company.html">Företagskatalog</a>
+    </div>
+    <p>© 2025 TVK Group Holding LTD. All rights reserved.</p>
+  </footer></div>
+<script src="/assets/js/tvk-master.js?v=6"></script>
 </body>
 </html>
-
-

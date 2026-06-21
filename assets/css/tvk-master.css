@@ -947,6 +947,7 @@ body[dir="rtl"] { direction: rtl; }
 .tvk-company-sub { display: block; font-size: 0.85rem; color: var(--tvk-slate-600); margin-bottom: 0.5rem; }
 .tvk-company-role { font-size: 0.95rem; color: var(--tvk-text); line-height: 1.7; }
 .tvk-company-focus ul { margin: 0.5rem 0 0; padding-left: 1.25rem; color: var(--tvk-slate-600); font-size: 0.88rem; }
+.tvk-company-bullets { margin: 0.75rem 0; padding-left: 1.25rem; color: var(--tvk-slate-600); font-size: 0.88rem; line-height: 1.7; }
 
 .tvk-contact-form { background: #fff; padding: 2rem; border-radius: var(--tvk-radius-lg); border: 1px solid var(--tvk-slate-100); box-shadow: var(--tvk-shadow); }
 .tvk-contact-block { max-width: 640px; margin: 0 auto; }

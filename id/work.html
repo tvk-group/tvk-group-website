@@ -1,137 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Join the TVK Ecosystem – TVK Group</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #000;
-      color: white;
-    }
-    nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    header { background: #0b0f1a; padding: 2rem; text-align: center; }
-    h1 { margin-bottom: 0.5rem; font-size: 2.5rem; color: #66fcf1; }
-    p.lead { font-size: 1.2rem; color: #cfcfcf; }
-    .section, .content { max-width: 1000px; margin: auto; padding: 2rem; }
-    ul { line-height: 1.8; }
-    .cta { text-align: center; margin: 2rem 0; }
-    a.button {
-      background: #1f6feb;
-      padding: 1rem 2rem;
-      border-radius: 5px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f0f0f0;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    select { padding: 4px; border-radius: 5px; }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <div><strong>TVK GROUP</strong></div>
-    <ul>
-      <li><a href="/id/index.html">Home</a></li>
-      <li><a href="/id/company.html">Company</a></li>
-      <li><a href="/id/work.html">Work With Us</a></li>
-      <li><a href="/id/legal.html">Legal</a></li>
-      <li><a href="/id/privacy.html">Privacy</a></li>
-      <li><a href="/id/terms.html">Terms</a></li>
-      <li><a href="/id/contact.html">Contact</a></li>
-      <li>
-        <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
-          <option disabled>🌐 Language</option>
-          <option value="/ar/work.html">🇸🇦 العربية</option>
-          <option value="/zh/work.html">🇨🇳 中文</option>
-          <option value="/da/work.html">🇩🇰 Dansk</option>
-          <option value="/nl/work.html">🇳🇱 Nederlands</option>
-          <option value="/en/work.html">🇬🇧 English</option>
-          <option value="/fr/work.html">🇫🇷 Français</option>
-          <option value="/de/work.html">🇩🇪 Deutsch</option>
-          <option value="/he/work.html">🇮🇱 עברית</option>
-          <option value="/hi/work.html">🇮🇳 हिन्दी</option>
-          <option value="/it/work.html">🇮🇹 Italiano</option>
-          <option value="/ja/work.html">🇯🇵 日本語</option>
-          <option value="/ko/work.html">🇰🇷 한국어</option>
-          <option value="/pl/work.html">🇵🇱 Polski</option>
-          <option value="/pt/work.html">🇵🇹 Português</option>
-          <option value="/ru/work.html">🇷🇺 Русский</option>
-          <option value="/es/work.html">🇪🇸 Español</option>
-          <option value="/sv/work.html">🇸🇪 Svenska</option>
-          <option value="/tr/work.html">🇹🇷 Türkçe</option>
-          <option value="/fi/work.html">🇫🇮 Suomi</option>
-          <option value="/no/work.html">🇳🇴 Norsk</option>
-          <option value="/id/work.html" selected>🇮🇩 Bahasa Indonesia</option>
-          <option value="/vi/work.html">🇻🇳 Tiếng Việt</option>
-          <option value="/th/work.html">🇹🇭 ไทย</option>
-          <option value="/uk/work.html">🇺🇦 Українська</option>
-          <option value="/cs/work.html">🇨🇿 Čeština</option>
-          <option value="/el/work.html">🇬🇷 Ελληνικά</option>
-        </select>
-      </li>
+  <meta charset="UTF-8" />
+  <title>Karier di TVK Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Peluang bagi kontributor dan talenta strategis dalam ekosistem teknologi tahap awal." />
+  <meta name="theme-color" content="#071A3D" />
+  <link rel="canonical" href="https://tvk.group/id/work.html" />
+  <link rel="alternate" hreflang="en" href="https://tvk.group/en/work.html" />
+  <link rel="alternate" hreflang="tr" href="https://tvk.group/tr/work.html" />
+  <link rel="alternate" hreflang="de" href="https://tvk.group/de/work.html" />
+  <link rel="alternate" hreflang="fr" href="https://tvk.group/fr/work.html" />
+  <link rel="alternate" hreflang="es" href="https://tvk.group/es/work.html" />
+  <link rel="alternate" hreflang="ar" href="https://tvk.group/ar/work.html" />
+  <link rel="alternate" hreflang="zh" href="https://tvk.group/zh/work.html" />
+  <link rel="alternate" hreflang="ja" href="https://tvk.group/ja/work.html" />
+  <link rel="alternate" hreflang="ru" href="https://tvk.group/ru/work.html" />
+  <link rel="alternate" hreflang="he" href="https://tvk.group/he/work.html" />
+  <link rel="alternate" hreflang="it" href="https://tvk.group/it/work.html" />
+  <link rel="alternate" hreflang="ko" href="https://tvk.group/ko/work.html" />
+  <link rel="alternate" hreflang="pl" href="https://tvk.group/pl/work.html" />
+  <link rel="alternate" hreflang="pt" href="https://tvk.group/pt/work.html" />
+  <link rel="alternate" hreflang="nl" href="https://tvk.group/nl/work.html" />
+  <link rel="alternate" hreflang="da" href="https://tvk.group/da/work.html" />
+  <link rel="alternate" hreflang="sv" href="https://tvk.group/sv/work.html" />
+  <link rel="alternate" hreflang="fi" href="https://tvk.group/fi/work.html" />
+  <link rel="alternate" hreflang="no" href="https://tvk.group/no/work.html" />
+  <link rel="alternate" hreflang="hi" href="https://tvk.group/hi/work.html" />
+  <link rel="alternate" hreflang="id" href="https://tvk.group/id/work.html" />
+  <link rel="alternate" hreflang="vi" href="https://tvk.group/vi/work.html" />
+  <link rel="alternate" hreflang="th" href="https://tvk.group/th/work.html" />
+  <link rel="alternate" hreflang="uk" href="https://tvk.group/uk/work.html" />
+  <link rel="alternate" hreflang="cs" href="https://tvk.group/cs/work.html" />
+  <link rel="alternate" hreflang="el" href="https://tvk.group/el/work.html" />
+  <link rel="alternate" hreflang="x-default" href="https://tvk.group/en/work.html" />
+  <meta property="og:title" content="Karier di TVK Group" />
+  <meta property="og:description" content="Peluang bagi kontributor dan talenta strategis dalam ekosistem teknologi tahap awal." />
+  <meta property="og:url" content="https://tvk.group/id/work.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tvk.group/og-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=6" />
+</head><body><canvas id="tvk-neural-canvas"></canvas><canvas id="tvk-particles-canvas"></canvas><div class="tvk-page-content"><nav class="tvk-nav">
+    <a href="/id/index.html" class="tvk-nav-brand"><img src="/assets/logo.tvk.group.png" alt="TVK Group" /><strong>TVK GROUP</strong></a>
+    <button class="tvk-nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="tvk-nav-links"><li><a href="/id/index.html">Beranda</a></li>
+        <li><a href="/id/about.html">Tentang TVK Group</a></li>
+        <li><a href="/id/companies.html">Perusahaan</a></li>
+        <li><a href="/id/ecosystem.html">Ekosistem</a></li>
+        <li><a href="/id/technologies.html">Teknologi</a></li>
+        <li><a href="/id/industries.html">Industri</a></li>
+        <li><a href="/id/strategic-partnerships.html">Kemitraan</a></li>
+        <li><a href="/id/investor-relations.html">Hubungan Investor</a></li>
+        <li><a href="/id/insights.html">Berita</a></li>
+        <li><a href="/id/contact.html">Kontak</a></li>
+      <li><select class="tvk-lang-select" onchange="location.href=this.value"><option disabled>🌐 Bahasa</option><option value="/en/work.html">🇬🇧 English</option>
+            <option value="/tr/work.html">🇹🇷 Türkçe</option>
+            <option value="/de/work.html">🇩🇪 Deutsch</option>
+            <option value="/fr/work.html">🇫🇷 Français</option>
+            <option value="/es/work.html">🇪🇸 Español</option>
+            <option value="/ar/work.html">🇸🇦 العربية</option>
+            <option value="/zh/work.html">🇨🇳 中文</option>
+            <option value="/ja/work.html">🇯🇵 日本語</option>
+            <option value="/ru/work.html">🇷🇺 Русский</option>
+            <option value="/he/work.html">🇮🇱 עברית</option>
+            <option value="/it/work.html">🇮🇹 Italiano</option>
+            <option value="/ko/work.html">🇰🇷 한국어</option>
+            <option value="/pl/work.html">🇵🇱 Polski</option>
+            <option value="/pt/work.html">🇵🇹 Português</option>
+            <option value="/nl/work.html">🇳🇱 Nederlands</option>
+            <option value="/da/work.html">🇩🇰 Dansk</option>
+            <option value="/sv/work.html">🇸🇪 Svenska</option>
+            <option value="/fi/work.html">🇫🇮 Suomi</option>
+            <option value="/no/work.html">🇳🇴 Norsk</option>
+            <option value="/hi/work.html">🇮🇳 हिन्दी</option>
+            <option value="/id/work.html" selected>🇮🇩 Bahasa Indonesia</option>
+            <option value="/vi/work.html">🇻🇳 Tiếng Việt</option>
+            <option value="/th/work.html">🇹🇭 ไทย</option>
+            <option value="/uk/work.html">🇺🇦 Українська</option>
+            <option value="/cs/work.html">🇨🇿 Čeština</option>
+            <option value="/el/work.html">🇬🇷 Ελληνικά</option></select></li>
     </ul>
   </nav>
-
-  <header>
-    <h1>Join the EnteleKRON Launch Team</h1>
-    <p class="lead">We're not offering a job. We're offering you a share of history.</p>
-  </header>
-
-  <div class="content">
-    <p>TVK Group Holding LTD is building Entelekron – a sovereign, protocol-based ecosystem that redefines infrastructure, digital identity, AI coordination, and energy tokenization.</p>
-    <p>We are offering contributor roles in exchange for vested ownership in $ENK, the Entelekron native token.</p>
-
-    <h2>Open Roles</h2>
-    <ul>
-      <li>Chief Operating Officer (COO)</li>
-      <li>Chief Technical Architect</li>
-      <li>Protocol Lead – Entelekron</li>
-      <li>Solidity/Web3 Developer</li>
-      <li>Frontend/UX Engineer</li>
-      <li>Cybersecurity Director</li>
-      <li>DevOps / Validator Admin</li>
-      <li>Visual Designer / Brand Architect</li>
-      <li>AI Prompting & Model Ops</li>
-      <li>Business Development Manager</li>
-      <li>Content/Docs Strategist</li>
-      <li>Legal Officer / Contract Auditor</li>
-      <li>Multilingual Community Manager</li>
-      <li>Investor Relations Lead</li>
-      <li>Executive Assistant</li>
-    </ul>
-
-    <div class="cta">
-      <a href="mailto:careers@tvk.group" class="button">Apply or Partner Now</a>
+<section class="tvk-page-hero"><div class="tvk-container tvk-reveal visible"><h1>Bekerja dengan TVK Group</h1><p class="tvk-page-hero-lead">Peluang bagi kontributor dan talenta strategis dalam ekosistem teknologi tahap awal.</p></div></section>
+<section class="tvk-section">
+  <div class="tvk-container tvk-content-narrow tvk-reveal">
+    <p>TVK Group mencari kontributor multidisiplin selama tahap penelitian, pengembangan, dan pembentukan ekosistem.</p>
+    <p>Peran mencakup AI, keamanan siber, infrastruktur, pengembangan protokol, pengembangan bisnis, dan operasi korporat.</p>
+    <h3>Area kontribusi terbuka</h3>
+    <ul class="tvk-check-list"><li>Chief Operating Officer (COO)</li><li>Chief Technical Architect</li><li>Protocol & Infrastructure Lead</li><li>Software & Systems Engineer</li><li>Cybersecurity Specialist</li><li>DevOps & Infrastructure</li><li>Product & UX Design</li><li>AI & Data Systems</li><li>Business Development</li><li>Documentation & Strategy</li><li>Legal & Compliance Support</li><li>Community & Communications</li><li>Investor Relations Support</li><li>Executive Operations</li></ul>
+    <div class="tvk-section-cta">
+      <a href="mailto:careers@tvk.group" class="tvk-btn tvk-btn-primary">Lamar melalui careers@tvk.group</a>
     </div>
-
-    <p>For detailed terms and vesting, download our contributor guide:</p>
-    <div class="cta">
-      <a href="/docs/Entelekron_Contributor_Program_TVK.docx" class="button">Download Guide (DOCX)</a>
-    </div>
+    <p class="tvk-content-note">TVK Group berada di tahap awal. Semua peran tunduk pada evaluasi terstruktur dan tinjauan keselarasan jangka panjang.</p>
   </div>
-
-  <footer>
-    TVK Group Holding LTD · Entelekron Protocol © 2025
-  </footer>
-
-</body>
-</html>
-
+</section><footer class="tvk-footer">
+    <p class="tvk-footer-tagline">Teknologi, infrastruktur, dan inovasi untuk ekonomi digital berikutnya.</p>
+    <div class="tvk-footer-links">
+      <a href="/id/legal.html">Hukum</a>
+      <a href="/id/privacy.html">Privasi</a>
+      <a href="/id/terms.html">Ketentuan</a>
+      <a href="/id/work.html">Karier</a>
+      <a href="/id/company.html">Direktori perusahaan</a>
+    </div>
+    <p>© 2025 TVK Group Holding LTD. All rights reserved.</p>
+  </footer></div>
+<script src="/assets/js/tvk-master.js?v=6"></script>
 </body>
 </html>

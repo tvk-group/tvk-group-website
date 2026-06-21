@@ -2,6 +2,7 @@
  * TVK Group Holding — shared content, data & helpers
  */
 const path = require('path');
+const { LOCALE_OVERRIDES, WORK_ROLES_EN, ECO_CAT_I18N } = require('./i18n-content');
 const ROOT = path.join(__dirname, '..');
 
 const LANGUAGES = [
@@ -206,15 +207,44 @@ const CONTENT = {
     insightsTitle: 'News & Insights', insightsLead: 'Perspectives on ecosystem development, technology strategy and institutional growth.',
     insightsPlaceholder: 'Updates and analysis will be published as the Group progresses through R&D and validation programs.',
     contactTitle: 'Contact TVK Group', contactLead: 'Reach our team for strategic, partnership and institutional inquiries.',
-    contactGeneral: 'General Inquiries', contactPartnerships: 'Partnerships', contactInstitutional: 'Institutional'
+    contactGeneral: 'General Inquiries', contactPartnerships: 'Partnerships', contactInstitutional: 'Institutional',
+    companyLegacyTitle: 'TVK Group Company Directory', companyLegacyH1: 'Company Directory',
+    companyLegacyLead: 'Detailed directory of all operating and planned entities within the TVK Group holding structure.',
+    workTitle: 'Careers at TVK Group', workH1: 'Work With TVK Group',
+    workLead: 'Contributor and strategic talent opportunities within an early-stage technology ecosystem.',
+    workP1: 'TVK Group is seeking multidisciplinary contributors during its research, development and ecosystem formation stage.',
+    workP2: 'Roles span AI, cybersecurity, infrastructure, protocol development, business development and corporate operations.',
+    workRolesH: 'Open Contribution Areas', workCta: 'Apply via careers@tvk.group',
+    workNote: 'TVK Group is early-stage. All roles are subject to structured evaluation and long-term alignment review.',
+    workRoles: WORK_ROLES_EN,
+    focusAreas: 'Focus areas', visitWebsite: 'Visit website', viewCompaniesPage: 'View Companies Page',
+    legalTitle: 'Legal Notice', privacyTitle: 'Privacy Policy', termsTitle: 'Terms & Conditions',
+    statusActive: 'Active', statusPlanned: 'Planned', statusDevelopment: 'Under development',
+    stageUnderRD: 'Under R&D', stageUnderDev: 'Under development', stageConcept: 'Concept / early development', stageExperimental: 'Experimental / R&D'
   }
 };
 
 function t(lang, key) {
-  return (CONTENT[lang] && CONTENT[lang][key] !== undefined) ? CONTENT[lang][key] : CONTENT.en[key];
+  if (LOCALE_OVERRIDES[lang] && LOCALE_OVERRIDES[lang][key] !== undefined) return LOCALE_OVERRIDES[lang][key];
+  if (CONTENT[lang] && CONTENT[lang][key] !== undefined) return CONTENT[lang][key];
+  return CONTENT.en[key];
 }
 function tArray(lang, key) {
-  return (CONTENT[lang] && CONTENT[lang][key] !== undefined) ? CONTENT[lang][key] : CONTENT.en[key];
+  if (LOCALE_OVERRIDES[lang] && LOCALE_OVERRIDES[lang][key] !== undefined) return LOCALE_OVERRIDES[lang][key];
+  if (CONTENT[lang] && CONTENT[lang][key] !== undefined) return CONTENT[lang][key];
+  if (key === 'workRoles') return WORK_ROLES_EN;
+  return CONTENT.en[key];
+}
+
+function getEcosystemCategories(lang) {
+  return ECOSYSTEM_CATEGORIES.map(cat => ({
+    ...cat,
+    title: (ECO_CAT_I18N[cat.id] && ECO_CAT_I18N[cat.id][lang]) || cat.title
+  }));
+}
+
+function getGroupCompanies(lang) {
+  return GROUP_COMPANIES;
 }
 
 function langOptions(code, page = 'index.html') {
@@ -275,7 +305,7 @@ function headHtml(lang, title, desc, page = 'index.html') {
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=5" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=6" />
 </head>` };
 }
 
@@ -285,7 +315,7 @@ function ambient() {
 
 function scripts(includeEco = false) {
   const s = includeEco ? `\n<script>window.TVK_ECOSYSTEMS=${JSON.stringify(ECOSYSTEMS)};</script>` : '';
-  return `${s}\n<script src="/assets/js/tvk-master.js?v=5"></script>\n</body>\n</html>`;
+  return `${s}\n<script src="/assets/js/tvk-master.js?v=6"></script>\n</body>\n</html>`;
 }
 
 function pageHero(h1, lead) {
@@ -324,5 +354,6 @@ function contactForm(lang) {
 module.exports = {
   ROOT, LANGUAGES, NAV_PAGES, HOMEPAGE_COMPANIES, GROUP_COMPANIES, ECOSYSTEM_CATEGORIES,
   ECOSYSTEMS, TECH_PILLARS, INDUSTRIES, CONTENT, t, tArray, langOptions, hreflangTags,
-  navHtml, footerHtml, headHtml, ambient, scripts, pageHero, sectionHeader, ecosystemCategoryHtml, contactForm
+  navHtml, footerHtml, headHtml, ambient, scripts, pageHero, sectionHeader, ecosystemCategoryHtml, contactForm,
+  getEcosystemCategories, getGroupCompanies
 };
