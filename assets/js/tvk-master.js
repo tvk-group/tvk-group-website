@@ -814,14 +814,14 @@
   function init() {
     initParticles();
     initNeural();
-    initGalaxy();
-    initTechStack();
-    initWorldMap();
+    if (document.getElementById('tvk-galaxy-canvas')) initGalaxy();
+    if (document.getElementById('tvk-tech-canvas')) initTechStack();
+    if (document.getElementById('tvk-world-map')) initWorldMap();
     initScrollReveal();
     initNav();
-    initHeroViz();
-    initSovraViz();
-    initEntelekronViz();
+    if (document.getElementById('tvk-hero-viz-canvas')) initHeroViz();
+    if (document.getElementById('tvk-sovra-canvas')) initSovraViz();
+    if (document.getElementById('tvk-entelekron-canvas')) initEntelekronViz();
   }
 
   if (document.readyState === 'loading') {

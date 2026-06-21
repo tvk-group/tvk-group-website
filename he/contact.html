@@ -1,165 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>צור קשר – TVK Group Holding LTD</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body { margin: 0; font-family: sans-serif; background: #ffffff; color: #111; direction: rtl; }
-    nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background-color: #000; color: white; }
-    nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .section { max-width: 1000px; margin: auto; padding: 2rem; animation: fadeIn 1s ease-in-out; }
-    .section h3 { margin-top: 2rem; }
-    .contact-table { width: 100%; border-collapse: collapse; margin-bottom: 2rem; }
-    .contact-table th, .contact-table td { padding: 0.75rem 1rem; border-bottom: 1px solid #ddd; text-align: right; vertical-align: middle; }
-    .contact-table th { background-color: #f0f0f0; }
-    .contact-icon { display: inline-block; margin-left: 10px; color: #0073e6; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    footer { text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem; }
-    @media print { nav, footer, .language-dropdown { display: none; } body { background: white; color: black; } .section { padding: 0; } }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <div><img src="/assets/logo.tvk.group.png" alt="לוגו TVK Group" style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">TVK GROUP</strong></div>
-    <ul>
-      <li><a href="/he/index.html">דף הבית</a></li>
-      <li><a href="/he/company.html">החברה</a></li>
-      <li><a href="/he/work.html">עבוד איתנו</a></li>
-      <li><a href="/he/legal.html">מידע משפטי</a></li>
-      <li><a href="/he/privacy.html">פרטיות</a></li>
-      <li><a href="/he/terms.html">תנאים</a></li>
-      <li><a href="/he/contact.html">צור קשר</a></li>
-    </ul>
-           <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
-          <option disabled>🌐 Language</option>
-          <option value="/ar/contact.html">🇸🇦 العربية</option>
-          <option value="/zh/contact.html">🇨🇳 中文</option>
-          <option value="/da/contact.html">🇩🇰 Dansk</option>
-          <option value="/nl/contact.html">🇳🇱 Nederlands</option>
-          <option value="/en/contact.html">🇬🇧 English</option>
-          <option value="/fr/contact.html">🇫🇷 Français</option>
-          <option value="/de/contact.html">🇩🇪 Deutsch</option>
-          <option value="/he/contact.html" selected>🇮🇱 עברית</option>
-          <option value="/hi/contact.html">🇮🇳 हिन्दी</option>
-          <option value="/it/contact.html">🇮🇹 Italiano</option>
-          <option value="/ja/contact.html">🇯🇵 日本語</option>
-          <option value="/ko/contact.html">🇰🇷 한국어</option>
-          <option value="/pl/contact.html">🇵🇱 Polski</option>
-          <option value="/pt/contact.html">🇵🇹 Português</option>
-          <option value="/ru/contact.html">🇷🇺 Русский</option>
-          <option value="/es/contact.html">🇪🇸 Español</option>
-          <option value="/sv/contact.html">🇸🇪 Svenska</option>
-          <option value="/tr/contact.html">🇹🇷 Türkçe</option>
-          <option value="/fi/contact.html">🇫🇮 Suomi</option>
-          <option value="/no/contact.html">🇳🇴 Norsk</option>
-          <option value="/id/contact.html">🇮🇩 Bahasa Indonesia</option>
-          <option value="/vi/contact.html">🇻🇳 Tiếng Việt</option>
-          <option value="/th/contact.html">🇹🇭 ไทย</option>
-          <option value="/uk/contact.html">🇺🇦 Українська</option>
-          <option value="/cs/contact.html">🇨🇿 Čeština</option>
-          <option value="/el/contact.html">🇬🇷 Ελληνικά</option>
-        </select>
-      </li>
+  <meta charset="UTF-8" />
+  <title>Contact TVK Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reach our team for strategic, partnership and institutional inquiries." />
+  <meta name="theme-color" content="#071A3D" />
+  <link rel="canonical" href="https://tvk.group/he/contact.html" />
+  <link rel="alternate" hreflang="en" href="https://tvk.group/en/contact.html" />
+  <link rel="alternate" hreflang="tr" href="https://tvk.group/tr/contact.html" />
+  <link rel="alternate" hreflang="de" href="https://tvk.group/de/contact.html" />
+  <link rel="alternate" hreflang="fr" href="https://tvk.group/fr/contact.html" />
+  <link rel="alternate" hreflang="es" href="https://tvk.group/es/contact.html" />
+  <link rel="alternate" hreflang="ar" href="https://tvk.group/ar/contact.html" />
+  <link rel="alternate" hreflang="zh" href="https://tvk.group/zh/contact.html" />
+  <link rel="alternate" hreflang="ja" href="https://tvk.group/ja/contact.html" />
+  <link rel="alternate" hreflang="ru" href="https://tvk.group/ru/contact.html" />
+  <link rel="alternate" hreflang="he" href="https://tvk.group/he/contact.html" />
+  <link rel="alternate" hreflang="it" href="https://tvk.group/it/contact.html" />
+  <link rel="alternate" hreflang="ko" href="https://tvk.group/ko/contact.html" />
+  <link rel="alternate" hreflang="pl" href="https://tvk.group/pl/contact.html" />
+  <link rel="alternate" hreflang="pt" href="https://tvk.group/pt/contact.html" />
+  <link rel="alternate" hreflang="nl" href="https://tvk.group/nl/contact.html" />
+  <link rel="alternate" hreflang="da" href="https://tvk.group/da/contact.html" />
+  <link rel="alternate" hreflang="sv" href="https://tvk.group/sv/contact.html" />
+  <link rel="alternate" hreflang="fi" href="https://tvk.group/fi/contact.html" />
+  <link rel="alternate" hreflang="no" href="https://tvk.group/no/contact.html" />
+  <link rel="alternate" hreflang="hi" href="https://tvk.group/hi/contact.html" />
+  <link rel="alternate" hreflang="id" href="https://tvk.group/id/contact.html" />
+  <link rel="alternate" hreflang="vi" href="https://tvk.group/vi/contact.html" />
+  <link rel="alternate" hreflang="th" href="https://tvk.group/th/contact.html" />
+  <link rel="alternate" hreflang="uk" href="https://tvk.group/uk/contact.html" />
+  <link rel="alternate" hreflang="cs" href="https://tvk.group/cs/contact.html" />
+  <link rel="alternate" hreflang="el" href="https://tvk.group/el/contact.html" />
+  <link rel="alternate" hreflang="x-default" href="https://tvk.group/en/contact.html" />
+  <meta property="og:title" content="Contact TVK Group" />
+  <meta property="og:description" content="Reach our team for strategic, partnership and institutional inquiries." />
+  <meta property="og:url" content="https://tvk.group/he/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tvk.group/og-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=5" />
+</head><body dir="rtl"><canvas id="tvk-neural-canvas"></canvas><canvas id="tvk-particles-canvas"></canvas><div class="tvk-page-content"><nav class="tvk-nav">
+    <a href="/he/index.html" class="tvk-nav-brand"><img src="/assets/logo.tvk.group.png" alt="TVK Group" /><strong>TVK GROUP</strong></a>
+    <button class="tvk-nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="tvk-nav-links"><li><a href="/he/index.html">בית</a></li>
+        <li><a href="/he/about.html">אודות TVK Group</a></li>
+        <li><a href="/he/companies.html">חברות</a></li>
+        <li><a href="/he/ecosystem.html">אקוסיסטם</a></li>
+        <li><a href="/he/technologies.html">טכנולוגיות</a></li>
+        <li><a href="/he/industries.html">תעשיות</a></li>
+        <li><a href="/he/strategic-partnerships.html">שותפויות</a></li>
+        <li><a href="/he/investor-relations.html">יחסי משקיעים</a></li>
+        <li><a href="/he/insights.html">חדשות</a></li>
+        <li><a href="/he/contact.html" class="active">צור קשר</a></li>
+      <li><select class="tvk-lang-select" onchange="location.href=this.value"><option disabled>🌐 שפה</option><option value="/en/contact.html">🇬🇧 English</option>
+            <option value="/tr/contact.html">🇹🇷 Türkçe</option>
+            <option value="/de/contact.html">🇩🇪 Deutsch</option>
+            <option value="/fr/contact.html">🇫🇷 Français</option>
+            <option value="/es/contact.html">🇪🇸 Español</option>
+            <option value="/ar/contact.html">🇸🇦 العربية</option>
+            <option value="/zh/contact.html">🇨🇳 中文</option>
+            <option value="/ja/contact.html">🇯🇵 日本語</option>
+            <option value="/ru/contact.html">🇷🇺 Русский</option>
+            <option value="/he/contact.html" selected>🇮🇱 עברית</option>
+            <option value="/it/contact.html">🇮🇹 Italiano</option>
+            <option value="/ko/contact.html">🇰🇷 한국어</option>
+            <option value="/pl/contact.html">🇵🇱 Polski</option>
+            <option value="/pt/contact.html">🇵🇹 Português</option>
+            <option value="/nl/contact.html">🇳🇱 Nederlands</option>
+            <option value="/da/contact.html">🇩🇰 Dansk</option>
+            <option value="/sv/contact.html">🇸🇪 Svenska</option>
+            <option value="/fi/contact.html">🇫🇮 Suomi</option>
+            <option value="/no/contact.html">🇳🇴 Norsk</option>
+            <option value="/hi/contact.html">🇮🇳 हिन्दी</option>
+            <option value="/id/contact.html">🇮🇩 Bahasa Indonesia</option>
+            <option value="/vi/contact.html">🇻🇳 Tiếng Việt</option>
+            <option value="/th/contact.html">🇹🇭 ไทย</option>
+            <option value="/uk/contact.html">🇺🇦 Українська</option>
+            <option value="/cs/contact.html">🇨🇿 Čeština</option>
+            <option value="/el/contact.html">🇬🇷 Ελληνικά</option></select></li>
     </ul>
   </nav>
-
-  <div class="section">
-    <h2>📬 ספר טלפונים - צור קשר</h2>
-    <p>כתובות אימייל רשמיות לכל חברה וחטיבה:</p>
-
-    <h3>TVK Group Holding LTD</h3>
-    <table class="contact-table">
-      <tr><th>מטרה</th><th>אימייל</th></tr>
-      <tr><td>פניות כלליות</td><td><i class="fas fa-envelope contact-icon"></i>hq@tvk.group</td></tr>
-      <tr><td>משפטי ותאימות</td><td><i class="fas fa-envelope contact-icon"></i>legal@tvk.group</td></tr>
-      <tr><td>קריירות / משאבי אנוש</td><td><i class="fas fa-envelope contact-icon"></i>careers@tvk.group</td></tr>
-    </table>
-
-    <h3>TVK Labs & Technologies LTD</h3>
-    <table class="contact-table">
-      <tr><td>צוות פיתוח</td><td><i class="fas fa-envelope contact-icon"></i>team@tvklabs.com</td></tr>
-      <tr><td>צור קשר כללי</td><td><i class="fas fa-envelope contact-icon"></i>contact@tvklabs.com</td></tr>
-    </table>
-
-    <h3>EnteleKRON</h3>
-    <table class="contact-table">
-      <tr><td>פרוטוקולים בסיסיים</td><td><i class="fas fa-envelope contact-icon"></i>core@entelekron.com</td></tr>
-      <tr><td>תמיכה בוולידטורים</td><td><i class="fas fa-envelope contact-icon"></i>validators@entelekron.com</td></tr>
-    </table>
-
-    <h3>EnteleSCAN</h3>
-    <table class="contact-table">
-      <tr><td>שחזור זהות / KYC</td><td><i class="fas fa-envelope contact-icon"></i>support@entelescan.com</td></tr>
-    </table>
-
-    <h3>EnteleVAULT</h3>
-    <table class="contact-table">
-      <tr><td>אחסון מאובטח</td><td><i class="fas fa-envelope contact-icon"></i>contact@entelevault.com</td></tr>
-    </table>
-
-    <h3>Ava Santé</h3>
-    <table class="contact-table">
-      <tr><td>צוות בריאות</td><td><i class="fas fa-envelope contact-icon"></i>team@avasante.com</td></tr>
-    </table>
-
-    <h3>Ava Sentient</h3>
-    <table class="contact-table">
-      <tr><td>אוטומציה מבוססת AI</td><td><i class="fas fa-envelope contact-icon"></i>ai@avasentient.com</td></tr>
-    </table>
-
-    <h3>ALVINA</h3>
-    <table class="contact-table">
-      <tr><td>פניות אישיות</td><td><i class="fas fa-envelope contact-icon"></i>alvina@tvk.group</td></tr>
-    </table>
-
-    <h3>EnergiemIND</h3>
-    <table class="contact-table">
-      <tr><td>תמיכה ומכירות</td><td><i class="fas fa-envelope contact-icon"></i>contact@energiemind.io</td></tr>
-      <tr><td>צוות טכני</td><td><i class="fas fa-envelope contact-icon"></i>team@energiemind.io</td></tr>
-    </table>
-
-    <h3>Sentient Signals</h3>
-    <table class="contact-table">
-      <tr><td>שולחן הון</td><td><i class="fas fa-envelope contact-icon"></i>capital@sentsig.com</td></tr>
-      <tr><td>מטה ראשי</td><td><i class="fas fa-envelope contact-icon"></i>hq@sentientsignals.io</td></tr>
-    </table>
-
-    <h3>תשתית רשת</h3>
-    <table class="contact-table">
-      <tr><td>תפעול וולידטורים / צמתים</td><td><i class="fas fa-envelope contact-icon"></i>ops@tvk.network</td></tr>
-    </table>
-
-    <h3>TVK Infrastructure & Energy SystemsLTD</h3>
-    <table class="contact-table">
-      <tr><td>פרויקטים סולאריים וכרייה</td><td><i class="fas fa-envelope contact-icon"></i>solar@tvk.group</td></tr>
-    </table>
-
-    <h3>LoNDon – The Secret of Women – LTD</h3>
-    <table class="contact-table">
-      <tr><td>מוצרי יוקרה</td><td><i class="fas fa-envelope contact-icon"></i>contact@secretwomen.london</td></tr>
-    </table>
-
-    <h3>TVK Container & Fertighäuser & Militärisches Material & Internationaler Transport GmbH</h3>
-    <table class="contact-table">
-      <tr><td>צור קשר עם ההנדסה הגרמנית</td><td><i class="fas fa-envelope contact-icon"></i>logistik@tvk.group</td></tr>
-    </table>
-    <h3>TVK Group Teknoloji Yatırım İthalat İhracat Ticaret ve Sanayi Limited Şirketi</h3>
-    <table class="contact-table">
-      <tr><td>Türkiye Operations</td><td><i class="fas fa-envelope contact-icon"></i>hq@tvk.group</td></tr>
-    </table>
-
+<section class="tvk-page-hero"><div class="tvk-container tvk-reveal visible"><h1>Contact TVK Group</h1><p class="tvk-page-hero-lead">Reach our team for strategic, partnership and institutional inquiries.</p></div></section>
+<section class="tvk-section"><div class="tvk-container"><div class="tvk-contact-layout tvk-reveal">
+  <div class="tvk-contact-info">
+    <div class="tvk-contact-info-item"><i class="fa-solid fa-envelope"></i><div><h4>General Inquiries</h4><a href="mailto:contact@tvk.group">contact@tvk.group</a></div></div>
+    <div class="tvk-contact-info-item"><i class="fa-solid fa-handshake"></i><div><h4>Partnerships</h4><a href="mailto:partners@tvk.group">partners@tvk.group</a></div></div>
+    <div class="tvk-contact-info-item"><i class="fa-solid fa-building-columns"></i><div><h4>Institutional</h4><a href="mailto:institutional@tvk.group">institutional@tvk.group</a></div></div>
   </div>
-
-  <footer>
-    &copy; 2025 TVK Group Holding LTD כל הזכויות שמורות.
-  </footer>
-
+  <form class="tvk-contact-form" action="mailto:contact@tvk.group" method="post" enctype="text/plain">
+    <div class="tvk-form-row">
+      <div class="tvk-form-group"><label>Name</label><input type="text" name="name" required /></div>
+      <div class="tvk-form-group"><label>Company</label><input type="text" name="company" /></div>
+    </div>
+    <div class="tvk-form-row">
+      <div class="tvk-form-group"><label>Role</label><input type="text" name="role" /></div>
+      <div class="tvk-form-group"><label>Email</label><input type="email" name="email" required /></div>
+    </div>
+    <div class="tvk-form-group"><label>Area of Interest</label><input type="text" name="interest" placeholder="Partnership, Investment, Ecosystem, Other" /></div>
+    <div class="tvk-form-group"><label>Message</label><textarea name="message" rows="4" required></textarea></div>
+    <button type="submit" class="tvk-btn tvk-btn-primary">Send Message</button>
+  </form>
+</div></div></section><footer class="tvk-footer">
+    <p class="tvk-footer-tagline">Technology, infrastructure and innovation for the next digital economy.</p>
+    <div class="tvk-footer-links">
+      <a href="/he/legal.html">Legal</a>
+      <a href="/he/privacy.html">Privacy</a>
+      <a href="/he/terms.html">Terms</a>
+      <a href="/he/work.html">Careers</a>
+      <a href="/he/company.html">Company Directory</a>
+    </div>
+    <p>© 2025 TVK Group Holding LTD. All rights reserved.</p>
+  </footer></div>
+<script src="/assets/js/tvk-master.js?v=5"></script>
 </body>
 </html>
-
