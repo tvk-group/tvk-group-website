@@ -41,7 +41,7 @@
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(8, 145, 178, ${p.opacity})`;
+        ctx.fillStyle = `rgba(10, 102, 255, ${p.opacity * 0.6})`;
         ctx.fill();
 
         for (let j = i + 1; j < particles.length; j++) {
@@ -51,7 +51,7 @@
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(q.x, q.y);
-            ctx.strokeStyle = `rgba(8, 145, 178, ${0.08 * (1 - dist / 120)})`;
+            ctx.strokeStyle = `rgba(10, 102, 255, ${0.06 * (1 - dist / 120)})`;
             ctx.stroke();
           }
         }
@@ -814,14 +814,14 @@
   function init() {
     initParticles();
     initNeural();
-    initGalaxy();
-    initTechStack();
-    initWorldMap();
+    if (document.getElementById('tvk-galaxy-canvas')) initGalaxy();
+    if (document.getElementById('tvk-tech-canvas')) initTechStack();
+    if (document.getElementById('tvk-world-map')) initWorldMap();
     initScrollReveal();
     initNav();
-    initHeroViz();
-    initSovraViz();
-    initEntelekronViz();
+    if (document.getElementById('tvk-hero-viz-canvas')) initHeroViz();
+    if (document.getElementById('tvk-sovra-canvas')) initSovraViz();
+    if (document.getElementById('tvk-entelekron-canvas')) initEntelekronViz();
   }
 
   if (document.readyState === 'loading') {

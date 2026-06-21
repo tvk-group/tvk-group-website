@@ -1,40 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>利用規約 – TVKグループ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body { margin: 0; font-family: sans-serif; background-color: #fff; color: #111; }
-    nav {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 1rem 2rem; background-color: #000; color: white; position: sticky; top: 0; z-index: 1000;
-    }
-    nav ul { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .section { padding: 3rem 2rem; max-width: 1000px; margin: auto; }
-    footer { text-align: center; padding: 2rem; background: #f0f0f0; font-size: 0.9rem; }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Terms & Conditions — TVK Group</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Terms & Conditions — TVK Group" />
+  <meta name="theme-color" content="#071A3D" />
+  <link rel="canonical" href="https://tvk.group/ja/terms.html" />
+  <link rel="alternate" hreflang="ar" href="https://tvk.group/ar/terms.html" />
+  <link rel="alternate" hreflang="zh" href="https://tvk.group/zh/terms.html" />
+  <link rel="alternate" hreflang="da" href="https://tvk.group/da/terms.html" />
+  <link rel="alternate" hreflang="nl" href="https://tvk.group/nl/terms.html" />
+  <link rel="alternate" hreflang="en" href="https://tvk.group/en/terms.html" />
+  <link rel="alternate" hreflang="fr" href="https://tvk.group/fr/terms.html" />
+  <link rel="alternate" hreflang="de" href="https://tvk.group/de/terms.html" />
+  <link rel="alternate" hreflang="he" href="https://tvk.group/he/terms.html" />
+  <link rel="alternate" hreflang="hi" href="https://tvk.group/hi/terms.html" />
+  <link rel="alternate" hreflang="it" href="https://tvk.group/it/terms.html" />
+  <link rel="alternate" hreflang="ja" href="https://tvk.group/ja/terms.html" />
+  <link rel="alternate" hreflang="ko" href="https://tvk.group/ko/terms.html" />
+  <link rel="alternate" hreflang="pl" href="https://tvk.group/pl/terms.html" />
+  <link rel="alternate" hreflang="pt" href="https://tvk.group/pt/terms.html" />
+  <link rel="alternate" hreflang="ru" href="https://tvk.group/ru/terms.html" />
+  <link rel="alternate" hreflang="es" href="https://tvk.group/es/terms.html" />
+  <link rel="alternate" hreflang="sv" href="https://tvk.group/sv/terms.html" />
+  <link rel="alternate" hreflang="tr" href="https://tvk.group/tr/terms.html" />
+  <link rel="alternate" hreflang="fi" href="https://tvk.group/fi/terms.html" />
+  <link rel="alternate" hreflang="no" href="https://tvk.group/no/terms.html" />
+  <link rel="alternate" hreflang="id" href="https://tvk.group/id/terms.html" />
+  <link rel="alternate" hreflang="vi" href="https://tvk.group/vi/terms.html" />
+  <link rel="alternate" hreflang="th" href="https://tvk.group/th/terms.html" />
+  <link rel="alternate" hreflang="uk" href="https://tvk.group/uk/terms.html" />
+  <link rel="alternate" hreflang="cs" href="https://tvk.group/cs/terms.html" />
+  <link rel="alternate" hreflang="el" href="https://tvk.group/el/terms.html" />
+  <link rel="alternate" hreflang="x-default" href="https://tvk.group/en/terms.html" />
+  <meta property="og:title" content="Terms & Conditions — TVK Group" />
+  <meta property="og:description" content="Terms & Conditions — TVK Group" />
+  <meta property="og:url" content="https://tvk.group/ja/terms.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tvk.group/og-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=4" />
+  
 </head>
 <body>
-  
-  <nav>
-    <div><img src="/assets/logo.tvk.group.png" alt="TVK Groupロゴ" style="height: 40px; vertical-align: middle;" /> <strong style="margin-left: 10px;">TVK GROUP</strong></div>
-    <ul>
-      <li><a href="/ja/index.html">ホーム</a></li>
-      <li><a href="/ja/company.html">会社概要</a></li>
-      <li><a href="/ja/work.html">採用情報</a></li>
-      <li><a href="/ja/legal.html">法的情報</a></li>
-      <li><a href="/ja/privacy.html">プライバシー</a></li>
-      <li><a href="/ja/terms.html">利用規約</a></li>
-      <li><a href="/ja/contact.html">お問い合わせ</a></li>
-    </ul>
-          <select id="lang-dropdown" style="padding:4px;border-radius:5px;" onchange="window.location.href=this.value;">
-          <option disabled>🌐 Language</option>
-          <option value="/ar/terms.html">🇸🇦 العربية</option>
+  <canvas id="tvk-neural-canvas"></canvas>
+  <canvas id="tvk-particles-canvas"></canvas>
+
+  <div class="tvk-page-content">
+    <nav class="tvk-nav">
+      <a href="/ja/index.html" class="tvk-nav-brand">
+        <img src="/assets/logo.tvk.group.png" alt="TVK Group" />
+        <strong>TVK GROUP</strong>
+      </a>
+      <button class="tvk-nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      <ul class="tvk-nav-links">
+        <li><a href="/ja/index.html">ホーム</a></li>
+        <li><a href="/ja/about.html">会社概要</a></li>
+        <li><a href="/ja/ecosystem.html">エコシステム</a></li>
+        <li><a href="/ja/ai-trust-suite.html">AI＆トラストスイート</a></li>
+        <li><a href="/ja/industries.html">産業</a></li>
+        <li><a href="/ja/partnerships.html">戦略的パートナーシップ</a></li>
+        <li><a href="/ja/insights.html">インサイト</a></li>
+        <li><a href="/ja/contact.html">お問い合わせ</a></li>
+        <li>
+          <select class="tvk-lang-select" onchange="window.location.href=this.value;">
+            <option disabled>🌐 言語</option>
+            <option value="/ar/terms.html">🇸🇦 العربية</option>
           <option value="/zh/terms.html">🇨🇳 中文</option>
           <option value="/da/terms.html">🇩🇰 Dansk</option>
           <option value="/nl/terms.html">🇳🇱 Nederlands</option>
@@ -60,16 +94,22 @@
           <option value="/uk/terms.html">🇺🇦 Українська</option>
           <option value="/cs/terms.html">🇨🇿 Čeština</option>
           <option value="/el/terms.html">🇬🇷 Ελληνικά</option>
-        </select>
-      </li>
-    </ul>
-  </nav>
+          </select>
+        </li>
+      </ul>
+    </nav>
 
-  <div class="section">
-    <h1>利用規約 – TVKグループホールディング株式会社</h1>
+    <section class="tvk-page-hero">
+      <div class="tvk-container tvk-reveal visible">
+        <h1>Terms & Conditions</h1>
+      </div>
+    </section>
+
+    <section class="tvk-section">
+      <div class="tvk-container tvk-content-narrow tvk-reveal">
+        <h1>利用規約 – TVKグループホールディング株式会社</h1>
     <p><strong>発効日:</strong> 2025年5月</p>
 
-    <h2>1. はじめに</h2>
     <p>本ウェブサイトおよびT.V.K.グループホールディング株式会社（「当社」）のWeb3インターフェースをご利用いただきありがとうございます。本利用規約（以下「規約」）は、当社のウェブサイト、アプリケーション、トークンインターフェース、スマートコントラクト、関連サービス（以下「サービス」）の利用を規定するものです。</p>
 
     <h2>2. 法的実体および管轄</h2>
@@ -127,11 +167,20 @@
 
     <h2>13. お問い合わせ</h2>
     <p>TVK Group Holding LTD<br>RAK DAO, アラブ首長国連邦<br>メール: hq@tvk.group<br>ウェブサイト: https://tvk.group</p>
+      </div>
+    </section>
+
+    <footer class="tvk-footer">
+      <p class="tvk-footer-tagline">Building the Trust Infrastructure of the Next Digital Economy.</p>
+      <div class="tvk-footer-links">
+        <a href="/ja/legal.html">Legal</a>
+        <a href="/ja/privacy.html">Privacy</a>
+        <a href="/ja/terms.html">Terms</a>
+      </div>
+      <p>© 2025 TVK Group Holding LTD. All rights reserved.</p>
+    </footer>
   </div>
 
-  <footer>
-    &copy; 2025 TVK Group Holding LTD. 無断転載を禁じます。
-  </footer>
+  <script src="/assets/js/tvk-master.js?v=4"></script>
 </body>
 </html>
-
