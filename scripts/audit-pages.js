@@ -8,7 +8,7 @@ const { ROOT, LANGUAGES } = require('./tvk-shared');
 
 const PAGES = ['index.html','about.html','companies.html','ecosystem.html','technologies.html','industries.html','strategic-partnerships.html','investor-relations.html','insights.html','contact.html','legal.html','privacy.html','terms.html','company.html','work.html'];
 const OLD = [/background-color:\s*#000/i, /font-family:\s*sans-serif/i, /tvk-master\.css\?v=3/i];
-const NEW = [/tvk-master\.css\?v=6/i, /class="tvk-nav"/];
+const NEW = [/tvk-master\.css\?v=7/i, /class="tvk-nav"/];
 
 let issues = [];
 LANGUAGES.forEach(l => {

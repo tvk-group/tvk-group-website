@@ -68,51 +68,58 @@ const GROUP_COMPANIES = [
 
 const ECOSYSTEM_CATEGORIES = [
   {
-    id: 'ai', title: 'AI & Intelligence', projects: [
-      { name: 'SOVRA', desc: 'AI decision intelligence and reasoning systems under R&D.', stage: 'Under R&D', url: '' },
-      { name: 'Cerebthra', desc: 'Cognitive architecture and neural reasoning framework.', stage: 'Under development', url: '' },
-      { name: 'Sentient Signals', desc: 'Signal processing and intelligence analytics.', stage: 'Under development', url: 'https://sentientsignals.io', img: 'sentientsignals_logo.png' }
+    id: 'ai', title: 'AI & Intelligence', desc: 'Decision intelligence, cognitive architectures and signal analytics across the ecosystem.',
+    projects: [
+      { name: 'SOVRA', desc: 'AI decision intelligence and reasoning systems under structured R&D.', detail: 'Multi-layer reasoning pipelines for enterprise coordination, protocol logic and strategic decision support.', stage: 'Under R&D', url: '', icon: 'fa-brain', tags: ['Reasoning', 'Decision AI'] },
+      { name: 'Cerebthra', desc: 'Cognitive architecture and neural reasoning framework.', detail: 'Foundational cognitive model for structured intelligence layers within TVK protocol research.', stage: 'Under development', url: '', icon: 'fa-network-wired', tags: ['Cognitive AI', 'Architecture'] },
+      { name: 'Sentient Signals', desc: 'Signal processing and intelligence analytics.', detail: 'Analytics layer for pattern detection, signal interpretation and intelligence workflows.', stage: 'Under development', url: 'https://sentientsignals.io', img: 'sentientsignals_logo.png', tags: ['Analytics', 'Signals'] }
     ]
   },
   {
-    id: 'trust', title: 'Trust & Verification', projects: [
-      { name: 'EnteleKRON', desc: 'Foundational coordination layer with modular protocol architecture.', stage: 'Under R&D', url: 'https://entelekron.org', img: 'entelekron_logo.png' },
-      { name: 'EnteleLEDGER', desc: 'Distributed ledger coordination and audit systems.', stage: 'Under development', url: '' },
-      { name: 'EnteleLINK', desc: 'Interoperability layer for chain-to-chain communication.', stage: 'Under development', url: 'https://entelelink.com', img: 'entelelink_logo.png' },
-      { name: 'TVK ID', desc: 'Digital identity and access verification infrastructure.', stage: 'Under development', url: 'https://tvkidentity.com', img: 'tvkid_logo.png' },
-      { name: 'GraphVault', desc: 'Document integrity and knowledge vault infrastructure.', stage: 'Under R&D', url: '' },
-      { name: 'ChronoSeal', desc: 'Timestamping and proof-of-existence systems.', stage: 'Under R&D', url: '' },
-      { name: 'EnteleSCAN', desc: 'Biometric and decentralized identity authentication.', stage: 'Under development', url: 'https://entelescan.com', img: 'entelescan_logo.png' }
+    id: 'trust', title: 'Trust & Verification', desc: 'Identity, ledger coordination, audit trails and proof systems for digital trust.',
+    projects: [
+      { name: 'EnteleKRON', desc: 'Foundational coordination layer with modular protocol architecture.', detail: 'Core ecosystem coordination protocol — modular layers for trust, governance and interoperability.', stage: 'Under R&D', url: 'https://entelekron.org', img: 'entelekron_logo.png', tags: ['Protocol', 'Coordination'] },
+      { name: 'EnteleLEDGER', desc: 'Distributed ledger coordination and audit systems.', detail: 'Ledger structures for auditability, coordination records and verification workflows.', stage: 'Under development', url: '', icon: 'fa-book', tags: ['Ledger', 'Audit'] },
+      { name: 'EnteleLINK', desc: 'Interoperability layer for chain-to-chain communication.', detail: 'Cross-chain messaging and interoperability bridge for ecosystem asset coordination.', stage: 'Under development', url: 'https://entelelink.com', img: 'entelelink_logo.png', tags: ['Interop', 'Bridge'] },
+      { name: 'TVK ID', desc: 'Digital identity and access verification infrastructure.', detail: 'Identity credentials, access control and verification for future pilot environments.', stage: 'Under development', url: 'https://tvkidentity.com', img: 'tvkid_logo.png', tags: ['Identity', 'Access'] },
+      { name: 'GraphVault', desc: 'Document integrity and knowledge vault infrastructure.', detail: 'Knowledge graph storage with integrity verification for documents and records.', stage: 'Under R&D', url: '', icon: 'fa-vault', tags: ['Documents', 'Integrity'] },
+      { name: 'ChronoSeal', desc: 'Timestamping and proof-of-existence systems.', detail: 'Cryptographic timestamping for existence proofs and audit trail anchoring.', stage: 'Under R&D', url: '', icon: 'fa-clock', tags: ['Timestamp', 'Proof'] },
+      { name: 'EnteleSCAN', desc: 'Biometric and decentralized identity authentication.', detail: 'Biometric verification and decentralized identity authentication protocols.', stage: 'Under development', url: 'https://entelescan.com', img: 'entelescan_logo.png', tags: ['Biometric', 'Auth'] }
     ]
   },
   {
-    id: 'security', title: 'Security', projects: [
-      { name: 'TVK CyberLab', desc: 'Cybersecurity, digital risk and security advisory capabilities.', stage: 'Under development', url: 'https://tvkcyberlab.com', img: 'cyberlab_logo.png' },
-      { name: 'EnteleCLOS', desc: 'Secure operations and closure protocols for ecosystem assets.', stage: 'Under R&D', url: '' },
-      { name: 'EnteleVAULT', desc: 'Vault-grade secure storage for identity and governance assets.', stage: 'Under development', url: 'https://entelevault.com', img: 'entelevault_logo.png' }
+    id: 'security', title: 'Security', desc: 'Cybersecurity, secure operations and vault-grade protective infrastructure.',
+    projects: [
+      { name: 'TVK CyberLab', desc: 'Cybersecurity, digital risk and security advisory capabilities.', detail: 'Security research, digital risk frameworks and advisory for ecosystem deployments.', stage: 'Under development', url: 'https://tvkcyberlab.com', img: 'cyberlab_logo.png', tags: ['Cybersecurity', 'Risk'] },
+      { name: 'EnteleCLOS', desc: 'Secure operations and closure protocols for ecosystem assets.', detail: 'Operational security protocols for asset closure, handover and secure state transitions.', stage: 'Under R&D', url: '', icon: 'fa-lock', tags: ['Operations', 'Protocols'] },
+      { name: 'EnteleVAULT', desc: 'Vault-grade secure storage for identity and governance assets.', detail: 'High-assurance storage for identity keys, governance assets and sensitive credentials.', stage: 'Under development', url: 'https://entelevault.com', img: 'entelevault_logo.png', tags: ['Vault', 'Storage'] }
     ]
   },
   {
-    id: 'energy', title: 'Energy', projects: [
-      { name: 'EnergieMIND', desc: 'Energy intelligence and infrastructure optimization.', stage: 'Under development', url: 'https://energiemind.com' },
-      { name: 'ENM', desc: 'Energy network modules for intelligent infrastructure coordination.', stage: 'Under R&D', url: '' }
+    id: 'energy', title: 'Energy', desc: 'Energy intelligence, infrastructure optimization and network coordination modules.',
+    projects: [
+      { name: 'EnergieMIND', desc: 'Energy intelligence and infrastructure optimization.', detail: 'Smart coordination for energy systems, industrial infrastructure and optimization analytics.', stage: 'Under development', url: 'https://energiemind.com', img: 'energiemind_logo.png', tags: ['Energy', 'Intelligence'] },
+      { name: 'ENM', desc: 'Energy network modules for intelligent infrastructure coordination.', detail: 'Modular network components for distributed energy infrastructure coordination.', stage: 'Under R&D', url: '', icon: 'fa-bolt', tags: ['Grid', 'Modules'] }
     ]
   },
   {
-    id: 'human', title: 'Human & Health Technologies', projects: [
-      { name: 'ALVINA', desc: 'Human-centric AI expression and emotional intelligence layer.', stage: 'Under development', url: 'https://alvina.app', img: 'alvina_logo.png' },
-      { name: 'Ava Sentient', desc: 'Advanced AI presence and interaction systems.', stage: 'Under development', url: 'https://avasentient.com', img: 'avasentient_logo.png' },
-      { name: 'Ava Santé', desc: 'AI-assisted health and wellness technologies.', stage: 'Under development', url: 'https://avasante.com', img: 'avasante_logo.png' }
+    id: 'human', title: 'Human & Health Technologies', desc: 'Human-centric AI, presence systems and wellness technologies.',
+    projects: [
+      { name: 'ALVINA', desc: 'Human-centric AI expression and emotional intelligence layer.', detail: 'Expressive AI interface designed around human emotional intelligence and interaction.', stage: 'Under development', url: 'https://alvina.app', img: 'alvina_logo.png', tags: ['Human AI', 'Expression'] },
+      { name: 'Ava Sentient', desc: 'Advanced AI presence and interaction systems.', detail: 'Presence and interaction layer for advanced AI-assisted communication environments.', stage: 'Under development', url: 'https://avasentient.com', img: 'avasentient_logo.png', tags: ['Presence', 'Interaction'] },
+      { name: 'Ava Santé', desc: 'AI-assisted health and wellness technologies.', detail: 'Wellness and health-adjacent technologies under structured development and validation.', stage: 'Under development', url: 'https://avasante.com', img: 'avasante_logo.png', tags: ['Wellness', 'Health'] }
     ]
   },
   {
-    id: 'social', title: 'Social Impact', projects: [
-      { name: 'PuppyKRON', desc: 'Social impact initiative within the ecosystem architecture.', stage: 'Concept / early development', url: '' }
+    id: 'social', title: 'Social Impact', desc: 'Initiatives connecting technology development with social responsibility.',
+    projects: [
+      { name: 'PuppyKRON', desc: 'Social impact initiative within the ecosystem architecture.', detail: 'Early-stage social impact concept integrated into the broader ecosystem design philosophy.', stage: 'Concept / early development', url: '', icon: 'fa-paw', tags: ['Social impact', 'Community'] }
     ]
   },
   {
-    id: 'digital', title: 'Digital Asset Experiments', projects: [
-      { name: 'KRON Ecosystem Assets', desc: 'Experimental ecosystem tokens under research — not investment products. Mentioned for architectural transparency only.', stage: 'Experimental / R&D', url: 'https://entelekron.org' }
+    id: 'digital', title: 'Digital Asset Experiments', desc: 'Experimental architecture components — research only, not investment products.',
+    projects: [
+      { name: 'KRON Ecosystem Assets', desc: 'Experimental ecosystem tokens under research — not investment products.', detail: 'Architectural transparency only. Experimental tokens under R&D with no investment solicitation.', stage: 'Experimental / R&D', url: 'https://entelekron.org', icon: 'fa-flask', tags: ['Experimental', 'R&D only'] }
     ]
   }
 ];
@@ -305,7 +312,7 @@ function headHtml(lang, title, desc, page = 'index.html') {
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=6" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=7" />
 </head>` };
 }
 
@@ -315,7 +322,7 @@ function ambient() {
 
 function scripts(includeEco = false) {
   const s = includeEco ? `\n<script>window.TVK_ECOSYSTEMS=${JSON.stringify(ECOSYSTEMS)};</script>` : '';
-  return `${s}\n<script src="/assets/js/tvk-master.js?v=6"></script>\n</body>\n</html>`;
+  return `${s}\n<script src="/assets/js/tvk-master.js?v=7"></script>\n</body>\n</html>`;
 }
 
 function pageHero(h1, lead) {
@@ -326,13 +333,45 @@ function sectionHeader(label, h2, p) {
   return `<div class="tvk-section-header tvk-reveal"><span class="tvk-section-label">${label}</span><h2>${h2}</h2>${p ? `<p>${p}</p>` : ''}</div>`;
 }
 
-function ecosystemCategoryHtml(cat, compact = false) {
-  const items = cat.projects.map(p => {
-    const img = p.img ? `<img src="/assets/${p.img}" alt="${p.name}" class="tvk-eco-thumb" loading="lazy" />` : '';
-    const link = p.url ? `<a href="${p.url}" target="_blank" rel="noopener">${p.name}</a>` : p.name;
-    return `<div class="tvk-eco-item${compact ? ' compact' : ''}">${img}<div><h4>${link}</h4><p>${p.desc}</p><span class="tvk-stage-badge">${p.stage}</span></div></div>`;
-  }).join('');
-  return `<div class="tvk-eco-category" id="${cat.id}"><h3>${cat.title}</h3><div class="tvk-eco-items">${items}</div></div>`;
+function ecosystemProjectCard(p, lang, compact) {
+  const visit = t(lang, 'visitWebsite');
+  const mediaInner = p.img
+    ? `<img src="/assets/${p.img}" alt="${p.name}" loading="lazy" />`
+    : `<i class="fa-solid ${p.icon || 'fa-cube'}"></i>`;
+  const media = p.url
+    ? `<a href="${p.url}" target="_blank" rel="noopener" class="tvk-eco-card-media${p.img ? '' : ' tvk-eco-card-media-icon'}">${mediaInner}</a>`
+    : `<div class="tvk-eco-card-media${p.img ? '' : ' tvk-eco-card-media-icon'}">${mediaInner}</div>`;
+  const title = p.url
+    ? `<a href="${p.url}" target="_blank" rel="noopener">${p.name}</a>`
+    : p.name;
+  const detail = p.detail ? `<p class="tvk-eco-card-detail">${p.detail}</p>` : '';
+  const tags = p.tags && p.tags.length
+    ? `<ul class="tvk-eco-card-tags">${p.tags.map(tg => `<li>${tg}</li>`).join('')}</ul>` : '';
+  const link = p.url
+    ? `<a href="${p.url}" target="_blank" rel="noopener" class="tvk-eco-card-link">${visit} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : '';
+  return `<article class="tvk-eco-card${compact ? ' tvk-eco-card-sm' : ''}">
+    ${media}
+    <div class="tvk-eco-card-body">
+      <h4>${title}</h4>
+      <p class="tvk-eco-card-desc">${p.desc}</p>
+      ${detail}
+      ${tags}
+      <div class="tvk-eco-card-footer">
+        <span class="tvk-stage-badge">${p.stage}</span>
+        ${link}
+      </div>
+    </div>
+  </article>`;
+}
+
+function ecosystemCategoryHtml(cat, lang = 'en', compact = false) {
+  const items = cat.projects.map(p => ecosystemProjectCard(p, lang, compact)).join('');
+  const gridClass = compact ? 'tvk-eco-grid tvk-eco-grid-compact' : 'tvk-eco-grid';
+  const catDesc = cat.desc ? `<p class="tvk-eco-cat-desc">${cat.desc}</p>` : '';
+  return `<div class="tvk-eco-category" id="${cat.id}">
+    <div class="tvk-eco-cat-header"><h3>${cat.title}</h3>${catDesc}</div>
+    <div class="${gridClass}">${items}</div>
+  </div>`;
 }
 
 function contactForm(lang) {

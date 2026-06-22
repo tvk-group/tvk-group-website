@@ -49,7 +49,7 @@ ${S.navHtml(lang, 'index.html')}
   <div class="tvk-container">
     ${S.sectionHeader(S.t(lang, 'ecosystemLabel'), S.t(lang, 'ecosystemH2'), S.t(lang, 'ecosystemP'))}
     <div class="tvk-eco-preview tvk-reveal">
-      ${S.getEcosystemCategories(lang).map(c => S.ecosystemCategoryHtml(c, true)).join('')}
+      ${S.getEcosystemCategories(lang).map(c => S.ecosystemCategoryHtml(c, lang, true)).join('')}
     </div>
     <div class="tvk-section-cta tvk-reveal"><a href="/${lang}/ecosystem.html" class="tvk-btn tvk-btn-primary">View Full Ecosystem <i class="fa-solid fa-arrow-right"></i></a></div>
   </div>
