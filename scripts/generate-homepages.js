@@ -48,6 +48,7 @@ ${S.navHtml(lang, 'index.html')}
 <section class="tvk-section" id="ecosystem">
   <div class="tvk-container">
     ${S.sectionHeader(S.t(lang, 'ecosystemLabel'), S.t(lang, 'ecosystemH2'), S.t(lang, 'ecosystemP'))}
+    <div class="tvk-ecosystem-embed tvk-reveal"><iframe src="https://entelewallet.app/ecosystem-animation/embed.html" title="EnteleKRON Ecosystem — 28 modules" width="100%" height="360" style="border:0;max-width:1200px;display:block;margin:0 auto;" loading="lazy"></iframe></div>
     <div class="tvk-eco-preview tvk-reveal">
       ${S.getEcosystemCategories(lang).map(c => S.ecosystemCategoryHtml(c, lang, true)).join('')}
     </div>
