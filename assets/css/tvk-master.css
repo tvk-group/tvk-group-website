@@ -286,7 +286,7 @@ body[dir="rtl"] { direction: rtl; }
 .tvk-ecosystem-embed {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 2.5rem;
 }
 
 .tvk-ecosystem-embed iframe {
