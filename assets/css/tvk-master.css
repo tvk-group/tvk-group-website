@@ -282,6 +282,17 @@ body[dir="rtl"] { direction: rtl; }
   transform: translateY(0);
 }
 
+/* EnteleKRON ecosystem animation embed */
+.tvk-ecosystem-embed {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tvk-ecosystem-embed iframe {
+  border-radius: var(--tvk-radius-lg);
+}
+
 /* Ecosystem Galaxy */
 .tvk-galaxy-wrap {
   position: relative;
