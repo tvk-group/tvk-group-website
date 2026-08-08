@@ -28,6 +28,26 @@ ${S.navHtml(lang, 'index.html')}
 
 <section class="tvk-stage-notice"><div class="tvk-container"><div class="tvk-stage-notice-inner"><i class="fa-solid fa-circle-info"></i><p>${S.t(lang, 'stageNotice')}</p></div></div></section>
 
+<section class="tvk-brand-panorama" aria-label="TVK Group — Infrastructure for the Intelligent Age">
+  <div class="tvk-brand-panorama-inner tvk-reveal">
+    <picture>
+      <source media="(max-width: 640px)" srcset="/assets/tvk-group-intelligent-age-mobile.webp" />
+      <source
+        srcset="/assets/tvk-group-intelligent-age-960.webp 960w, /assets/tvk-group-intelligent-age-1672.webp 1672w"
+        sizes="(max-width: 1800px) calc(100vw - 4rem), 1672px"
+      />
+      <img
+        src="/assets/tvk-group-intelligent-age-1672.webp"
+        width="1672"
+        height="941"
+        alt="TVK Group — Infrastructure for the Intelligent Age"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+  </div>
+</section>
+
 <section class="tvk-section" id="overview">
   <div class="tvk-container">
     ${S.sectionHeader(S.t(lang, 'overviewLabel'), S.t(lang, 'overviewH2'), S.t(lang, 'overviewP'))}
