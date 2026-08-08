@@ -294,6 +294,9 @@ function footerHtml(lang) {
 function headHtml(lang, title, desc, page = 'index.html') {
   const l = LANGUAGES.find(x => x.code === lang);
   const dir = l.rtl ? ' dir="rtl"' : '';
+  const socialImage = page === 'index.html'
+    ? 'https://tvk.group/assets/tvk-group-intelligent-age-og.jpg'
+    : 'https://tvk.group/og-preview.jpg';
   return { dir, html: `<!DOCTYPE html>
 <html lang="${lang}"${dir}>
 <head>
@@ -308,11 +311,15 @@ function headHtml(lang, title, desc, page = 'index.html') {
   <meta property="og:description" content="${desc}" />
   <meta property="og:url" content="https://tvk.group/${lang}/${page}" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://tvk.group/og-preview.jpg" />
+  <meta property="og:image" content="${socialImage}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="TVK Group — Infrastructure for the Intelligent Age" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="${socialImage}" />
   <link rel="icon" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=7" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=8" />
 </head>` };
 }
 

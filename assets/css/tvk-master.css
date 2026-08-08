@@ -218,6 +218,31 @@ body[dir="rtl"] { direction: rtl; }
   opacity: 0.7;
 }
 
+/* Group vision panorama */
+.tvk-brand-panorama {
+  background: linear-gradient(180deg, var(--tvk-soft-blue), #fff);
+  padding: 1.5rem 2rem 4.5rem;
+}
+
+.tvk-brand-panorama-inner {
+  border: 1px solid rgba(30, 64, 175, 0.14);
+  border-radius: calc(var(--tvk-radius-lg) + 2px);
+  box-shadow: 0 28px 70px rgba(7, 26, 61, 0.16);
+  margin: 0 auto;
+  max-width: 1672px;
+  overflow: hidden;
+}
+
+.tvk-brand-panorama picture,
+.tvk-brand-panorama img {
+  display: block;
+  width: 100%;
+}
+
+.tvk-brand-panorama img {
+  height: auto;
+}
+
 /* Section base */
 .tvk-section {
   padding: 6rem 2rem;
@@ -1035,4 +1060,6 @@ body[dir="rtl"] { direction: rtl; }
   .tvk-hero h1 { font-size: 1.75rem; }
   .tvk-two-col, .tvk-contact-layout, .tvk-form-row { grid-template-columns: 1fr; flex-direction: column; display: flex; }
   .tvk-hero-ctas { flex-direction: column; align-items: center; }
+  .tvk-brand-panorama { padding: 1rem 1rem 3rem; }
+  .tvk-brand-panorama-inner { border-radius: var(--tvk-radius); }
 }
