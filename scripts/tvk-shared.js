@@ -290,7 +290,7 @@ function headHtml(lang, title, desc, page = 'index.html') {
   <meta name="twitter:image" content="${socialImage}" />
   <link rel="icon" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=8" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=9" />
 </head>` };
 }
 
@@ -331,7 +331,7 @@ function ecosystemLayerHtml(lang, modifier = '') {
     </div>
     <div class="tvk-layer-map tvk-reveal" aria-label="EnteleKRON ecosystem architecture">
       <div class="tvk-layer-core">
-        <img src="/assets/entelekron_logo.png" alt="" />
+        <img src="/assets/ecosystem/entelekron-transparent.svg" alt="EnteleKRON" />
         <strong>EnteleKRON</strong>
         <span>Unified coordination layer</span>
       </div>
