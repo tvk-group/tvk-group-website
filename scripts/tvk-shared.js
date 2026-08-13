@@ -3,6 +3,12 @@
  */
 const path = require('path');
 const { LOCALE_OVERRIDES, WORK_ROLES_EN, ECO_CAT_I18N } = require('./i18n-content');
+const {
+  ECOSYSTEM_CATEGORIES,
+  HOMEPAGE_PROJECTS
+} = require('./ecosystem-registry');
+const FINANCIAL_LAYER_EN = require('../content/entelekron-financial-layer.en.json');
+const FINANCIAL_LAYER_TR = require('../content/entelekron-financial-layer.tr.json');
 const ROOT = path.join(__dirname, '..');
 
 const LANGUAGES = [
@@ -66,81 +72,6 @@ const GROUP_COMPANIES = [
   { id: 'ventures', flag: '🌐', title: 'Future Ventures', subtitle: 'Venture Development', role: 'Pipeline for sector-specific ventures and future group companies under structured validation.', focus: ['Venture building', 'Sector pilots', 'Strategic validation'], status: 'Under development', planned: true }
 ];
 
-const ECOSYSTEM_CATEGORIES = [
-  {
-    id: 'ai', title: 'AI & Intelligence', desc: 'Decision intelligence, cognitive architectures and signal analytics across the ecosystem.',
-    projects: [
-      { name: 'SOVRA', desc: 'AI decision intelligence and reasoning systems under structured R&D.', detail: 'Multi-layer reasoning pipelines for enterprise coordination, protocol logic and strategic decision support.', stage: 'Under R&D', url: '', icon: 'fa-brain', tags: ['Reasoning', 'Decision AI'] },
-      { name: 'Cerebthra', desc: 'Cognitive architecture and neural reasoning framework.', detail: 'Foundational cognitive model for structured intelligence layers within TVK protocol research.', stage: 'Under development', url: '', icon: 'fa-network-wired', tags: ['Cognitive AI', 'Architecture'] },
-      { name: 'Sentient Signals', desc: 'Signal processing and intelligence analytics.', detail: 'Analytics layer for pattern detection, signal interpretation and intelligence workflows.', stage: 'Under development', url: 'https://sentientsignals.io', img: 'sentientsignals_logo.png', tags: ['Analytics', 'Signals'] }
-    ]
-  },
-  {
-    id: 'trust', title: 'Trust & Verification', desc: 'Identity, ledger coordination, audit trails and proof systems for digital trust.',
-    projects: [
-      { name: 'EnteleKRON', desc: 'Foundational coordination layer with modular protocol architecture.', detail: 'Core ecosystem coordination protocol — modular layers for trust, governance and interoperability.', stage: 'Under R&D', url: 'https://entelekron.org', img: 'entelekron_logo.png', tags: ['Protocol', 'Coordination'] },
-      { name: 'EnteleLEDGER', desc: 'Distributed ledger coordination and audit systems.', detail: 'Ledger structures for auditability, coordination records and verification workflows.', stage: 'Under development', url: '', icon: 'fa-book', tags: ['Ledger', 'Audit'] },
-      { name: 'EnteleLINK', desc: 'Interoperability layer for chain-to-chain communication.', detail: 'Cross-chain messaging and interoperability bridge for ecosystem asset coordination.', stage: 'Under development', url: 'https://entelelink.com', img: 'entelelink_logo.png', tags: ['Interop', 'Bridge'] },
-      { name: 'TVK ID', desc: 'Digital identity and access verification infrastructure.', detail: 'Identity credentials, access control and verification for future pilot environments.', stage: 'Under development', url: 'https://tvkidentity.com', img: 'tvkid_logo.png', tags: ['Identity', 'Access'] },
-      { name: 'GraphVault', desc: 'Document integrity and knowledge vault infrastructure.', detail: 'Knowledge graph storage with integrity verification for documents and records.', stage: 'Under R&D', url: '', icon: 'fa-vault', tags: ['Documents', 'Integrity'] },
-      { name: 'ChronoSeal', desc: 'Timestamping and proof-of-existence systems.', detail: 'Cryptographic timestamping for existence proofs and audit trail anchoring.', stage: 'Under R&D', url: '', icon: 'fa-clock', tags: ['Timestamp', 'Proof'] },
-      { name: 'EnteleSCAN', desc: 'Biometric and decentralized identity authentication.', detail: 'Biometric verification and decentralized identity authentication protocols.', stage: 'Under development', url: 'https://entelescan.com', img: 'entelescan_logo.png', tags: ['Biometric', 'Auth'] }
-    ]
-  },
-  {
-    id: 'security', title: 'Security', desc: 'Cybersecurity, secure operations and vault-grade protective infrastructure.',
-    projects: [
-      { name: 'TVK CyberLab', desc: 'Cybersecurity, digital risk and security advisory capabilities.', detail: 'Security research, digital risk frameworks and advisory for ecosystem deployments.', stage: 'Under development', url: 'https://tvkcyberlab.com', img: 'cyberlab_logo.png', tags: ['Cybersecurity', 'Risk'] },
-      { name: 'EnteleCLOS', desc: 'Secure operations and closure protocols for ecosystem assets.', detail: 'Operational security protocols for asset closure, handover and secure state transitions.', stage: 'Under R&D', url: '', icon: 'fa-lock', tags: ['Operations', 'Protocols'] },
-      { name: 'EnteleVAULT', desc: 'Vault-grade secure storage for identity and governance assets.', detail: 'High-assurance storage for identity keys, governance assets and sensitive credentials.', stage: 'Under development', url: 'https://entelevault.com', img: 'entelevault_logo.png', tags: ['Vault', 'Storage'] }
-    ]
-  },
-  {
-    id: 'energy', title: 'Energy', desc: 'Energy intelligence, infrastructure optimization and network coordination modules.',
-    projects: [
-      { name: 'EnergieMIND', desc: 'Energy intelligence and infrastructure optimization.', detail: 'Smart coordination for energy systems, industrial infrastructure and optimization analytics.', stage: 'Under development', url: 'https://energiemind.com', img: 'energiemind_logo.png', tags: ['Energy', 'Intelligence'] },
-      { name: 'ENM', desc: 'Energy network modules for intelligent infrastructure coordination.', detail: 'Modular network components for distributed energy infrastructure coordination.', stage: 'Under R&D', url: '', icon: 'fa-bolt', tags: ['Grid', 'Modules'] }
-    ]
-  },
-  {
-    id: 'human', title: 'Human & Health Technologies', desc: 'Human-centric AI, presence systems and wellness technologies.',
-    projects: [
-      { name: 'ALVINA', desc: 'Human-centric AI expression and emotional intelligence layer.', detail: 'Expressive AI interface designed around human emotional intelligence and interaction.', stage: 'Under development', url: 'https://alvina.app', img: 'alvina_logo.png', tags: ['Human AI', 'Expression'] },
-      { name: 'Ava Sentient', desc: 'Advanced AI presence and interaction systems.', detail: 'Presence and interaction layer for advanced AI-assisted communication environments.', stage: 'Under development', url: 'https://avasentient.com', img: 'avasentient_logo.png', tags: ['Presence', 'Interaction'] },
-      { name: 'Ava Santé', desc: 'AI-assisted health and wellness technologies.', detail: 'Wellness and health-adjacent technologies under structured development and validation.', stage: 'Under development', url: 'https://avasante.com', img: 'avasante_logo.png', tags: ['Wellness', 'Health'] }
-    ]
-  },
-  {
-    id: 'social', title: 'Social Impact', desc: 'Initiatives connecting technology development with social responsibility.',
-    projects: [
-      { name: 'PuppyKRON', desc: 'Social impact initiative within the ecosystem architecture.', detail: 'Early-stage social impact concept integrated into the broader ecosystem design philosophy.', stage: 'Concept / early development', url: '', icon: 'fa-paw', tags: ['Social impact', 'Community'] }
-    ]
-  },
-  {
-    id: 'digital', title: 'Digital Asset Experiments', desc: 'Experimental architecture components — research only, not investment products.',
-    projects: [
-      { name: 'KRON Ecosystem Assets', desc: 'Experimental ecosystem tokens under research — not investment products.', detail: 'Architectural transparency only. Experimental tokens under R&D with no investment solicitation.', stage: 'Experimental / R&D', url: 'https://entelekron.org', icon: 'fa-flask', tags: ['Experimental', 'R&D only'] }
-    ]
-  }
-];
-
-const ECOSYSTEMS = [
-  { id: 'entelekron', name: 'ENTELΞKRON', desc: 'Foundational coordination layer under R&D.', url: 'https://entelekron.org' },
-  { id: 'sovra', name: 'SOVRA', desc: 'AI decision intelligence and reasoning systems.', url: '' },
-  { id: 'tvklabs', name: 'TVK Labs', desc: 'Research and development core.', url: 'https://tvklabs.com' },
-  { id: 'entelescan', name: 'EnteleSCAN', desc: 'Biometric ID and identity authentication.', url: 'https://entelescan.com' },
-  { id: 'entelelink', name: 'EnteleLINK', desc: 'Interoperability layer for chain communication.', url: 'https://entelelink.com' },
-  { id: 'entelevault', name: 'EnteleVAULT', desc: 'Vault-grade secure storage.', url: 'https://entelevault.com' },
-  { id: 'chronoseal', name: 'ChronoSeal', desc: 'Timestamping and proof-of-existence.', url: '' },
-  { id: 'graphvault', name: 'GraphVAULT', desc: 'Document integrity infrastructure.', url: '' },
-  { id: 'tvkid', name: 'TVK ID', desc: 'Digital identity infrastructure.', url: 'https://tvkidentity.com' },
-  { id: 'cerebthra', name: 'Cerebthra', desc: 'Cognitive architecture framework.', url: '' },
-  { id: 'energiemind', name: 'Energiemind', desc: 'Energy intelligence systems.', url: 'https://energiemind.com' },
-  { id: 'avasante', name: 'Ava Santé', desc: 'Health and wellness technologies.', url: 'https://avasante.com' },
-  { id: 'alvina', name: 'ALVINA', desc: 'Human-centric AI expression.', url: 'https://alvina.app' },
-  { id: 'sentsig', name: 'Sentient Signals', desc: 'Signal processing and analytics.', url: 'https://sentientsignals.io' },
-  { id: 'cyberlab', name: 'TVK CyberLab', desc: 'Cybersecurity and digital risk.', url: 'https://tvkcyberlab.com' }
-];
 
 const TECH_PILLARS = [
   { icon: 'fa-brain', title: 'Artificial Intelligence', desc: 'Reasoning systems, decision intelligence and human-centric AI under structured R&D.' },
@@ -225,6 +156,11 @@ const CONTENT = {
     workNote: 'TVK Group is early-stage. All roles are subject to structured evaluation and long-term alignment review.',
     workRoles: WORK_ROLES_EN,
     focusAreas: 'Focus areas', visitWebsite: 'Visit website', viewCompaniesPage: 'View Companies Page',
+    ecosystemLayerLead: 'One connected architecture spanning protocol, intelligence, finance, security, infrastructure and ventures — presented directly in the website with no embedded window.',
+    mappedRepositories: 'mapped repositories', productFamilies: 'product families', strategicLayers: 'strategic layers',
+    repositoryCoverage: 'Repository coverage', viewFullEcosystem: 'View full ecosystem',
+    featuredProjectFamilies: 'Selected project families',
+    featuredProjectFamiliesLead: 'A cross-section of the connected ecosystem. The complete catalogue includes every mapped TVK Group repository.',
     legalTitle: 'Legal Notice', privacyTitle: 'Privacy Policy', termsTitle: 'Terms & Conditions',
     statusActive: 'Active', statusPlanned: 'Planned', statusDevelopment: 'Under development',
     stageUnderRD: 'Under R&D', stageUnderDev: 'Under development', stageConcept: 'Concept / early development', stageExperimental: 'Experimental / R&D'
@@ -244,10 +180,45 @@ function tArray(lang, key) {
 }
 
 function getEcosystemCategories(lang) {
-  return ECOSYSTEM_CATEGORIES.map(cat => ({
+  const financialSource = lang === 'tr' ? FINANCIAL_LAYER_TR : FINANCIAL_LAYER_EN;
+  const financialComponents = new Map(financialSource.components.map(component => [component.name, component]));
+  // Financial/regulatory copy is published only where reviewed locale sources
+  // exist. Other language editions keep this layer out until translation and
+  // claims review reach parity.
+  const visibleCategories = ['en', 'tr'].includes(lang)
+    ? ECOSYSTEM_CATEGORIES
+    : ECOSYSTEM_CATEGORIES.filter(category => category.id !== 'finance');
+  const sourceNames = {
+    TVKUSD: 'TVKUSD',
+    EnteleMINT: 'EnteleMINT',
+    EnteleTREASURY: 'EnteleTREASURY',
+    'Custody & Prime Brokerage': 'Prime brokerage',
+    Tokenization: 'Tokenization'
+  };
+  return visibleCategories.map(cat => ({
     ...cat,
-    title: (ECO_CAT_I18N[cat.id] && ECO_CAT_I18N[cat.id][lang]) || cat.title
+    title: (ECO_CAT_I18N[cat.id] && ECO_CAT_I18N[cat.id][lang]) || cat.title,
+    notice: cat.id === 'finance' ? financialSource.legal : cat.notice,
+    projects: cat.projects.map(project => {
+      if (cat.id !== 'finance' || !sourceNames[project.name]) return project;
+      const source = financialComponents.get(sourceNames[project.name]);
+      return source ? { ...project, desc: source.copy, detail: '', stage: source.status } : project;
+    })
   }));
+}
+
+function getHomepageEcosystemCategories(lang) {
+  const featured = new Set(HOMEPAGE_PROJECTS);
+  const projects = getEcosystemCategories(lang)
+    .flatMap(category => category.projects)
+    .filter(project => featured.has(project.name))
+    .sort((a, b) => HOMEPAGE_PROJECTS.indexOf(a.name) - HOMEPAGE_PROJECTS.indexOf(b.name));
+  return [{
+    id: 'featured',
+    title: t(lang, 'featuredProjectFamilies'),
+    desc: t(lang, 'featuredProjectFamiliesLead'),
+    projects
+  }];
 }
 
 function getGroupCompanies(lang) {
@@ -327,9 +298,8 @@ function ambient() {
   return `<canvas id="tvk-neural-canvas"></canvas><canvas id="tvk-particles-canvas"></canvas>`;
 }
 
-function scripts(includeEco = false) {
-  const s = includeEco ? `\n<script>window.TVK_ECOSYSTEMS=${JSON.stringify(ECOSYSTEMS)};</script>` : '';
-  return `${s}\n<script src="/assets/js/tvk-master.js?v=7"></script>\n</body>\n</html>`;
+function scripts() {
+  return `\n<script src="/assets/js/tvk-master.js?v=7"></script>\n</body>\n</html>`;
 }
 
 function pageHero(h1, lead) {
@@ -340,14 +310,45 @@ function sectionHeader(label, h2, p) {
   return `<div class="tvk-section-header tvk-reveal"><span class="tvk-section-label">${label}</span><h2>${h2}</h2>${p ? `<p>${p}</p>` : ''}</div>`;
 }
 
+function ecosystemLayerHtml(lang, modifier = '') {
+  const categories = getEcosystemCategories(lang);
+  const visibleRepositories = new Set(categories.flatMap(category => category.projects.flatMap(project => project.repos || [])));
+  const mappedRepositoryCount = visibleRepositories.size;
+  const productCount = categories.reduce((total, category) => total + category.projects.length, 0);
+  const layerItems = categories.map(category => `
+      <li><a href="/${lang}/ecosystem.html#${category.id}"><span>${category.title}</span><small>${category.projects.length} families</small></a></li>`).join('');
+  return `<section class="tvk-ecosystem-layer${modifier ? ` ${modifier}` : ''}" aria-labelledby="ecosystem-layer-${lang}">
+  <div class="tvk-container tvk-ecosystem-layer-inner">
+    <div class="tvk-layer-copy tvk-reveal">
+      <span class="tvk-section-label">EnteleKRON / TVK Group</span>
+      <h2 id="ecosystem-layer-${lang}">EnteleKRON Ecosystem Layer</h2>
+      <p>${t(lang, 'ecosystemLayerLead')}</p>
+      <dl class="tvk-layer-stats">
+        <div><dt>${mappedRepositoryCount}</dt><dd>${t(lang, 'mappedRepositories')}</dd></div>
+        <div><dt>${productCount}</dt><dd>${t(lang, 'productFamilies')}</dd></div>
+        <div><dt>${categories.length}</dt><dd>${t(lang, 'strategicLayers')}</dd></div>
+      </dl>
+    </div>
+    <div class="tvk-layer-map tvk-reveal" aria-label="EnteleKRON ecosystem architecture">
+      <div class="tvk-layer-core">
+        <img src="/assets/entelekron_logo.png" alt="" />
+        <strong>EnteleKRON</strong>
+        <span>Unified coordination layer</span>
+      </div>
+      <ul>${layerItems}</ul>
+    </div>
+  </div>
+</section>`;
+}
+
 function ecosystemProjectCard(p, lang, compact) {
   const visit = t(lang, 'visitWebsite');
   const mediaInner = p.img
     ? `<img src="/assets/${p.img}" alt="${p.name}" loading="lazy" />`
-    : `<i class="fa-solid ${p.icon || 'fa-cube'}"></i>`;
+    : `<span class="tvk-project-mark" aria-hidden="true">${p.mark || p.name.split(/\s+/).map(word => word[0]).join('').slice(0, 3)}</span>`;
   const media = p.url
-    ? `<a href="${p.url}" target="_blank" rel="noopener" class="tvk-eco-card-media${p.img ? '' : ' tvk-eco-card-media-icon'}">${mediaInner}</a>`
-    : `<div class="tvk-eco-card-media${p.img ? '' : ' tvk-eco-card-media-icon'}">${mediaInner}</div>`;
+    ? `<a href="${p.url}" target="_blank" rel="noopener" class="tvk-eco-card-media${p.img ? '' : ' tvk-eco-card-media-mark'}" aria-label="${p.name}">${mediaInner}</a>`
+    : `<div class="tvk-eco-card-media${p.img ? '' : ' tvk-eco-card-media-mark'}">${mediaInner}</div>`;
   const title = p.url
     ? `<a href="${p.url}" target="_blank" rel="noopener">${p.name}</a>`
     : p.name;
@@ -356,17 +357,18 @@ function ecosystemProjectCard(p, lang, compact) {
     ? `<ul class="tvk-eco-card-tags">${p.tags.map(tg => `<li>${tg}</li>`).join('')}</ul>` : '';
   const link = p.url
     ? `<a href="${p.url}" target="_blank" rel="noopener" class="tvk-eco-card-link">${visit} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>` : '';
+  const repositories = !compact && p.repos && p.repos.length
+    ? `<p class="tvk-eco-card-repos"><strong>${t(lang, 'repositoryCoverage')}:</strong> ${p.repos.map(repo => `<span>${repo}</span>`).join('<i aria-hidden="true">·</i>')}</p>` : '';
+  const optionalContent = [detail, tags, repositories].filter(Boolean).map(content => `      ${content}\n`).join('');
+  const footerLink = link ? `        ${link}\n` : '';
   return `<article class="tvk-eco-card${compact ? ' tvk-eco-card-sm' : ''}">
     ${media}
     <div class="tvk-eco-card-body">
       <h4>${title}</h4>
       <p class="tvk-eco-card-desc">${p.desc}</p>
-      ${detail}
-      ${tags}
-      <div class="tvk-eco-card-footer">
+${optionalContent}      <div class="tvk-eco-card-footer">
         <span class="tvk-stage-badge">${p.stage}</span>
-        ${link}
-      </div>
+${footerLink}      </div>
     </div>
   </article>`;
 }
@@ -375,8 +377,9 @@ function ecosystemCategoryHtml(cat, lang = 'en', compact = false) {
   const items = cat.projects.map(p => ecosystemProjectCard(p, lang, compact)).join('');
   const gridClass = compact ? 'tvk-eco-grid tvk-eco-grid-compact' : 'tvk-eco-grid';
   const catDesc = cat.desc ? `<p class="tvk-eco-cat-desc">${cat.desc}</p>` : '';
+  const catNotice = cat.notice && !compact ? `<p class="tvk-eco-cat-notice"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>${cat.notice}</p>` : '';
   return `<div class="tvk-eco-category" id="${cat.id}">
-    <div class="tvk-eco-cat-header"><h3>${cat.title}</h3>${catDesc}</div>
+    <div class="tvk-eco-cat-header"><h3>${cat.title}</h3>${catDesc}${catNotice}</div>
     <div class="${gridClass}">${items}</div>
   </div>`;
 }
@@ -399,7 +402,7 @@ function contactForm(lang) {
 
 module.exports = {
   ROOT, LANGUAGES, NAV_PAGES, HOMEPAGE_COMPANIES, GROUP_COMPANIES, ECOSYSTEM_CATEGORIES,
-  ECOSYSTEMS, TECH_PILLARS, INDUSTRIES, CONTENT, t, tArray, langOptions, hreflangTags,
-  navHtml, footerHtml, headHtml, ambient, scripts, pageHero, sectionHeader, ecosystemCategoryHtml, contactForm,
-  getEcosystemCategories, getGroupCompanies
+  TECH_PILLARS, INDUSTRIES, CONTENT, t, tArray, langOptions, hreflangTags,
+  navHtml, footerHtml, headHtml, ambient, scripts, pageHero, sectionHeader, ecosystemLayerHtml, ecosystemCategoryHtml, contactForm,
+  getEcosystemCategories, getHomepageEcosystemCategories, getGroupCompanies
 };

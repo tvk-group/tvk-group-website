@@ -41,8 +41,8 @@ function ecosystem(lang) {
   const cats = S.getEcosystemCategories(lang).map(c => S.ecosystemCategoryHtml(c, lang)).join('');
   return shell(lang, 'ecosystem.html', S.t(lang, 'ecosystemTitle'), S.t(lang, 'ecosystemLead'), `
 ${S.pageHero(S.t(lang, 'ecosystemH2'), S.t(lang, 'ecosystemLead'))}
-<section class="tvk-section tvk-section-alt"><div class="tvk-container"><div class="tvk-ecosystem-embed tvk-reveal"><iframe src="https://entelewallet.app/ecosystem-animation/embed.html" title="EnteleKRON Ecosystem — 28 modules" width="100%" height="360" style="border:0;max-width:1200px;display:block;margin:0 auto;" loading="lazy"></iframe></div></div></section>
-<section class="tvk-section"><div class="tvk-container tvk-eco-full tvk-reveal">${cats}</div></section>`, true);
+${S.ecosystemLayerHtml(lang, 'tvk-ecosystem-layer-page')}
+<section class="tvk-section tvk-ecosystem-catalogue"><div class="tvk-container tvk-eco-full tvk-reveal">${cats}</div></section>`);
 }
 
 function technologies(lang) {

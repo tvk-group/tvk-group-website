@@ -1,0 +1,69 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE680"/>
+      <stop offset="35%" stop-color="#FFC400"/>
+      <stop offset="70%" stop-color="#FF9D00"/>
+      <stop offset="100%" stop-color="#E07A00"/>
+    </linearGradient>
+
+    <linearGradient id="innerGrad" x1="20%" y1="10%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="35%" stop-color="#E8590C"/>
+      <stop offset="75%" stop-color="#B0250B"/>
+      <stop offset="100%" stop-color="#7A1404"/>
+    </linearGradient>
+
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF0"/>
+      <stop offset="45%" stop-color="#FFE27A"/>
+      <stop offset="100%" stop-color="#FFB300"/>
+    </linearGradient>
+
+    <radialGradient id="glossGrad" cx="35%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- outer gold ring -->
+  <circle cx="256" cy="256" r="220" fill="url(#ringGrad)"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#B5660A" stroke-width="4"/>
+
+  <!-- inner red/orange disc -->
+  <circle cx="256" cy="256" r="178" fill="url(#innerGrad)" stroke="#7A1404" stroke-width="4"/>
+
+  <!-- glossy highlight overlay across whole coin -->
+  <circle cx="256" cy="256" r="220" fill="url(#glossGrad)"/>
+
+  <!-- inner ring rim detail -->
+  <circle cx="256" cy="256" r="178" fill="none" stroke="#FFD86B" stroke-width="3" stroke-opacity="0.5"/>
+
+  <!-- K / lightning bolt monogram -->
+  <g>
+    <path d="
+      M 196 150
+      L 248 150
+      L 248 245
+      L 320 150
+      L 380 150
+      L 286 268
+      L 360 268
+      L 226 430
+      L 246 305
+      L 196 305
+      Z"
+      fill="url(#boltGrad)" stroke="#A85E00" stroke-width="5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#FFFDE7">
+    <path d="M 352 220 l 8 22 l 22 8 l -22 8 l -8 22 l -8 -22 l -22 -8 l 22 -8 Z"/>
+    <path d="M 386 300 l 5 14 l 14 5 l -14 5 l -5 14 l -5 -14 l -14 -5 l 14 -5 Z"/>
+  </g>
+
+  <!-- top gloss arc -->
+  <path d="M 110 170 A 200 200 0 0 1 330 90" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="14" stroke-linecap="round"/>
+</svg>
+
