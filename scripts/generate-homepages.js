@@ -65,14 +65,20 @@ ${S.navHtml(lang, 'index.html')}
   </div>
 </section>
 
-<section class="tvk-section" id="ecosystem">
+<section class="tvk-section tvk-ecosystem-intro" id="ecosystem">
   <div class="tvk-container">
     ${S.sectionHeader(S.t(lang, 'ecosystemLabel'), S.t(lang, 'ecosystemH2'), S.t(lang, 'ecosystemP'))}
-    <div class="tvk-ecosystem-embed tvk-reveal"><iframe src="https://entelewallet.app/ecosystem-animation/embed.html" title="EnteleKRON Ecosystem — 28 modules" width="100%" height="360" style="border:0;max-width:1200px;display:block;margin:0 auto;" loading="lazy"></iframe></div>
+  </div>
+</section>
+
+${S.ecosystemLayerHtml(lang, 'tvk-ecosystem-layer-home')}
+
+<section class="tvk-section tvk-ecosystem-preview-section">
+  <div class="tvk-container">
     <div class="tvk-eco-preview tvk-reveal">
-      ${S.getEcosystemCategories(lang).map(c => S.ecosystemCategoryHtml(c, lang, true)).join('')}
+      ${S.getHomepageEcosystemCategories(lang).map(c => S.ecosystemCategoryHtml(c, lang, true)).join('')}
     </div>
-    <div class="tvk-section-cta tvk-reveal"><a href="/${lang}/ecosystem.html" class="tvk-btn tvk-btn-primary">View Full Ecosystem <i class="fa-solid fa-arrow-right"></i></a></div>
+    <div class="tvk-section-cta tvk-reveal"><a href="/${lang}/ecosystem.html" class="tvk-btn tvk-btn-primary">${S.t(lang, 'viewFullEcosystem')} <i class="fa-solid fa-arrow-right"></i></a></div>
   </div>
 </section>
 
@@ -118,7 +124,7 @@ ${S.navHtml(lang, 'index.html')}
 
 ${S.footerHtml(lang)}
 </div>
-${S.scripts(true)}`;
+${S.scripts()}`;
 }
 
 S.LANGUAGES.forEach(l => {

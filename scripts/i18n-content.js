@@ -14,6 +14,11 @@ const LOCALE_OVERRIDES = {
     footerTagline: 'Yeni dijital ekonomi için teknoloji, altyapı ve inovasyon.',
     footerLegal: 'Yasal', footerPrivacy: 'Gizlilik', footerTerms: 'Şartlar', footerWork: 'Kariyer', footerLegacy: 'Şirket Dizini',
     focusAreas: 'Odak alanları', visitWebsite: 'Web sitesini ziyaret et', viewCompaniesPage: 'Şirketler sayfasına git',
+    ecosystemLayerLead: 'Protokol, zekâ, finans, güvenlik, altyapı ve girişimleri tek mimaride birleştiren; gömülü pencere olmadan doğrudan web sitesinde sunulan bağlantılı ekosistem.',
+    mappedRepositories: 'eşlenen depo', productFamilies: 'proje ailesi', strategicLayers: 'stratejik katman',
+    repositoryCoverage: 'Depo kapsamı', viewFullEcosystem: 'Tüm ekosistemi görüntüle',
+    featuredProjectFamilies: 'Seçili proje aileleri',
+    featuredProjectFamiliesLead: 'Bağlantılı ekosistemden seçili bir görünüm. Tam katalog, eşlenen tüm TVK Group depolarını kapsar.',
     companyLegacyTitle: 'TVK Group Şirket Dizini', companyLegacyH1: 'Şirket Dizini', companyLegacyLead: 'TVK Group holding yapısındaki tüm operasyonel ve planlanan şirketler.',
     workTitle: 'TVK Group Kariyer', workH1: 'TVK Group ile Çalışın', workLead: 'Erken aşama teknoloji ekosisteminde katkıda bulunanlar ve stratejik yetenekler için.',
     workP1: 'TVK Group, araştırma, geliştirme ve ekosistem oluşturma aşamasında multidisipliner katkıda bulunanlar aramaktadır.',
@@ -174,6 +179,13 @@ const WORK_ROLES_EN = [
 
 // Ecosystem category title translations
 const ECO_CAT_I18N = {
+  core: { tr: 'Temel Protokol ve Dijital Güven' },
+  intelligence: { tr: 'Yapay Zekâ, Zekâ ve İnsan Sistemleri' },
+  finance: { tr: 'Finans ve Piyasa Altyapısı' },
+  infrastructure: { tr: 'Enerji, Altyapı ve Yörünge Sistemleri' },
+  kron: { tr: 'KRON Ekosistem Deneyleri' },
+  ventures: { tr: 'Girişimler, Markalar ve Deneyimler' },
+  operations: { tr: 'Ekosistem Operasyonları ve Araştırma' },
   ai: { tr: 'Yapay Zeka ve Zeka', de: 'KI & Intelligenz', fr: 'IA & Intelligence', es: 'IA e Inteligencia', ar: 'الذكاء الاصطناعي', zh: '人工智能', ja: 'AIとインテリジェンス', ru: 'ИИ и интеллект' },
   trust: { tr: 'Güven ve Doğrulama', de: 'Vertrauen & Verifizierung', fr: 'Confiance & Vérification', es: 'Confianza y Verificación' },
   security: { tr: 'Güvenlik', de: 'Sicherheit', fr: 'Sécurité', es: 'Seguridad', ar: 'الأمن' },
