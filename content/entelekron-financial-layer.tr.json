@@ -1,0 +1,53 @@
+{
+  "locale": "tr",
+  "page_id": "entelekron-financial-layer",
+  "version": "1.0.0",
+  "status": "approved-source-draft",
+  "eyebrow": "EnteleKRON finansal katman yol haritası",
+  "headline": "Kanıtla aktive edilen birleşik bir finansal ekosistem",
+  "lead": "EnteleKRON'un önceki hedefleri, ürünleri, ENK tokenomisi ve Ethereum güvenli L2 yönü değişmeden korunur. Finansal katman; ayrı yönetişim altındaki stablecoin, mint, hazine, saklama, ödeme, kurumsal hizmetler ve tokenizasyon mimarisini ekler.",
+  "components": [
+    {
+      "name": "TVKUSD",
+      "status": "Planlandı — ihraç edilmedi",
+      "copy": "İhraççı, rezerv, itfa, muhasebe, denetim ve ülke bazlı yetki kapıları olan ayrı bir fiat destekli yükümlülüktür. ENK'nın yerini almaz."
+    },
+    {
+      "name": "EnteleMINT",
+      "status": "Mimari",
+      "copy": "Kanıta dayalı ihraç ve yakım kontrolleridir. Bir ödeme talebi veya arayüz işlemi tek başına değer basamaz."
+    },
+    {
+      "name": "EnteleTREASURY",
+      "status": "Mimari",
+      "copy": "Rezerv-yükümlülük, işletme sermayesi, kurumsal hazine, ENK hazinesi ve teminat kayıtları ayrı tutulur."
+    },
+    {
+      "name": "Saklama ve ödemeler",
+      "status": "Ülke ve faaliyet bazlı",
+      "copy": "Kanonik varlık doğrulaması, müşteri varlıklarının ayrıştırılması ve ürün/faaliyet/tüzel kişi/ülke bazında kesin aktivasyon gerekir."
+    },
+    {
+      "name": "Prime brokerage",
+      "status": "Yol haritası",
+      "copy": "İşlem, saklama, finansman, teminat, takas ve raporlama ayrı ayrı onaylanan hizmetlerdir; tek bir küresel izin değildir."
+    },
+    {
+      "name": "Tokenizasyon",
+      "status": "Yol haritası",
+      "copy": "Zincir üstü temsil oluşturulmadan önce hukuki haklar ve ihraççı kanıtı mevcut olmalıdır."
+    }
+  ],
+  "invariants": [
+    "ENK, azami 100 milyar arzlı ekosistem erişim, yönetişim ve ağ fayda varlığı olarak kalır.",
+    "TVKUSD hiçbir zaman ENK arzına, tahsislerine, satış envanterine veya rezervlerine dahil edilmez.",
+    "Kesin ve tarihli kanıt olmadan hiçbir EnteleKRON kuruluşu banka veya her yerde lisanslı olarak tanımlanmaz.",
+    "Yol haritasındaki bir kabiliyet aktif ürün gibi sunulmaz.",
+    "Mevcut düzenleme temelinde Türkiye'deki kripto ödeme rotaları kapalı kalır."
+  ],
+  "cta": {
+    "label": "Mimariyi inceleyin",
+    "href": "https://github.com/tvk-group/tvk-docs/pull/2"
+  },
+  "legal": "İleriye dönük mimaridir. Teklif, mevduat, banka hesabı, ödeme hizmeti, saklama hizmeti, yatırım hizmeti veya mevcut lisans beyanı değildir."
+}
