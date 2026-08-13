@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>T.V.K. Labs LTD</title>
+  <meta property="og:image" content="/assets/tvklabs_logo.jpg">
+  <link rel="icon" href="/assets/tvklabs_logo.jpg">
   <style>
     body { font-family: sans-serif; margin: 0; padding: 0; background: #fff; color: #111; }
     header {
-      background: url('/img/tvk-labs.jpg') center/cover no-repeat;
-      height: 300px; display: flex; flex-direction: column;
+      min-height: 360px; display: flex; flex-direction: column;
       justify-content: center; align-items: center; color: white;
+      background: radial-gradient(circle at 50% 35%, #0a2740 0%, #061722 48%, #031019 100%);
       text-shadow: 0 2px 6px rgba(0,0,0,0.5);
     }
+    .tvk-labs-logo { width: min(560px, 82vw); height: auto; display: block; border-radius: 24px; box-shadow: 0 28px 70px rgba(0,0,0,.32); }
     h1 { margin: 0; font-size: 2rem; }
     .content { padding: 2rem; max-width: 900px; margin: auto; }
     .backlink { text-align: center; margin-top: 2rem; }
@@ -18,7 +21,8 @@
 </head>
 <body>
   <header>
-    <h1>T.V.K. Labs LTD</h1>
+    <img class="tvk-labs-logo" src="/assets/tvklabs_logo.jpeg" alt="T.V.K. Labs — Innovare ad Futurum" width="1024" height="1024" />
+    <h1 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">T.V.K. Labs LTD</h1>
     <p>🇬🇧 United Kingdom</p>
   </header>
   <div class="content">
