@@ -14,7 +14,7 @@ const LOCALE_OVERRIDES = {
     footerTagline: 'Yeni dijital ekonomi için teknoloji, altyapı ve inovasyon.',
     footerLegal: 'Yasal', footerPrivacy: 'Gizlilik', footerTerms: 'Şartlar', footerWork: 'Kariyer', footerLegacy: 'Şirket Dizini',
     focusAreas: 'Odak alanları', visitWebsite: 'Web sitesini ziyaret et', viewCompaniesPage: 'Şirketler sayfasına git',
-    ecosystemLayerLead: 'Protokol, zekâ, finans, güvenlik, altyapı ve girişimleri tek mimaride birleştiren; gömülü pencere olmadan doğrudan web sitesinde sunulan bağlantılı ekosistem.',
+    ecosystemLayerLead: 'Protokol, zekâ, finans, güvenlik, altyapı, deneyler ve operasyonları tek mimaride birleştiren; gömülü pencere olmadan doğrudan web sitesinde sunulan bağlantılı ekosistem.',
     mappedRepositories: 'eşlenen depo', productFamilies: 'proje ailesi', strategicLayers: 'stratejik katman',
     repositoryCoverage: 'Depo kapsamı', viewFullEcosystem: 'Tüm ekosistemi görüntüle',
     featuredProjectFamilies: 'Seçili proje aileleri',

@@ -35,7 +35,10 @@ const GITHUB_REPOSITORY_SNAPSHOT = [
 
 const EXCLUDED_REPOSITORIES = {
   'archive-tvk-site': 'Archived legacy website; superseded by the current group website.',
-  'tvk-group-website': 'The catalogue website itself, not an ecosystem product.'
+  'tvk-group-website': 'The catalogue website itself, not an ecosystem product.',
+  'LoNDoN-the-secret-of-women': 'Unrelated repository; explicitly excluded from the TVK Group ecosystem.',
+  'nadiia.moves': 'Unrelated repository; explicitly excluded from the TVK Group ecosystem.',
+  'cesal': 'Unrelated repository; explicitly excluded from the TVK Group ecosystem.'
 };
 
 const P = (name, desc, options = {}) => ({ name, desc, ...options });
@@ -138,16 +141,6 @@ const ECOSYSTEM_CATEGORIES = [
       P('restoKRON', 'Experimental food-service network, application and asset family.', { stage: 'Experimental / R&D', mark: 'RK', tags: ['Network', 'Application'], repos: ['restoKRON', 'restoKRON-token', 'restokron-network', 'restokron-app'] }),
       P('PuppyKRON', 'Community and social-impact experiment within the KRON family.', { stage: 'Concept / early development', mark: 'PK', tags: ['Community', 'Social impact'], repos: ['puppykron-site', 'puppykron-token'] }),
       P('warpKRON', 'Experimental high-speed coordination concept.', { stage: 'Experimental / R&D', url: 'https://github.com/tvk-group/warpkron', mark: 'WK', tags: ['Experiment', 'Coordination'], repos: ['warpkron'] })
-    ]
-  },
-  {
-    id: 'ventures',
-    title: 'Ventures, Brands & Experiences',
-    desc: 'Consumer, lifestyle, mobility and experience ventures connected to the wider group.',
-    projects: [
-      P('LoNDoN — The Secret of Women', 'Luxury wellness and lifestyle brand within the group portfolio.', { stage: 'Active development', url: 'https://london-thesecretofwomen.com', img: 'london_logo.png', tags: ['Wellness', 'Lifestyle'], repos: ['LoNDoN-the-secret-of-women'] }),
-      P('Nadiia Moves', 'Mobility and movement-focused digital venture.', { stage: 'Under development', mark: 'NM', tags: ['Mobility', 'Experience'], repos: ['nadiia.moves'] }),
-      P('CESAL', 'Emerging consumer and experience venture.', { stage: 'Under development', mark: 'C', tags: ['Consumer', 'Venture'], repos: ['cesal'] })
     ]
   },
   {
