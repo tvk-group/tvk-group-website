@@ -148,7 +148,7 @@ const ECOSYSTEM_CATEGORIES = [
     title: 'Ecosystem Operations & Research',
     desc: 'Shared research, documentation, asset, governance and engineering capabilities.',
     projects: [
-      P('TVK Labs & Technologies', 'Research and development core for group technologies.', { stage: 'Active development', url: 'https://tvklabs.com', img: 'tvklabs_logo.png', tags: ['R&D', 'Technology'], repos: ['tvk-labs-technologies'] }),
+      P('TVK Labs & Technologies', 'Research and development core for group technologies.', { stage: 'Active development', url: 'https://tvklabs.com', img: 'tvklabs_logo.jpeg', tags: ['R&D', 'Technology'], repos: ['tvk-labs-technologies'] }),
       P('TVK Assets', 'Central brand and digital-asset repository for ecosystem delivery.', { stage: 'Internal infrastructure', mark: 'TA', tags: ['Assets', 'Brand systems'], repos: ['tvk-assets'] }),
       P('TVK Documentation', 'Architecture, governance and product documentation source.', { stage: 'Active development', mark: 'DOC', tags: ['Documentation', 'Governance'], repos: ['tvk-docs'] }),
       P('Engineering Sandbox', 'Shared prototype environment for validated interface experiments.', { stage: 'Internal R&D', mark: 'LAB', tags: ['Prototype', 'Engineering'], repos: ['vite-react'] })
