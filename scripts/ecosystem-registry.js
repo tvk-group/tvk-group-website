@@ -46,11 +46,11 @@ const ECOSYSTEM_CATEGORIES = [
     title: 'Core Protocol & Digital Trust',
     desc: 'Coordination, identity, verification, interoperability and secure digital infrastructure.',
     projects: [
-      P('EnteleKRON', 'Foundational coordination protocol for the integrated ecosystem.', { detail: 'Modular trust, governance and interoperability architecture.', stage: 'Under R&D', url: 'https://entelekron.org', img: 'entelekron_logo.png', tags: ['Protocol', 'Coordination'], repos: ['EnteleKRON', 'entelekron-OSAIC', 'entelekron-smartcontracts'] }),
+      P('EnteleKRON', 'Foundational coordination protocol for the integrated ecosystem.', { detail: 'Modular trust, governance and interoperability architecture.', stage: 'Under R&D', url: 'https://entelekron.org', img: 'ecosystem/entelekron-transparent.svg', tags: ['Protocol', 'Coordination'], repos: ['EnteleKRON', 'entelekron-OSAIC', 'entelekron-smartcontracts'] }),
       P('EnteleKRON Chain', 'Network and validator infrastructure for the protocol layer.', { stage: 'Under development', mark: 'EK', tags: ['Network', 'Validator'], repos: ['entelekron-chain', 'entelekron-validator'] }),
       P('EnteleKRON Portal', 'Controlled access point for ecosystem applications and services.', { stage: 'Under development', mark: 'EK', tags: ['Portal', 'Access'], repos: ['entelekron-portal'] }),
       P('EnteleLINK', 'Interoperability layer for chain-to-chain communication.', { stage: 'Under development', url: 'https://entelelink.com', img: 'entelelink_logo.png', tags: ['Interoperability', 'Messaging'], repos: ['entelelink'] }),
-      P('EnteleWALLET', 'Wallet experience for ecosystem identity, assets and applications.', { stage: 'Under development', url: 'https://entelewallet.app', mark: 'EW', tags: ['Wallet', 'Access'], repos: ['entelewallet-app', 'entelewallet-site'] }),
+      P('EnteleWALLET', 'Wallet experience for ecosystem identity, assets and applications.', { stage: 'Under development', url: 'https://entelewallet.app', img: 'ecosystem/entelewallet-transparent.svg', tags: ['Wallet', 'Access'], repos: ['entelewallet-app', 'entelewallet-site'] }),
       P('EnteleLEDGER', 'Distributed ledger coordination and auditable records.', { stage: 'Under development', img: 'ecosystem/enteleledger.svg', tags: ['Ledger', 'Audit'], repos: ['enteleledger'] }),
       P('EnteleSCAN', 'Biometric and decentralized identity authentication.', { stage: 'Under development', url: 'https://entelescan.com', img: 'entelescan_logo.png', tags: ['Biometrics', 'Authentication'], repos: ['entelescan'] }),
       P('TVK ID', 'Digital identity, credentials and access-verification infrastructure.', { stage: 'Under development', img: 'tvkid_logo.png', tags: ['Identity', 'Credentials'], repos: ['tvk-id'] }),
@@ -76,7 +76,7 @@ const ECOSYSTEM_CATEGORIES = [
     title: 'AI, Intelligence & Human Systems',
     desc: 'Cognitive architectures, signal intelligence, human-centric AI and wellness research.',
     projects: [
-      P('SOVRA', 'AI decision-intelligence and reasoning systems under structured R&D.', { stage: 'Under R&D', mark: 'S', tags: ['Reasoning', 'Decision AI'], repos: ['sovra-network'] }),
+      P('SOVRA', 'AI decision-intelligence and reasoning systems under structured R&D.', { stage: 'Under R&D', img: 'ecosystem/sovra.svg', tags: ['Reasoning', 'Decision AI'], repos: ['sovra-network'] }),
       P('SOVRA Protocol Asset', 'Experimental protocol-asset research supporting the SOVRA architecture.', { stage: 'Experimental / R&D', mark: 'S', tags: ['Protocol', 'Research'], repos: ['SOVRA-protocol-token'] }),
       P('Cerebthra', 'Cognitive architecture and neural-reasoning framework.', { stage: 'Under development', img: 'ecosystem/cerebthra.svg', tags: ['Cognitive AI', 'Architecture'], repos: ['Cerebthra'] }),
       P('Cognethra', 'Cognition and knowledge-synthesis research environment.', { stage: 'Under development', img: 'ecosystem/cognethra.svg', tags: ['Cognition', 'Knowledge'], repos: ['cognethra'] }),
@@ -113,7 +113,7 @@ const ECOSYSTEM_CATEGORIES = [
     title: 'Energy, Infrastructure & Orbital Systems',
     desc: 'Energy intelligence, industrial networks, infrastructure coordination and frontier systems.',
     projects: [
-      P('EnergieMIND', 'Energy intelligence, optimisation, network and commerce platform family.', { stage: 'Under development', url: 'https://energiemind.com', img: 'energiemind_logo.png', tags: ['Energy', 'Intelligence'], repos: ['energiemind-dapp', 'energiemind-main', 'energiemind-shop', 'energiemind-org', 'energiemind.network', 'energiemind.io'] }),
+      P('EnergieMIND', 'Energy intelligence, optimisation, network and commerce platform family.', { stage: 'Under development', url: 'https://energiemind.com', img: 'ecosystem/energiemind-mark.svg', tags: ['Energy', 'Intelligence'], repos: ['energiemind-dapp', 'energiemind-main', 'energiemind-shop', 'energiemind-org', 'energiemind.network', 'energiemind.io'] }),
       P('ENM Network', 'Energy-network modules for intelligent infrastructure coordination.', { stage: 'Under R&D', mark: 'ENM', tags: ['Grid', 'Coordination'], repos: ['enm-network'] }),
       P('TVK Network', 'Shared network infrastructure for TVK ecosystem services.', { stage: 'Under development', mark: 'TVK', tags: ['Network', 'Infrastructure'], repos: ['tvk-network'] }),
       P('Infrasphere Network', 'Distributed coordination layer for infrastructure systems.', { stage: 'Under development', mark: 'IS', tags: ['Infrastructure', 'Network'], repos: ['infrasphere-network'] }),
