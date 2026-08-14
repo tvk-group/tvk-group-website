@@ -8,9 +8,9 @@
   "lead": "EnteleKRON's earlier aims, products, ENK tokenomics, and Ethereum-secured L2 direction remain unchanged. The financial layer adds a separately governed stablecoin, minting, treasury, custody, payments, institutional services, and tokenization architecture.",
   "components": [
     {
-      "name": "TVKUSD",
+      "name": "TVK USD",
       "status": "Planned — not issued",
-      "copy": "A separate fiat-backed liability with issuer, reserve, redemption, ledger, audit, and jurisdiction gates. It does not replace ENK."
+      "copy": "TVK USD (TVKUSD) is a separate planned fiat-backed liability with issuer, reserve, redemption, ledger, audit, and jurisdiction gates. The purchased tvkusd.com domain is a brand entrance, not an activation. It does not replace ENK."
     },
     {
       "name": "EnteleMINT",
@@ -40,14 +40,14 @@
   ],
   "invariants": [
     "ENK remains the ecosystem access, governance, and network-utility asset with a fixed maximum supply of 100 billion.",
-    "TVKUSD never counts toward ENK supply, allocations, sale inventory, or reserves.",
+    "TVK USD (TVKUSD) never counts toward ENK supply, allocations, sale inventory, or reserves.",
     "No EnteleKRON entity is described as a bank or licensed everywhere without exact, dated evidence.",
     "A roadmap capability is not presented as live.",
     "Türkiye crypto-payment routes remain disabled under the current baseline."
   ],
   "cta": {
     "label": "Review the architecture",
-    "href": "https://github.com/tvk-group/tvk-docs/pull/2"
+    "href": "https://finance.entelekron.org/solutions/stablecoin"
   },
   "legal": "Forward-looking architecture. Not an offer, deposit, bank account, payment service, custody service, investment service, or representation of current licensing."
 }

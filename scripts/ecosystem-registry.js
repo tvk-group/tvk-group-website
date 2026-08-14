@@ -6,11 +6,12 @@
  * a reason. Run `node scripts/audit-ecosystem-registry.js` after edits.
  */
 
-const INVENTORY_DATE = '2026-08-13';
+const INVENTORY_DATE = '2026-08-14';
 
 const GITHUB_REPOSITORY_SNAPSHOT = [
   'energiemind-dapp', 'archive-tvk-site', 'entelekron-OSAIC',
   'entelekron-smartcontracts', 'entelekron-validator', 'entelelink',
+  'entelekron-financial-infrastructure',
   'tvk-assets', 'tvk-docs', 'tvk-compliance', 'tvk-group-website',
   'EnteleKRON', 'entelekron-portal', 'enteleclos', 'alvina-app',
   'tvk-labs-technologies', 'sovra-network', 'eKRON', 'AlviKRON',
@@ -97,7 +98,7 @@ const ECOSYSTEM_CATEGORIES = [
     title: 'Finance & Market Infrastructure',
     desc: 'Jurisdiction-gated architecture for stablecoin, minting, treasury, custody, payments, markets and tokenization.',
     projects: [
-      P('TVKUSD', 'Planned fiat-backed stablecoin liability, separate from ENK.', { detail: 'Issuer, reserve, redemption, ledger, audit and jurisdiction gates are required before activation.', stage: 'Planned — not issued', mark: '₮', tags: ['Stablecoin', 'Evidence gated'], repos: [] }),
+      P('TVK USD', 'Planned fiat-backed stablecoin liability, separate from ENK.', { detail: 'Issuer, reserve, redemption, ledger, audit and jurisdiction gates are required before activation.', stage: 'Planned — not issued', url: 'https://finance.entelekron.org/solutions/stablecoin', mark: '₮', tags: ['TVKUSD', 'Stablecoin', 'Evidence gated'], repos: ['entelekron-financial-infrastructure'] }),
       P('EnteleMINT', 'Evidence-gated issuance and burn-control architecture.', { stage: 'Architecture', mark: 'EM', tags: ['Minting', 'Controls'], repos: [] }),
       P('EnteleTREASURY', 'Separated reserve, liability, operating-capital and collateral books.', { stage: 'Architecture', mark: 'ET', tags: ['Treasury', 'Reserves'], repos: [] }),
       P('EntelePAY', 'Payments infrastructure designed for exact product and jurisdiction activation.', { stage: 'Jurisdiction gated', url: 'https://entelepay.com', mark: 'EP', tags: ['Payments', 'Settlement'], repos: ['entelepay'] }),
@@ -107,7 +108,7 @@ const ECOSYSTEM_CATEGORIES = [
       P('Opsline', 'Institutional operations and reporting workbench.', { stage: 'Under development', url: 'https://opsline.org', mark: 'OL', tags: ['Operations', 'Reporting'], repos: ['opsline'] }),
       P('Custody & Prime Brokerage', 'Roadmap for separately approved custody, execution, financing, collateral, settlement and reporting services.', { stage: 'Roadmap', mark: 'PB', tags: ['Custody', 'Prime services'], repos: [] }),
       P('Tokenization', 'Evidence-first architecture for representing legally established rights on-chain.', { stage: 'Roadmap', mark: 'TK', tags: ['Tokenization', 'Legal rights'], repos: [] }),
-      P('ENK Ecosystem Asset', 'Access, governance and network-utility asset architecture; separate from TVKUSD.', { stage: 'Under development', mark: 'ENK', tags: ['Utility', 'Governance'], repos: ['entelekron-token', 'EnteleKRON_token_V2_OLD'] }),
+      P('ENK Ecosystem Asset', 'Access, governance and network-utility asset architecture; separate from TVK USD (TVKUSD).', { stage: 'Under development', mark: 'ENK', tags: ['Utility', 'Governance'], repos: ['entelekron-token', 'EnteleKRON_token_V2_OLD'] }),
       P('Financial Governance', 'Compliance evidence, activation controls and policy support for the financial layer.', { stage: 'Architecture', mark: 'FG', tags: ['Compliance', 'Activation'], repos: ['tvk-compliance'] })
     ]
   },
@@ -158,7 +159,7 @@ const ECOSYSTEM_CATEGORIES = [
 
 const HOMEPAGE_PROJECTS = [
   'EnteleKRON', 'EnteleWALLET', 'TVK ID', 'EnteleVAULT',
-  'SOVRA', 'ALVINA', 'TVKUSD', 'EnteleMINT',
+  'SOVRA', 'ALVINA', 'TVK USD', 'EnteleMINT',
   'EnteleTREASURY', 'EntelePAY', 'EnergieMIND', 'TVK Orbital'
 ];
 

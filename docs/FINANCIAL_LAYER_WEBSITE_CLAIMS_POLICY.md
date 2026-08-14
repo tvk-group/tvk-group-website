@@ -6,7 +6,9 @@ Website implementations must consume the reviewed locale source in content/entel
 
 ## Allowed roadmap language
 
-Use planned, architecture, research, testnet, or jurisdiction-gated when supported. State that TVKUSD is not issued and that ENK remains separate.
+Use planned, architecture, research, testnet, or jurisdiction-gated when supported. Display the public name as **TVK USD** and the ticker as **TVKUSD**. State that TVK USD is not issued and that ENK remains separate.
+
+`tvkusd.com` is the purchased short product entrance. `finance.entelekron.org` remains the canonical financial disclosure and machine-readable status origin. Domain ownership or a successful deployment is not financial activation.
 
 ## Prohibited unsupported claims
 

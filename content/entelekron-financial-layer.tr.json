@@ -8,9 +8,9 @@
   "lead": "EnteleKRON'un önceki hedefleri, ürünleri, ENK tokenomisi ve Ethereum güvenli L2 yönü değişmeden korunur. Finansal katman; ayrı yönetişim altındaki stablecoin, mint, hazine, saklama, ödeme, kurumsal hizmetler ve tokenizasyon mimarisini ekler.",
   "components": [
     {
-      "name": "TVKUSD",
+      "name": "TVK USD",
       "status": "Planlandı — ihraç edilmedi",
-      "copy": "İhraççı, rezerv, itfa, muhasebe, denetim ve ülke bazlı yetki kapıları olan ayrı bir fiat destekli yükümlülüktür. ENK'nın yerini almaz."
+      "copy": "TVK USD (TVKUSD); ihraççı, rezerv, itfa, muhasebe, denetim ve ülke bazlı yetki kapıları olan, planlanan ayrı bir fiat destekli yükümlülüktür. Satın alınan tvkusd.com alan adı bir marka girişidir; aktivasyon değildir. ENK'nın yerini almaz."
     },
     {
       "name": "EnteleMINT",
@@ -40,14 +40,14 @@
   ],
   "invariants": [
     "ENK, azami 100 milyar arzlı ekosistem erişim, yönetişim ve ağ fayda varlığı olarak kalır.",
-    "TVKUSD hiçbir zaman ENK arzına, tahsislerine, satış envanterine veya rezervlerine dahil edilmez.",
+    "TVK USD (TVKUSD) hiçbir zaman ENK arzına, tahsislerine, satış envanterine veya rezervlerine dahil edilmez.",
     "Kesin ve tarihli kanıt olmadan hiçbir EnteleKRON kuruluşu banka veya her yerde lisanslı olarak tanımlanmaz.",
     "Yol haritasındaki bir kabiliyet aktif ürün gibi sunulmaz.",
     "Mevcut düzenleme temelinde Türkiye'deki kripto ödeme rotaları kapalı kalır."
   ],
   "cta": {
     "label": "Mimariyi inceleyin",
-    "href": "https://github.com/tvk-group/tvk-docs/pull/2"
+    "href": "https://finance.entelekron.org/solutions/stablecoin"
   },
   "legal": "İleriye dönük mimaridir. Teklif, mevduat, banka hesabı, ödeme hizmeti, saklama hizmeti, yatırım hizmeti veya mevcut lisans beyanı değildir."
 }

@@ -53,6 +53,35 @@ const NAV_PAGES = [
   { file: 'contact.html', key: 'contact' }
 ];
 
+const NAV_UI = {
+  en: { resources: 'Resources', finance: 'Finance' },
+  tr: { resources: 'Kaynaklar', finance: 'Finans' },
+  de: { resources: 'Ressourcen', finance: 'Finanzen' },
+  fr: { resources: 'Ressources', finance: 'Finance' },
+  es: { resources: 'Recursos', finance: 'Finanzas' },
+  ar: { resources: 'الموارد', finance: 'التمويل' },
+  zh: { resources: '资源', finance: '金融' },
+  ja: { resources: 'リソース', finance: '金融' },
+  ru: { resources: 'Ресурсы', finance: 'Финансы' },
+  he: { resources: 'משאבים', finance: 'פיננסים' },
+  it: { resources: 'Risorse', finance: 'Finanza' },
+  ko: { resources: '자료', finance: '금융' },
+  pl: { resources: 'Zasoby', finance: 'Finanse' },
+  pt: { resources: 'Recursos', finance: 'Finanças' },
+  nl: { resources: 'Bronnen', finance: 'Financiën' },
+  da: { resources: 'Ressourcer', finance: 'Finans' },
+  sv: { resources: 'Resurser', finance: 'Finans' },
+  fi: { resources: 'Resurssit', finance: 'Rahoitus' },
+  no: { resources: 'Ressurser', finance: 'Finans' },
+  hi: { resources: 'संसाधन', finance: 'वित्त' },
+  id: { resources: 'Sumber daya', finance: 'Keuangan' },
+  vi: { resources: 'Tài nguyên', finance: 'Tài chính' },
+  th: { resources: 'แหล่งข้อมูล', finance: 'การเงิน' },
+  uk: { resources: 'Ресурси', finance: 'Фінанси' },
+  cs: { resources: 'Zdroje', finance: 'Finance' },
+  el: { resources: 'Πόροι', finance: 'Χρηματοοικονομικά' }
+};
+
 const HOMEPAGE_COMPANIES = [
   { icon: 'fa-flask', title: 'TVK Labs & Technologies', desc: 'Research, development, AI, cybersecurity, blockchain and emerging technologies.', link: 'companies.html#labs' },
   { icon: 'fa-bolt', title: 'TVK Infrastructure & Energy Systems', desc: 'Energy, infrastructure, industrial systems and strategic technology investments.', link: 'companies.html#energy' },
@@ -119,7 +148,7 @@ const CONTENT = {
     contactLabel: 'Contact', contactH2: 'Contact TVK Group', contactP: 'For strategic inquiries, partnership discussions and institutional correspondence.',
     formName: 'Name', formCompany: 'Company', formRole: 'Role', formEmail: 'Email', formInterest: 'Area of Interest', formMessage: 'Message', formSubmit: 'Send Message',
     footerTagline: 'Technology, infrastructure and innovation for the next digital economy.',
-    footerCopy: '© 2025 TVK Group Holding LTD. All rights reserved.',
+    footerCopy: '© 2026 TVK Group Holding LTD. All rights reserved.',
     footerLegal: 'Legal', footerPrivacy: 'Privacy', footerTerms: 'Terms', footerWork: 'Careers', footerLegacy: 'Company Directory',
     aboutTitle: 'About TVK Group', aboutH1: 'About TVK Group',
     aboutLead: 'An early-stage technology and investment ecosystem building structured foundations for digital trust, intelligence and strategic transformation.',
@@ -188,7 +217,7 @@ function getEcosystemCategories(lang) {
     ? ECOSYSTEM_CATEGORIES
     : ECOSYSTEM_CATEGORIES.filter(category => category.id !== 'finance');
   const sourceNames = {
-    TVKUSD: 'TVKUSD',
+    'TVK USD': 'TVK USD',
     EnteleMINT: 'EnteleMINT',
     EnteleTREASURY: 'EnteleTREASURY',
     'Custody & Prime Brokerage': 'Prime brokerage',
@@ -235,29 +264,100 @@ function hreflangTags(page = 'index.html') {
 
 function navHtml(lang, active = 'index.html') {
   const l = LANGUAGES.find(x => x.code === lang);
-  const links = NAV_PAGES.map(p =>
-    `<li><a href="/${lang}/${p.file}"${p.file === active ? ' class="active"' : ''}>${l.nav[p.key]}</a></li>`
-  ).join('\n        ');
-  return `<nav class="tvk-nav">
-    <a href="/${lang}/index.html" class="tvk-nav-brand"><img src="/assets/logo.tvk.group.png" alt="TVK Group" /><strong>TVK GROUP</strong></a>
-    <button class="tvk-nav-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
-    <ul class="tvk-nav-links">${links}
-      <li><select class="tvk-lang-select" onchange="location.href=this.value"><option disabled>${l.langLabel}</option>${langOptions(lang, active)}</select></li>
-    </ul>
+  const ui = NAV_UI[lang] || NAV_UI.en;
+  const isActive = (...files) => files.includes(active);
+  const localLink = (file, label, icon) => `<a href="/${lang}/${file}" class="tvk-mega-link${file === active ? ' active' : ''}"><i class="fa-solid ${icon}" aria-hidden="true"></i><span>${label}</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>`;
+  const externalLink = (href, label, icon) => `<a href="${href}" target="_blank" rel="noopener" class="tvk-mega-link"><i class="fa-solid ${icon}" aria-hidden="true"></i><span>${label}</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>`;
+  const groups = [
+    {
+      id: 'group', label: 'TVK Group', active: isActive('index.html', 'about.html', 'companies.html', 'company.html'),
+      links: [
+        localLink('about.html', l.nav.about, 'fa-building'),
+        localLink('companies.html', l.nav.companies, 'fa-layer-group'),
+        localLink('strategic-partnerships.html', l.nav.partnerships, 'fa-handshake'),
+        localLink('investor-relations.html', l.nav.investors, 'fa-chart-line')
+      ]
+    },
+    {
+      id: 'ecosystem', label: l.nav.ecosystem, active: isActive('ecosystem.html'),
+      links: [
+        localLink('ecosystem.html', l.nav.ecosystem, 'fa-diagram-project'),
+        externalLink('https://www.entelekron.org/', 'EnteleKRON OS', 'fa-circle-nodes'),
+        externalLink('https://www.tvklabs.com/', 'TVK Labs', 'fa-flask'),
+        externalLink('https://www.entelewallet.com/', 'EnteleWALLET', 'fa-wallet')
+      ]
+    },
+    {
+      id: 'technologies', label: l.nav.technologies, active: isActive('technologies.html'),
+      links: [
+        localLink('technologies.html', l.nav.technologies, 'fa-microchip'),
+        externalLink('https://www.enteleclos.com/', 'EnteleCLOS', 'fa-shield-halved'),
+        externalLink('https://www.energiemind.com/', 'EnergieMIND', 'fa-bolt'),
+        externalLink('https://www.osoix.com/', 'OSOIX', 'fa-satellite')
+      ]
+    },
+    {
+      id: 'industries', label: l.nav.industries, active: isActive('industries.html'),
+      links: [
+        localLink('industries.html', l.nav.industries, 'fa-industry'),
+        externalLink('https://www.osoix.com/mission-control', 'Orbital Intelligence', 'fa-earth-europe'),
+        externalLink('https://www.energiemind.com/', 'Energy & Infrastructure', 'fa-solar-panel'),
+        externalLink('https://www.webkron.org/', 'Digital Enterprise', 'fa-globe')
+      ]
+    },
+    {
+      id: 'finance', label: ui.finance, active: false,
+      links: [
+        externalLink('https://finance.entelekron.org/', 'Financial Infrastructure', 'fa-landmark'),
+        externalLink('https://finance.entelekron.org/solutions/stablecoin', 'TVK USD · TVKUSD', 'fa-coins'),
+        externalLink('https://finance.entelekron.org/platform', 'Platform Architecture', 'fa-sitemap'),
+        externalLink('https://finance.entelekron.org/transparency', 'Transparency & Controls', 'fa-file-shield')
+      ]
+    },
+    {
+      id: 'resources', label: ui.resources, active: isActive('insights.html', 'contact.html', 'work.html', 'legal.html', 'privacy.html', 'terms.html'),
+      links: [
+        localLink('insights.html', l.nav.insights, 'fa-newspaper'),
+        localLink('contact.html', l.nav.contact, 'fa-envelope'),
+        localLink('work.html', t(lang, 'footerWork'), 'fa-briefcase'),
+        localLink('legal.html', t(lang, 'footerLegal'), 'fa-scale-balanced')
+      ]
+    }
+  ];
+  const triggers = groups.map(group => `<button type="button" class="tvk-nav-trigger${group.active ? ' active' : ''}" data-tvk-menu-trigger="${group.id}" aria-expanded="false" aria-controls="tvk-menu-${group.id}">${group.label}<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>`).join('');
+  const panels = groups.map(group => `<section class="tvk-mega-panel" id="tvk-menu-${group.id}" data-tvk-menu-panel="${group.id}" aria-label="${group.label}" hidden><div class="tvk-mega-panel-inner"><div class="tvk-mega-heading"><span>TVK Group</span><strong>${group.label}</strong></div><div class="tvk-mega-link-grid">${group.links.join('')}</div>${group.id === 'finance' ? `<a class="tvk-mega-feature" href="https://finance.entelekron.org/regulatory-status" target="_blank" rel="noopener"><span>TVK USD</span><strong>Planned · not issued</strong><small>Open regulatory and product status <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></small></a>` : `<a class="tvk-mega-feature" href="/${lang}/contact.html"><span>TVK Group</span><strong>${l.nav.contact}</strong><small>${l.nav.partnerships} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></small></a>`}</div></section>`).join('');
+  const mobileGroups = groups.map(group => `<details class="tvk-mobile-nav-group"><summary>${group.label}<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></summary><div>${group.links.join('')}</div></details>`).join('');
+  return `<nav class="tvk-nav" data-tvk-nav>
+    <div class="tvk-nav-bar">
+      <a href="/${lang}/index.html" class="tvk-nav-brand"><img src="/assets/logo.tvk.group.png" alt="TVK Group" /><strong>TVK GROUP</strong></a>
+      <div class="tvk-nav-desktop" aria-label="Primary navigation">${triggers}</div>
+      <div class="tvk-nav-actions">
+        <label class="tvk-sr-only" for="tvk-language-${lang}">${l.langLabel}</label>
+        <select id="tvk-language-${lang}" class="tvk-lang-select" onchange="location.href=this.value"><option disabled>${l.langLabel}</option>${langOptions(lang, active)}</select>
+        <a href="/${lang}/contact.html" class="tvk-nav-contact">${l.nav.contact}</a>
+        <button class="tvk-nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="tvk-mobile-navigation"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <div class="tvk-mega-board">${panels}</div>
+    <div class="tvk-mobile-navigation" id="tvk-mobile-navigation" hidden>${mobileGroups}<a href="/${lang}/contact.html" class="tvk-mobile-contact">${l.nav.contact}</a></div>
   </nav>`;
 }
 
 function footerHtml(lang) {
+  const l = LANGUAGES.find(x => x.code === lang);
+  const ui = NAV_UI[lang] || NAV_UI.en;
+  const group = (title, links) => `<div class="tvk-footer-group"><h2>${title}</h2><ul>${links.map(link => `<li><a href="${link.href}"${link.external ? ' target="_blank" rel="noopener"' : ''}>${link.label}</a></li>`).join('')}</ul></div>`;
   return `<footer class="tvk-footer">
-    <p class="tvk-footer-tagline">${t(lang, 'footerTagline')}</p>
-    <div class="tvk-footer-links">
-      <a href="/${lang}/legal.html">${t(lang, 'footerLegal')}</a>
-      <a href="/${lang}/privacy.html">${t(lang, 'footerPrivacy')}</a>
-      <a href="/${lang}/terms.html">${t(lang, 'footerTerms')}</a>
-      <a href="/${lang}/work.html">${t(lang, 'footerWork')}</a>
-      <a href="/${lang}/company.html">${t(lang, 'footerLegacy')}</a>
+    <div class="tvk-footer-top"><button type="button" data-tvk-to-top>Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button></div>
+    <div class="tvk-footer-board">
+      <div class="tvk-footer-identity"><a href="/${lang}/index.html" class="tvk-footer-brand"><img src="/assets/logo.tvk.group.png" alt="TVK Group" /><strong>TVK GROUP</strong></a><p>${t(lang, 'footerTagline')}</p><a href="/${lang}/contact.html" class="tvk-footer-contact">${l.nav.contact} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+      ${group('TVK Group', [{ href: `/${lang}/about.html`, label: l.nav.about }, { href: `/${lang}/companies.html`, label: l.nav.companies }, { href: `/${lang}/strategic-partnerships.html`, label: l.nav.partnerships }, { href: `/${lang}/investor-relations.html`, label: l.nav.investors }])}
+      ${group(l.nav.ecosystem, [{ href: `/${lang}/ecosystem.html`, label: l.nav.ecosystem }, { href: 'https://www.entelekron.org/', label: 'EnteleKRON OS', external: true }, { href: 'https://www.tvklabs.com/', label: 'TVK Labs', external: true }, { href: 'https://finance.entelekron.org/', label: `EnteleKRON ${ui.finance}`, external: true }])}
+      ${group(l.nav.technologies, [{ href: `/${lang}/technologies.html`, label: l.nav.technologies }, { href: `/${lang}/industries.html`, label: l.nav.industries }, { href: 'https://www.osoix.com/', label: 'OSOIX', external: true }, { href: 'https://www.energiemind.com/', label: 'EnergieMIND', external: true }])}
+      ${group(ui.resources, [{ href: `/${lang}/insights.html`, label: l.nav.insights }, { href: `/${lang}/work.html`, label: t(lang, 'footerWork') }, { href: `/${lang}/legal.html`, label: t(lang, 'footerLegal') }, { href: `/${lang}/privacy.html`, label: t(lang, 'footerPrivacy') }])}
     </div>
-    <p>${t(lang, 'footerCopy')}</p>
+    <div class="tvk-footer-status"><div><span>TVK USD · TVKUSD</span><strong>Planned · not issued</strong></div><p>Financial capabilities remain subject to legal-entity, product, provider and jurisdiction approval.</p></div>
+    <div class="tvk-footer-bottom"><p>${t(lang, 'footerCopy')}</p><div><a href="/${lang}/privacy.html">${t(lang, 'footerPrivacy')}</a><a href="/${lang}/terms.html">${t(lang, 'footerTerms')}</a><a href="/${lang}/contact.html">${l.nav.contact}</a></div></div>
   </footer>`;
 }
 
@@ -289,7 +389,7 @@ function headHtml(lang, title, desc, page = 'index.html') {
   <meta name="twitter:image" content="${socialImage}" />
   <link rel="icon" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=9" />
+  <link rel="stylesheet" href="/assets/css/tvk-master.css?v=10" />
 </head>` };
 }
 
@@ -298,7 +398,7 @@ function ambient() {
 }
 
 function scripts() {
-  return `\n<script src="/assets/js/tvk-master.js?v=7"></script>\n</body>\n</html>`;
+  return `\n<script src="/assets/js/tvk-master.js?v=8"></script>\n</body>\n</html>`;
 }
 
 function pageHero(h1, lead) {
