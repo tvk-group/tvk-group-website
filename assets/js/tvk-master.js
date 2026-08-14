@@ -399,7 +399,11 @@
   function initNav() {
     const nav = document.querySelector('.tvk-nav');
     const toggle = document.querySelector('.tvk-nav-toggle');
-    const links = document.querySelector('.tvk-nav-links');
+    const mobileNavigation = document.querySelector('.tvk-mobile-navigation');
+    const triggers = Array.from(document.querySelectorAll('[data-tvk-menu-trigger]'));
+    const panels = Array.from(document.querySelectorAll('[data-tvk-menu-panel]'));
+    const toTop = document.querySelector('[data-tvk-to-top]');
+    let lastTrigger = null;
 
     if (nav) {
       window.addEventListener('scroll', () => {
@@ -407,11 +411,79 @@
       });
     }
 
-    if (toggle && links) {
-      toggle.addEventListener('click', () => links.classList.toggle('open'));
-      links.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => links.classList.remove('open'));
+    function closeMega(restoreFocus) {
+      triggers.forEach(trigger => trigger.setAttribute('aria-expanded', 'false'));
+      panels.forEach(panel => { panel.hidden = true; });
+      if (restoreFocus && lastTrigger) lastTrigger.focus();
+      lastTrigger = null;
+    }
+
+    function openMega(id, trigger) {
+      const panel = panels.find(item => item.dataset.tvkMenuPanel === id);
+      const alreadyOpen = trigger.getAttribute('aria-expanded') === 'true';
+      closeMega(false);
+      if (alreadyOpen || !panel) return;
+      trigger.setAttribute('aria-expanded', 'true');
+      panel.hidden = false;
+      lastTrigger = trigger;
+    }
+
+    triggers.forEach(trigger => {
+      trigger.addEventListener('click', () => openMega(trigger.dataset.tvkMenuTrigger, trigger));
+    });
+
+    if (nav) {
+      document.addEventListener('pointerdown', event => {
+        if (!nav.contains(event.target)) closeMega(false);
       });
+    }
+
+    document.addEventListener('keydown', event => {
+      if (event.key !== 'Escape') return;
+      closeMega(true);
+      if (toggle && mobileNavigation && !mobileNavigation.hidden) {
+        mobileNavigation.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+        const icon = toggle.querySelector('i');
+        if (icon) icon.className = 'fa-solid fa-bars';
+        toggle.focus();
+      }
+    });
+
+    if (toggle && mobileNavigation) {
+      toggle.addEventListener('click', () => {
+        const willOpen = mobileNavigation.hidden;
+        closeMega(false);
+        mobileNavigation.hidden = !willOpen;
+        toggle.setAttribute('aria-expanded', String(willOpen));
+        const icon = toggle.querySelector('i');
+        if (icon) icon.className = `fa-solid ${willOpen ? 'fa-xmark' : 'fa-bars'}`;
+      });
+      mobileNavigation.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileNavigation.hidden = true;
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+      mobileNavigation.querySelectorAll('details').forEach(details => {
+        details.addEventListener('toggle', () => {
+          if (!details.open) return;
+          mobileNavigation.querySelectorAll('details').forEach(other => {
+            if (other !== details) other.open = false;
+          });
+        });
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1180 && mobileNavigation && toggle) {
+        mobileNavigation.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    if (toTop) {
+      toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     }
   }
 
