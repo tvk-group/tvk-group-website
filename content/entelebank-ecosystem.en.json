@@ -1,0 +1,13 @@
+{
+  "name": "EnteleBANK",
+  "legalNamePlanned": "EnteleBANK LTD",
+  "url": "https://www.entelebank.com",
+  "group": "TVK Group",
+  "category": "Proposed UK Banking Institution",
+  "stage": "Pre-authorisation / sensitive-name review",
+  "summary": "EnteleBANK is being developed as a proposed UK banking institution within the wider TVK Group ecosystem, with security, operational resilience, governance and responsible technology designed into its foundation.",
+  "regulatoryNotice": "EnteleBANK is not currently authorised by the Prudential Regulation Authority or Financial Conduct Authority to accept deposits or provide regulated banking services. Use of the proposed EnteleBANK LTD name remains subject to the applicable sensitive-business-name process and Companies House requirements.",
+  "integrationBoundary": "TVK Group and EnteleKRON ecosystem technologies may be evaluated as future technology, infrastructure or service dependencies only where appropriate. They are not EnteleBANK banking products merely because they are part of the wider ecosystem. Any future integration is subject to regulatory approval, legal assessment, governance, security, operational-resilience, outsourcing and third-party-risk requirements.",
+  "publicLabels": ["Proposed UK banking institution", "Pre-authorisation", "A TVK Group Company"],
+  "forbiddenClaims": ["authorised bank", "licensed bank", "FCA approved", "PRA approved", "FSCS protected", "deposits available", "accounts open now"]
+}
