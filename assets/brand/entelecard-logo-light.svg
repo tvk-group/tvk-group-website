@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 150" role="img" aria-labelledby="title desc">
+  <title id="title">EnteleCARD</title>
+  <desc id="desc">EnteleCARD logo with transaction portal mark.</desc>
+  <defs>
+    <linearGradient id="rail" x1="16" y1="60" x2="113" y2="90" gradientUnits="userSpaceOnUse"><stop stop-color="#0ddff0"/><stop offset="1" stop-color="#2b61ff"/></linearGradient>
+    <linearGradient id="card" x1="430" y1="35" x2="690" y2="116" gradientUnits="userSpaceOnUse"><stop stop-color="#d7e3ef"/><stop offset=".35" stop-color="#0ddff0"/><stop offset="1" stop-color="#2b61ff"/></linearGradient>
+  </defs>
+  <g transform="translate(8 15) scale(1.25)">
+    <path d="M75.5 27.5A34 34 0 1 0 75.5 68.5" fill="none" stroke="#ffffff" stroke-width="11"/>
+    <path d="M13 31h51l-8 11H6z" fill="#ffffff"/>
+    <path d="M8 44h61l-8 12H1z" fill="url(#rail)"/>
+    <path d="M6 59h50l8 11H13z" fill="#ffffff"/>
+  </g>
+  <text x="138" y="102" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="600" letter-spacing="-3">Entele</text>
+  <text x="354" y="102" fill="url(#card)" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="600" letter-spacing="-3">CARD</text>
+</svg>

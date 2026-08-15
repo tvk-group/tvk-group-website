@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">EnteleCARD mark</title>
+  <desc id="desc">A circular transaction portal crossed by three payment rails.</desc>
+  <defs>
+    <linearGradient id="rail" x1="10" y1="40" x2="72" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0ddff0"/>
+      <stop offset="1" stop-color="#2b61ff"/>
+    </linearGradient>
+  </defs>
+  <path d="M75.5 27.5A34 34 0 1 0 75.5 68.5" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="butt"/>
+  <path d="M13 31h51l-8 11H6z" fill="#ffffff"/>
+  <path d="M8 44h61l-8 12H1z" fill="url(#rail)"/>
+  <path d="M6 59h50l8 11H13z" fill="#ffffff"/>
+</svg>
