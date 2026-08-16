@@ -1,0 +1,18 @@
+{
+  "name": "TVK Group",
+  "short_name": "TVK Group",
+  "description": "TVK Group is an early-stage technology ecosystem developing AI, digital trust, cybersecurity, energy intelligence and strategic infrastructure projects.",
+  "start_url": "/en/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#071a3d",
+  "icons": [
+    {
+      "src": "/assets/logo.tvk.group.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
