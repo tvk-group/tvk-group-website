@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">EnteleCLOS reverse mark</title>
+  <desc id="desc">A light controlled assurance aperture for dark surfaces.</desc>
+  <defs>
+    <linearGradient id="clos-reverse" x1="90" y1="60" x2="430" y2="455" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.44" stop-color="#dbeafe"/>
+      <stop offset="0.76" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="clos-platinum" x1="160" y1="160" x2="350" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.52" stop-color="#cbd5e1"/>
+      <stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+  </defs>
+  <path d="M390 94A202 202 0 1 0 390 418" fill="none" stroke="#e2e8f0" stroke-width="68" stroke-linecap="square" opacity=".42"/>
+  <path d="M390 94A202 202 0 1 0 390 418" fill="none" stroke="url(#clos-reverse)" stroke-width="46" stroke-linecap="square"/>
+  <path d="M256 132V386" fill="none" stroke="#bae6fd" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="256" cy="132" r="16" fill="#ffffff" stroke="#7dd3fc" stroke-width="4"/>
+  <path d="M256 168 344 211 256 254 168 211Z" fill="url(#clos-platinum)" stroke="#ffffff" stroke-width="5"/>
+  <path d="M256 226 344 269 256 312 168 269Z" fill="#38bdf8" stroke="#ffffff" stroke-width="5"/>
+  <path d="M256 284 344 327 256 370 168 327Z" fill="#0b4fb7" stroke="#ffffff" stroke-width="5"/>
+  <circle cx="256" cy="389" r="32" fill="#0ea5e9" stroke="#ffffff" stroke-width="7"/>
+  <path d="m240 389 11 11 22-25" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

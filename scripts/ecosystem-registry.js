@@ -6,7 +6,7 @@
  * a reason. Run `node scripts/audit-ecosystem-registry.js` after edits.
  */
 
-const INVENTORY_DATE = '2026-08-14';
+const INVENTORY_DATE = '2026-08-16';
 
 const GITHUB_REPOSITORY_SNAPSHOT = [
   'energiemind-dapp', 'archive-tvk-site', 'entelekron-OSAIC',
@@ -70,7 +70,7 @@ const ECOSYSTEM_CATEGORIES = [
     desc: 'Cybersecurity, custody controls, operational protection and release assurance.',
     projects: [
       P('TVK CyberLab', 'Cybersecurity, digital risk and security advisory capabilities.', { stage: 'Under development', url: 'https://tvkcyberlab.com', img: 'cyberlab_logo.png', tags: ['Cybersecurity', 'Risk'], repos: ['tvk-cyberlab'] }),
-      P('EnteleCLOS', 'Secure operations and closure protocols for ecosystem assets.', { stage: 'Under R&D', mark: 'EC', tags: ['Operations', 'Protocols'], repos: ['enteleclos'] }),
+      P('EnteleCLOS', 'Security assurance, evidence and control layer for wallets, exchanges, cloud and custody.', { detail: 'Coordinates measurable controls, release gates, incident exercises and review evidence without signing or moving assets.', stage: 'Under development', url: 'https://www.enteleclos.com', img: 'ecosystem/enteleclos.svg', tags: ['Security assurance', 'Evidence'], repos: ['enteleclos'] }),
       P('EnteleVAULT', 'Vault-grade storage for identity, governance and digital assets.', { stage: 'Under development', url: 'https://entelevault.com', img: 'entelevault_logo.png', tags: ['Vault', 'Custody controls'], repos: ['entelevault'] }),
       P('Preflight Audit', 'Pre-release evidence and quality gates for ecosystem deployments.', { stage: 'Internal infrastructure', mark: 'PA', tags: ['Audit', 'Release gates'], repos: ['Preflightaudit'] })
     ]

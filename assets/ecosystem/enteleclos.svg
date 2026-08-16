@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">EnteleCLOS mark</title>
+  <desc id="desc">A controlled assurance aperture surrounding layered evidence and a verified checkpoint.</desc>
+  <defs>
+    <linearGradient id="clos-silver" x1="90" y1="60" x2="430" y2="455" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.28" stop-color="#94a3b8"/>
+      <stop offset="0.58" stop-color="#e2e8f0"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="clos-blue" x1="120" y1="90" x2="410" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#071a45"/>
+      <stop offset="0.46" stop-color="#0b4fb7"/>
+      <stop offset="0.78" stop-color="#087fc7"/>
+      <stop offset="1" stop-color="#23c6e8"/>
+    </linearGradient>
+    <linearGradient id="clos-cyan" x1="176" y1="232" x2="338" y2="306" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="0.55" stop-color="#19bde2"/>
+      <stop offset="1" stop-color="#0b65c5"/>
+    </linearGradient>
+  </defs>
+  <path d="M390 94A202 202 0 1 0 390 418" fill="none" stroke="url(#clos-silver)" stroke-width="68" stroke-linecap="square"/>
+  <path d="M390 94A202 202 0 1 0 390 418" fill="none" stroke="url(#clos-blue)" stroke-width="46" stroke-linecap="square"/>
+  <path d="M256 132V386" fill="none" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="256" cy="132" r="16" fill="url(#clos-silver)" stroke="#ffffff" stroke-width="4"/>
+  <path d="M256 168 344 211 256 254 168 211Z" fill="url(#clos-silver)" stroke="#ffffff" stroke-width="5"/>
+  <path d="M256 226 344 269 256 312 168 269Z" fill="url(#clos-cyan)" stroke="#ffffff" stroke-width="5"/>
+  <path d="M256 284 344 327 256 370 168 327Z" fill="#082a6b" stroke="#ffffff" stroke-width="5"/>
+  <circle cx="256" cy="389" r="32" fill="url(#clos-blue)" stroke="url(#clos-silver)" stroke-width="7"/>
+  <path d="m240 389 11 11 22-25" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
