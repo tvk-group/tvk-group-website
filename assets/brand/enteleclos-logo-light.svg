@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" role="img" aria-labelledby="title desc">
+  <title id="title">EnteleCLOS reverse logo</title>
+  <desc id="desc">EnteleCLOS identity for dark backgrounds.</desc>
+  <defs>
+    <linearGradient id="lr" x1="70" y1="50" x2="410" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset=".44" stop-color="#dbeafe"/><stop offset=".77" stop-color="#67e8f9"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <linearGradient id="lp" x1="140" y1="160" x2="350" y2="380" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset=".52" stop-color="#cbd5e1"/><stop offset="1" stop-color="#7dd3fc"/></linearGradient>
+  </defs>
+  <g transform="translate(12 0) scale(.82)">
+    <path d="M390 94A202 202 0 1 0 390 418" fill="none" stroke="#e2e8f0" stroke-width="68" stroke-linecap="square" opacity=".42"/>
+    <path d="M390 94A202 202 0 1 0 390 418" fill="none" stroke="url(#lr)" stroke-width="46" stroke-linecap="square"/>
+    <path d="M256 132V386" fill="none" stroke="#bae6fd" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="256" cy="132" r="16" fill="#fff" stroke="#7dd3fc" stroke-width="4"/>
+    <path d="M256 168 344 211 256 254 168 211Z" fill="url(#lp)" stroke="#fff" stroke-width="5"/>
+    <path d="M256 226 344 269 256 312 168 269Z" fill="#38bdf8" stroke="#fff" stroke-width="5"/>
+    <path d="M256 284 344 327 256 370 168 327Z" fill="#0b4fb7" stroke="#fff" stroke-width="5"/>
+    <circle cx="256" cy="389" r="32" fill="#0ea5e9" stroke="#fff" stroke-width="7"/>
+    <path d="m240 389 11 11 22-25" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="430" y="270" fill="#ffffff" font-family="Inter, IBM Plex Sans, Arial, sans-serif" font-size="218" font-weight="720" letter-spacing="-9">Entele</text>
+  <text x="1030" y="270" fill="#a5f3fc" font-family="Inter, IBM Plex Sans, Arial, sans-serif" font-size="218" font-weight="690" letter-spacing="-7">CLOS</text>
+</svg>
